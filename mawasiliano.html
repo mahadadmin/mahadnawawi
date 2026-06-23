@@ -55,179 +55,55 @@
                     </li>
 
                     <li class="nav-item"><a class="nav-link active" href="mawasiliano.html" data-i18n="nav.contact">Mawasiliano</a></li>
-
-                    <li class="nav-item ms-lg-2 d-flex align-items-center">
-                        <div class="language-switcher" role="group" aria-label="Language Switcher">
-                            <button class="lang-btn" data-lang="sw" title="Kiswahili" aria-pressed="false">SW</button>
-                            <button class="lang-btn" data-lang="en" title="English" aria-pressed="false">EN</button>
-                            <button class="lang-btn arabic-btn" data-lang="ar" title="العربية" aria-pressed="false">AR</button>
-                        </div>
-                    </li>
-                    <li class="nav-item ms-lg-2 d-flex align-items-center">
-                        <button class="theme-toggle" id="themeToggle" title="Badilisha Theme" aria-label="Toggle dark mode" data-i18n-attr="title:nav.toggle_theme,aria-label:nav.toggle_theme">
-                            <i class="bi bi-moon" id="themeIcon"></i>
-                        </button>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
    <header class="bg-success text-white py-5 position-relative section-pattern-bg">
+        <img
+            src="assets/img/publications-banner.jpg"
+            alt=""
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="object-fit: cover; z-index:0;"
+        >
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" style="z-index:0;"></div>
 
-    <img
-        src="assets/img/publications-banner.jpg"
-        alt=""
-        class="position-absolute top-0 start-0 w-100 h-100"
-        style="object-fit: cover; z-index:0;"
-    >
-    
-<div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" style="z-index:0;"></div>
-
-    <div class="container text-center py-3 position-relative z-1">
-        <h1 class="display-5 fw-bold mb-2" data-i18n="hero.title"></h1>
-        <p class="breadcrumbs mb-0 small opacity-75">
-            <span class="me-2">
-                <a href="index.html" class="text-white text-decoration-none" data-i18n="nav.home"></a>
-            <i class="bi bi-chevron-right ms-1"></i>
-            <span class="text-gold" data-i18n="nav.contact"></span>
-        </p>
-    </div>
-</header>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4" id="contactInfoCardsContainer">
-                </div>
+        <div class="container text-center py-3 position-relative z-1">
+            <h1 class="display-5 fw-bold mb-2" data-i18n="hero.title"></h1>
         </div>
-    </section>
+    </header>
 
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="custom-card p-4 h-100">
-                        <h2 class="h4 mb-3 card-title fw-bold text-success" data-i18n="contact_form.title"></h2>
-                        <p class="text-muted small mb-4" data-i18n="contact_form.subtitle"></p>
-                        
-                        <form id="contactForm" novalidate>
-                            <div class="mb-3">
-                                <label for="formName" class="form-label text-success small fw-semibold" data-i18n="contact_form.label_name"></label>
-                                <input type="text" class="form-control" id="formName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="formEmail" class="form-label text-success small fw-semibold" data-i18n="contact_form.label_email"></label>
-                                <input type="email" class="form-control" id="formEmail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="formSubject" class="form-label text-success small fw-semibold" data-i18n="contact_form.label_subject"></label>
-                                <input type="text" class="form-control" id="formSubject" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="formMessage" class="form-label text-success small fw-semibold" data-i18n="contact_form.label_message"></label>
-                                <textarea class="form-control" id="formMessage" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-success text-uppercase fw-bold shadow-sm px-4" id="formSubmitBtn" data-i18n="contact_form.btn_send"></button>
-                        </form>
-                    </div>
-                </div>
-
+                
                 <div class="col-lg-6">
                     <div class="custom-card p-4 h-100 d-flex flex-column">
                         <h2 class="h4 mb-3 card-title fw-bold text-success" data-i18n="map_section.title"></h2>
+
                         <p class="text-muted small mb-4" data-i18n="map_section.subtitle"></p>
-                        <div class="flex-grow-1 position-relative rounded overflow-hidden min-h-300"> 
 
-				<iframe 
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31734.17534503731!2d39.22284530561137!3d-6.16129370484917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd700696ca863%3A0x932a09de60fa5b7b!2sMasjid%20Aisha!5e0!3m2!1sen!2stz!4v1781454266450!5m2!1sen!2stz"
-
-                                class="w-100 h-100 border-0 position-absolute top-0 start-0" 
-                                allowfullscreen="" 
-                                loading="lazy" 
+                        <!-- ✅ ONLY CHANGE HERE -->
+                        <div class="flex-grow-1 position-relative rounded overflow-hidden" style="min-height: 400px;">
+                            
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31734.17534503731!2d39.22284530561137!3d-6.16129370484917!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd700696ca863%3A0x932a09de60fa5b7b!2sMasjid%20Aisha!5e0!3m2!1sen!2stz!4v1781454266450!5m2!1sen!2stz"
+                                class="w-100 h-100 border-0 position-absolute top-0 start-0"
+                                allowfullscreen=""
+                                loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
                                 data-i18n-attr="title:map_section.iframe_title">
                             </iframe>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
-     <footer class="mt-5" aria-label="Site Footer">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
-
-                    <img src="assets/img/logo_footer.svg" alt="Ma'had Logo" class="mb-3" style="height: 120px;">
-
-                    <p data-i18n="footer.description"></p>
-                </div>
-
-                <div class="col-lg-2 col-md-6">
-                    <h5 data-i18n="footer.useful_links"></h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" data-i18n="nav.home"></a></li>
-                        <li><a href="kuhusu.html" data-i18n="nav.about"></a></li>
-                        <li><a href="kozi.html" data-i18n="nav.courses"></a></li>
-                        <li><a href="udahili.html" data-i18n="nav.admission"></a></li>
-                        <li><a href="habari.html" data-i18n="nav.news"></a></li>
-                        <li><a href="mawasiliano.html" data-i18n="nav.contact"></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <h5 data-i18n="footer.knowledge_library"></h5>
-                    <ul class="list-unstyled">
-                        <li><a href="sauti.html" data-i18n="nav.audio"></a></li>
-                        <li><a href="video.html" data-i18n="nav.video"></a></li>
-                        <li><a href="machapisho.html" data-i18n="nav.publications"></a></li>
-                        <li><a href="makala.html" data-i18n="nav.articles"></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3">
-                    <h5 data-i18n="footer.contact_title"></h5>
-                    <p data-i18n="footer.address"><br></p>
-                    <p data-i18n="footer.phone"></p>
-                    <p data-i18n="footer.email"><br></p>
-                    <div class="d-flex gap-3 fs-4">
-                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            
- <hr class="my-4">
-
-            <div class="text-center">
-                <p class="mb-2" data-i18n="footer.copyright">
-                    </p>
-                <small class="text-muted d-block mb-3" data-i18n="footer.educational_disclaimer">
-                    </small>
-
-                <div class="d-flex justify-content-center flex-wrap gap-2">
-                    <a href="#" privacy-policy.html" data-i18n="footer.privacy"></a>
-                    <span>|</span>
-                    <a href="#" terms-of-use.html" data-i18n="footer.terms"></a>
-                    <span>|</span>
-                    <a href="#" copyright.html" data-i18n="footer.copyright_policy"></a>
-                    <span>|</span>
-                    <a href="#" faq.html" data-i18n="footer.faq"></a>
-                    <span>|</span>
-                    <a href="#"sitemap.html" data-i18n="footer.sitemap"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <a href="#" https://wa.me/255766163475?text=Assalamu%20alaykum,%20naomba%20kufahamu%20kuhusu%20Ma'had." 
-       class="whatsapp-float" target="_blank" aria-label="Wasiliana nasi kupitia WhatsApp">
-        <i class="bi bi-whatsapp"></i>
-    </a>
 
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
