@@ -1,0 +1,108 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Matukio Yajayo",
+      "description": "Fuatilia ratiba za semina, mitihani, na darsa maalum zinazofanyika Ma'had Al-Imam An-Nawawi.",
+      "keywords": "matukio, semina, darsa, mitihani, ratiba, ma'had, an-nawawi, zanzibar"
+    },
+    "hero": {
+      "title": "Matukio Yajayo"
+    },
+    "events_section": {
+      "search_placeholder": "Tafuta tukio...",
+      "time_label": "Muda",
+      "location_label": "Mahali"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Matukio na ratiba za semina, mitihani, na darsa za kila wiki."
+    },
+    "events": [
+      {
+        "id": 1,
+        "title": "Semina ya Siku Moja: Mbinu za Kuhifadhi Quran",
+        "date": "2026-06-15",
+        "time": "Saa 2:00 Asubuhi - Saa 10:00 Jioni",
+        "location": "Ma'had Al-Imam An-Nawawi"
+      },
+      {
+        "id": 2,
+        "title": "Somo Maalum la Jumatano (Baada ya Alasiri)",
+        "date": "Kila Jumatano",
+        "time": "Saa 10:30 Jioni - Saa 12:00 Jioni",
+        "location": "Ma'had Al-Imam An-Nawawi"
+      }
+    ]
+  },
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Upcoming Events",
+      "description": "Follow the schedules for seminars, examinations, and special lessons at Ma'had Al-Imam An-Nawawi.",
+      "keywords": "events, seminars, lessons, exams, schedule, ma'had, an-nawawi, zanzibar"
+    },
+    "hero": {
+      "title": "Upcoming Events"
+    },
+    "events_section": {
+      "search_placeholder": "Search event...",
+      "time_label": "Time",
+      "location_label": "Location"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Events and schedules for seminars, exams, and weekly lessons."
+    },
+    "events": [
+      {
+        "id": 1,
+        "title": "One Day Seminar: Methods of Memorizing the Quran",
+        "date": "2026-06-15",
+        "time": "8:00 AM - 4:00 PM",
+        "location": "Ma'had Al-Imam An-Nawawi"
+      },
+      {
+        "id": 2,
+        "title": "Special Wednesday Lesson (After Asr)",
+        "date": "Every Wenesday",
+        "time": "4:30 PM - 6:00 PM",
+        "location": "Ma'had Al-Imam An-Nawawi"
+      }
+    ]
+  },
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | الفعاليات القادمة",
+      "description": "تابع مواعيد الندوات والامتحانات والدروس الخاصة المقامة في معهد الإمام النووي.",
+      "keywords": "فعاليات, ندوات, دروس, امتحانات, جدول, معهد, النووي, زنجبار"
+    },
+    "hero": {
+      "title": "الفعاليات القادمة"
+    },
+    "events_section": {
+      "search_placeholder": "البحث عن الفعاليات...",
+      "time_label": "الوقت",
+      "location_label": "المكان"
+    },
+    "organization": {
+      "name": "معهد الإمام النووي",
+      "description": "الفعاليات ومواعيد الندوات والامتحانات والدروس الأسبوعية."
+    },
+    "events": [
+      {
+        "id": 1,
+        "title": "ندوة ليوم واحد: طرق حفظ القرآن الكريم",
+        "date": "2026-06-15",
+        "time": "الساعة ٢:٠٠ صباحاً - الساعة ٤:٠٠ مساءً",
+        "location": "معهد الإمام النووي"
+      },
+    {
+        "id": 2,
+        "title": "الدرس الخاص يوم الأربعاء (بعد العصر)",
+        "date": "كل يوم أربعاء",
+        "time": "الساعة ٤:٣٠ مساءً - الساعة ٦:٠٠ مساءً",
+        "location": "معهد الإمام النووي"
+      }
+    ]
+  }
+}
+

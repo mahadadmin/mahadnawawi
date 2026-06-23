@@ -1,0 +1,151 @@
+{
+  "sw": {
+    "meta": {
+      "title": "Udahili na Usajili | Ma'had Al-Imam An-Nawawi",
+      "description": "Taarifa rasmi za udahili na vigezo vya kujiunga na masomo katika Ma'had Al-Imam An-Nawawi.",
+      "keywords": "udahili, usajili, ada, vigezo, kujiunga, chuo, ma'had, an-nawawi, zanzibar"
+    },
+    "hero": {
+      "title": "Udahili na Usajili"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Taarifa rasmi za udahili na vigezo vya kujiunga na masomo."
+    },
+    "admission": {
+      "status": "Maombi Yamefungwa",
+      "deadline": "13 Juni 2026",
+      "section_title": "Taarifa za Kujiunga",
+      "schedule_title": "Ratiba ya Udahili",
+      "th_event": "Tukio",
+      "th_hijri": "Hijiria",
+      "th_gregorian": "Miladia",
+      "fees_title": "Gharama za Maombi",
+      "fee_form_label": "Ada ya Fomu",
+      "fee_registration_label": "Ada ya Usajili",
+      "fee_annual_label": "Ada ya Mwaka",
+      "centers_title": "Pata Fomu",
+      "centers_phone_label": "Simu",
+      "requirements_title": "Sifa na Vigezo vya Kujiunga",
+      "schedule": [
+        {"event": "Kufunguliwa kwa Udahili", "hijri": "1 Shawwal 1447", "gregorian": "20 Machi 2026"},
+        {"event": "Mwisho wa Usajili", "hijri": "27 Dhu al-Hijjah 1447", "gregorian": "13 Juni 2026"}
+      ],
+      "fees": {
+        "form": "2,000 TZS",
+        "registration": "20,000 TZS",
+        "annual_fee": "100,000 TZS"
+      },
+      "centers": [
+        {"name": "Masjid Aisha, Mwera", "phone": "+255 766 163 475"},
+        {"name": "Duka la Vitabu, Mtendeni", "phone": "+255 776 941 716"}
+      ],
+      "requirements": [
+        "Kuwa na nia thabiti na tabia njema.",
+        "Kujua kusoma na kuandika lugha ya Kiswahili.",
+        "Kuhudhuria usaili (interview) siku itakayopangwa.",
+        "Kujitolea kufuata taratibu na nidhamu zote za Ma'had."
+      ]
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Admission & Registration | Ma'had Al-Imam An-Nawawi",
+      "description": "Official admission updates and entry requirements for joining Ma'had Al-Imam An-Nawawi.",
+      "keywords": "admission, registration, fees, requirements, enrollment, college, ma'had, an-nawawi, zanzibar"
+    },
+    "hero": {
+      "title": "Admission & Registration"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Official admission updates and entry requirements."
+    },
+    "admission": {
+      "status": "Applications closed",
+      "deadline": "June 13, 2026",
+      "section_title": "Enrollment Information",
+      "schedule_title": "Admission Schedule",
+      "th_event": "Event",
+      "th_hijri": "Hijriah",
+      "th_gregorian": "Miladiah",
+      "fees_title": "Application Fees",
+      "fee_form_label": "Form Fee",
+      "fee_registration_label": "Registration Fee",
+      "fee_annual_label": "Annual Tuition",
+      "centers_title": "Get Application Form",
+      "centers_phone_label": "Phone",
+      "requirements_title": "Entry Requirements",
+      "schedule": [
+        {"event": "Opening of Admission", "hijri": "1 Shawwal 1447", "gregorian": "March 20, 2026"},
+        {"event": "Registration Deadline", "hijri": "27 Dhu al-Hijjah 1447", "gregorian": "June 13, 2026"}
+      ],
+      "fees": {
+        "form": "2,000 TZS",
+        "registration": "20,000 TZS",
+        "annual_fee": "100,000 TZS"
+      },
+      "centers": [
+        {"name": "Masjid Aisha, Mwera", "phone": "+255 766 163 475"},
+        {"name": "Bookshop, Mtendeni", "phone": "+255 776 941 716"}
+      ],
+      "requirements": [
+        "Must have a strong commitment and good character.",
+        "Must be able to read and write in Kiswahili.",
+        "Must attend the interview session on the scheduled date.",
+        "Must commit to following all regulations and discipline of the Ma'had."
+      ]
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "القبول والتسجيل | معهد الإمام النووي",
+      "description": "معلومات رسمية حول شروط القبول والتسجيل للالتحاق بالدراسة في معهد الإمام النووي.",
+      "keywords": "القبول, التسجيل, الرسوم, الشروط, الالتحاق, معهد, النووي, زنجبار"
+    },
+    "hero": {
+      "title": "القبول والتسجيل"
+    },
+    "organization": {
+      "name": "معهد الإمام النووي",
+      "description": "معلومات رسمية حول شروط القبول والتسجيل للالتحاق بالدراسة."
+    },
+    "admission": {
+      "status": "أغلقت الطلبات",
+      "deadline": "١٣ يونيو ٢٠٢٦",
+      "section_title": "معلومات الالتحاق",
+      "schedule_title": "جدول القبول",
+      "th_event": "الفعالية / الحدث",
+      "th_hijri": "الهجرية",
+      "th_gregorian": "الميلادية",
+      "fees_title": "رسوم التقديم",
+      "fee_form_label": "رسوم الاستمارة",
+      
+      "fee_annual_label": "الرسوم السنوية",
+      "fee_registration_label": "رسوم التسجيل",
+      "centers_title": "الحصول على الاستمارة",
+      "centers_phone_label": "الهاتف",
+      "requirements_title": "شروط ومعايير القبول",
+      "schedule": [
+        {"event": "فتح باب القبول", "hijri": "١ شوال ١٤٤٧", "gregorian": "٢٠ مارس ٢٠٢٦"},
+        {"event": "انتهاء فترة التسجيل", "hijri": "٢٧ ذو الحجة ١٤٤٧", "gregorian": "١٣ يونيو ٢٠٢٦"}
+      ],
+      "fees": {
+        "form": "٢,٠٠٠ شلن",
+        "registration": "٢٠,٠٠٠ شلن",
+        "annual_fee": "١٠٠,٠٠٠ شلن"
+      },
+      "centers": [
+        {"name": "مسجد عائشة، مويرا", "phone": "+255 766 163 475"},
+        {"name": "مكتبة الكتب، متنديني", "phone": "+255 776 941 716"}
+      ],
+      "requirements": [
+        "أن يكون لدى المتقدم نية صادقة وخلق حسن.",
+        "أن يجيد القراءة والكتابة باللغة السواحيلية.",
+        "حضور المقابلة الشخصية في الموعد المحدد.",
+        "الالتزام باتباع جميع الأنظمة واللوائح الخاصة بالمعهد."
+      ]
+    }
+  }
+}
+

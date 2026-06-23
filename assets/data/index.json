@@ -1,0 +1,267 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Nyumbani",
+      "description": "Kituo cha elimu ya Kiislamu kinachojitolea kufundisha Qur'an, Sunnah na lugha ya Kiarabu kwa mujibu wa uelewa wa Salafus-Salih.",
+      "keywords": "Ma'had, An-Nawawi, Zanzibar, elimu ya kiislamu, kiarabu, aqida, fiqhi, sunnah"
+    },
+    "hero": {
+      "title": "Karibu Ma’had Al-Imam An-Nawawi",
+      "subtitle": "Kituo cha elimu ya Kiislamu kinacholenga kufundisha Qur’an na Sunnah, pamoja na lugha ya Kiarabu kama ufunguo wa kuielewa Dini kwa mujibu wa ufahamu wa wema waliotangulia (Salafus-Salih) — Allah awaridhie.",
+      "cta_register": "Jisajili Sasa",
+      "cta_about": "Kuhusu Ma'had"
+    },
+    "stats": {
+      "years": { "value": "4", "label": "Miaka ya Masomo" },
+      "days": { "value": "5", "label": "Siku kwa Wiki" },
+      "start": { "value": "Muharram", "label": "Mwanzo wa Masomo" },
+      "location": { "value": "Mwera", "label": "Zanzibar" }
+    },
+    "features": {
+      "title": "Kwa Nini Uchague Ma'had Yetu?",
+      "subtitle": "Tunajitahidi kutoa elimu yenye manufaa, malezi mema na mazingira bora ya kujifunza.",
+      "items": [
+        { "title": "Elimu ya Kiislamu", "desc": "Mafunzo yanayotegemea Qur'an na Sunnah kwa uelewa wa Salafus-Salih." },
+        { "title": "Lugha ya Kiarabu", "desc": "Kujifunza lugha ya Kiarabu kwa mfumo uliopangwa vizuri na unaorahisisha uelewa." },
+        { "title": "Malezi na Adabu", "desc": "Kukuza maadili mema, tabia njema na kuheshimu misingi ya Kiislamu." }
+      ]
+    },
+    "levels": {
+      "title": "Ngazi za Masomo",
+      "subtitle": "Mafunzo yameandaliwa kwa hatua mbili kuu ili kumjengea mwanafunzi msingi imara wa elimu za Kiislamu na lugha ya Kiarabu.",
+      "primary": {
+        "title": "Ngazi ya Msingi",
+        "desc": "Kujifunza misingi ya elimu za Kiislamu pamoja na lugha ya Kiarabu kwa utaratibu unaomrahisishia mwanafunzi kuelewa na kujenga msingi thabiti.",
+        "subjects": ["Aqida", "Fiqhi", "Hadithi", "Tajwid", "Lugha ya Kiarabu"]
+      },
+      "preparatory": {
+        "title": "Ngazi ya Maandalizi",
+        "desc": "Kuongeza uelewa na kuimarisha maarifa ya mwanafunzi katika elimu za Kiislamu na lugha ya Kiarabu kwa kiwango cha juu zaidi.",
+        "subjects": ["Tafsiri", "Mustalah al-Hadith", "Usul al-Fiqhi", "Nahwu na Sarf", "Adabu za Kiislamu"]
+      }
+    },
+    "admission_cta": {
+      "title": "Karibu Udahili wa Mwaka Mpya",
+      "desc": "Kwa sasa kipindi cha maombi ya kujiunga na Ma’had Al-Imam An-Nawawi kimefungwa. Tutawafahamisha tarehe za kuanza kwa udahili wa mwaka mpya wa masomo. Endelea kufuatilia taarifa zetu kwa ajili ya kupata nafasi ya kujifunza Elimu za Kiislamu na Lugha ya Kiarabu katika mazingira bora ya kielimu.",
+      "stats_years_val": "Miaka 4",
+      "stats_years_lbl": "Muda wa Masomo",
+      "stats_start_val": "Muharram",
+      "stats_start_lbl": "Mwanzo wa Masomo",
+      "stats_days_val": "5",
+      "stats_days_lbl": "Siku kwa Wiki",
+      "btn_reqs": "Soma Masharti ya Udahili",
+      "btn_contact": "Wasiliana Nasi"
+    },
+    "news_section": {
+      "title": "Habari Mpya",
+      "subtitle": "Fuatilia matangazo na matukio mbalimbali ya Ma'had Al-Imam An-Nawawi.",
+      "btn_read_more": "Soma Zaidi",
+      "btn_view_all": "Tazama Habari Zote",
+      "articles": [
+        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Yafunguliwa Rasmi Na Masomo Kuanza", "desc": "Uongozi wa Ma'had Al-Imam An-Nawawi unafurahi kuwajulisha wanafunzi, wazazi, walezi na jamii kwa ujumla kwamba Ma'had imefunguliwa rasmi leo, Jumamosi tarehe 13 Juni 2026..." },
+        { "date": "2026-06-13", "title": "Maandalizi ya Upanuzi wa Ma'had Al-Imam An-Nawawi Yaendelea", "desc": "Ma'had Al-Imam An-Nawawi inaendelea na maandalizi ya muda mrefu ya kuimarisha miundombinu yake ili kuwezesha upanuzi wa huduma za elimu na kuongeza nafasi za udahili..." },
+        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Yazindua Tovuti Rasmi", "desc": "Katika hatua nyingine ya kuimarisha mawasiliano na upatikanaji wa elimu, Ma'had Al-Imam An-Nawawi imezindua rasmi tovuti yake kwa lengo la kuhudumia wanafunzi na jamii..." }
+      ]
+    },
+    "library_section": {
+      "title": "Maktaba ya Maarifa",
+      "subtitle": "Faidika na mkusanyiko wa mihadhara, video, machapisho na vitabu vinavyosaidia kujenga maarifa na kuongeza uelewa.",
+      "btn_open": "Fungua",
+      "cards": [
+        { "title": "Maktaba ya Sauti", "desc": "Sikiliza mihadhara na mafunzo mbalimbali ya Kiislamu." },
+        { "title": "Maktaba ya Video", "desc": "Tazama video za mafunzo na mihadhara mbalimbali." },
+        { "title": "Machapisho", "desc": "Soma makala na machapisho mbalimbali yenye manufaa." },
+        { "title": "Vitabu", "desc": "Pata vitabu mbalimbali vya Kiislamu na lugha ya Kiarabu." }
+      ]
+    },
+    "quran_blockquote": {
+      "section_title": "Neno la Allah Kuhusu Elimu",
+      "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "translation": "\"Na sema: Mola wangu! Niongezee elimu.\"",
+      "reference": "[Surat Twaha: 114]"
+    },
+    "bottom_cta": {
+      "title": "Karibu Ujifunze na Ufaidike",
+      "desc": "Fuatilia habari na machapisho mbalimbali, jifunze zaidi kuhusu Ma'had Al-Imam An-Nawawi, na uwe miongoni mwa wanaonufaika na elimu yenye manufaa.",
+      "btn_about": "Kuhusu Ma'had",
+      "btn_contact": "Wasiliana Nasi"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Home",
+      "description": "An Islamic educational center dedicated to teaching the Qur'an, Sunnah, and the Arabic language according to the understanding of the Salafus-Salih.",
+      "keywords": "Ma'had, An-Nawawi, Zanzibar, Islamic education, Arabic language, Creed, Fiqh, Sunnah"
+    },
+    "hero": {
+      "title": "Welcome to Ma’had Al-Imam An-Nawawi",
+      "subtitle": "An Islamic educational center dedicated to teaching the Qur’an and Sunnah, along with the Arabic language as a key to understanding the Religion according to the understanding of the righteous predecessors (Salafus-Salih) — may Allah be pleased with them.",
+      "cta_register": "Register Now",
+      "cta_about": "About Ma'had"
+    },
+    "stats": {
+      "years": { "value": "4", "label": "Years of Study" },
+      "days": { "value": "5", "label": "Days per Week" },
+      "start": { "value": "Muharram", "label": "Academic Start" },
+      "location": { "value": "Mwera", "label": "Zanzibar" }
+    },
+    "features": {
+      "title": "Why Choose Our Ma'had?",
+      "subtitle": "We strive to provide beneficial knowledge, proper upbringing, and an optimal learning environment.",
+      "items": [
+        { "title": "Islamic Education", "desc": "Curriculum based on the Qur'an and Sunnah according to the understanding of the Salafus-Salih." },
+        { "title": "Arabic Language", "desc": "Learning Arabic through a well-structured framework designed to facilitate easy comprehension." },
+        { "title": "Tarbiya and Adab", "desc": "Cultivating noble character, good manners, and respect for Islamic principles." }
+      ]
+    },
+    "levels": {
+      "title": "Levels of Study",
+      "subtitle": "The curriculum is organized into two primary stages to build a solid foundation in Islamic sciences and the Arabic language.",
+      "primary": {
+        "title": "Foundation Level",
+        "desc": "Learning the basics of Islamic sciences and the Arabic language through a structured approach that simplifies understanding and builds a firm foundation.",
+        "subjects": ["Aqidah (Creed)", "Fiqh (Jurisprudence)", "Hadith", "Tajweed", "Arabic Language"]
+      },
+      "preparatory": {
+        "title": "Preparatory Level",
+        "desc": "Enhancing comprehension and strengthening the student's knowledge in Islamic sciences and the Arabic language at an advanced level.",
+        "subjects": ["Tafseer (Exegesis)", "Mustalah al-Hadith", "Usul al-Fiqh", "Nahw and Sarf", "Islamic Ethics and Adab"]
+      }
+    },
+    "admission_cta": {
+      "title": "Welcome to the New Academic Year Admissions",
+      "desc": "Applications for enrollment at Ma’had Al-Imam An-Nawawi are currently closed. We will inform you of the commencement dates for the new academic year admissions. Please continue to follow our announcements for opportunities to study Islamic Sciences and the Arabic Language in an optimal educational environment.",
+      "stats_years_val": "4 Years",
+      "stats_years_lbl": "Duration of Study",
+      "stats_start_val": "Muharram",
+      "stats_start_lbl": "Academic Start",
+      "stats_days_val": "5",
+      "stats_days_lbl": "Days per Week",
+      "btn_reqs": "Admission Requirements",
+      "btn_contact": "Contact Us"
+    },
+    "news_section": {
+      "title": "Latest News",
+      "subtitle": "Stay updated with announcements and various events at Ma'had Al-Imam An-Nawawi.",
+      "btn_read_more": "Read More",
+      "btn_view_all": "View All News",
+      "articles": [
+        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Officially Opens and Classes Commence", "desc": "The administration of Ma'had Al-Imam An-Nawawi is pleased to inform students, parents, guardians, and the wider community that the institute has officially opened today, Saturday, 13 June 2026..." },
+        { "date": "2026-06-13", "title": "Preparations for The Expansion of Ma'had Al-Imam An-Nawawi Continue", "desc": "Ma'had Al-Imam An-Nawawi continues its long-term preparations to strengthen its infrastructure in order to expand its educational services and increase admission capacity..." },
+        { "date": "2026-06-13", "title": "Ma'had An-Imam An-Nawawi Launches its Official Website", "desc": "In another significant step towards enhancing communication and expanding access to knowledge, Ma'had Al-Imam An-Nawawi has officially launched its website to serve the community..." }
+      ]
+    },
+    "library_section": {
+      "title": "Knowledge Library",
+      "subtitle": "Benefit from a rich collection of lectures, videos, publications, and books that help build knowledge and deepen understanding.",
+      "btn_open": "Open",
+      "cards": [
+        { "title": "Audio Library", "desc": "Listen to various Islamic lectures and lessons." },
+        { "title": "Video Library", "desc": "Watch educational videos and various lectures." },
+        { "title": "Publications", "desc": "Read beneficial articles and various publications." },
+        { "title": "Books", "desc": "Access a variety of Islamic and Arabic language books." }
+      ]
+    },
+    "quran_blockquote": {
+      "section_title": "Allah's Word on Knowledge",
+      "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "translation": "\"And say: 'My Lord! Increase me in knowledge.'\"",
+      "reference": "[Surah Taha: 114]"
+    },
+    "bottom_cta": {
+      "title": "Welcome to Learn and Benefit",
+      "desc": "Follow the latest news and publications, learn more about Ma'had Al-Imam An-Nawawi, and be among those who benefit from sound Islamic knowledge.",
+      "btn_about": "About Ma'had",
+      "btn_contact": "Contact Us"
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | الرئيسية",
+      "description": "مركز تعليمي إسلامي يعنى بتدريس القرآن الكريم، والسنة النبوية، واللغة العربية وفق فهم السلف الصالح.",
+      "keywords": "معهد, النووي, زنجبار, العلوم الشرعية, اللغة العربية, العقيدة, الفقه, السنة"
+    },
+    "hero": {
+      "title": "مرحباً بكم في معهد الإمام النووي",
+      "subtitle": "معهد للتعليم الإسلامي يهدف إلى تعليم القرآن والسنة، بالإضافة إلى اللغة العربية باعتبارها مفتاحاً لفهم الدين وفق فهم السلف الصالح — رضي الله عنهم.",
+      "cta_register": "سجل الآن",
+      "cta_about": "عن المعهد"
+    },
+    "stats": {
+      "years": { "value": "٤", "label": "سنوات الدراسة" },
+      "days": { "value": "٥", "label": "أيام في الأسبوع" },
+      "start": { "value": "محرم", "label": "بداية الدراسة" },
+      "location": { "value": "مويرا", "label": "زنجبار" }
+    },
+    "features": {
+      "title": "لماذا تختار معهدنا؟",
+      "subtitle": "نسعى جاهدين لتقديم العلم النافع، التربية الصالحة، والبيئة التعليمية المتميزة.",
+      "items": [
+        { "title": "العلوم الشرعية", "desc": "مناهج تعليمية قائمة على الكتاب والسنة وفق فهم السلف الصالح." },
+        { "title": "اللغة العربية", "desc": "تعلم اللغة العربية وفق نظام منهجي مدروس يسهل الاستيعاب والفهم." },
+        { "title": "التربية والآداب", "desc": "تنمية الأخلاق الفاضلة، السلوك الحسن، واحترام المبادئ الإسلامية." }
+      ]
+    },
+    "levels": {
+      "title": "المراحل الدراسية",
+      "subtitle": "تم إعداد المناهج الدراسية على مرحلتين رئيسيتين لبناء أساس متين للطالب في العلوم الشرعية واللغة العربية.",
+      "primary": {
+        "title": "المرحلة الأساسية",
+        "desc": "دراسة مبادئ العلوم الشرعية واللغة العربية بطريقة ميسرة تساعد الطالب على الفهم وبناء أساس قوي.",
+        "subjects": ["العقيدة", "الفقه", "الحديث", "التجويد", "اللغة العربية"]
+      },
+      "preparatory": {
+        "title": "المرحلة الإعدادية",
+        "desc": "تعزيز الفهم وتعميق معارف الطالب في العلوم الشرعية واللغة العربية بمستوى أعلى وأكثر تفصيلاً.",
+        "subjects": ["التفسير", "مصطلح الحديث", "أصول الفقه", "النحو والصرف", "الآداب الإسلامية"]
+      }
+    },
+    "admission_cta": {
+      "title": "مرحباً بكم في التسجيل للعام الجديد",
+      "desc": "لقد تم إغلاق باب تقديم الطلبات للالتحاق بمعهد الإمام النووي في الوقت الحالي. وسنوافيكم بمواعيد بدء التسجيل للعام الدراسي الجديد لاحقاً. يرجى الاستمرار في متابعة إعلاناتنا للحصول على فرصة لتعلم العلوم الشرعية واللغة العربية في بيئة تعليمية متميزة.",
+      "stats_years_val": "٤ سنوات",
+      "stats_years_lbl": "مدة الدراسة",
+      "stats_start_val": "محرم",
+      "stats_start_lbl": "بداية الدراسة",
+      "stats_days_val": "٥",
+      "stats_days_lbl": "أيام الدراسة في الأسبوع",
+      "btn_reqs": "شروط القبول والتسجيل",
+      "btn_contact": "اتصل بنا"
+    },
+    "news_section": {
+      "title": "آخر الأخبار",
+      "subtitle": "تابع الإعلانات والأنشطة المختلفة لمعهد الإمام النووي.",
+      "btn_read_more": "اقرأ المزيد",
+      "btn_view_all": "عرض جميع الأخبار",
+      "articles": [
+        { "date": "2026-06-13", "title": "افتتاح معهد الإمام النووي رسميًّا وبدء الدراسة", "desc": "يسر إدارة معهد الإمام النووي أن تعلن للطلاب وأولياء الأمور ولعموم المجتمع أن المعهد قد افتُتح رسميًّا اليوم السبت 13 يونيو 2026م، وقد بدأت الدراسة فيه بحمد الله..." },
+        { "date": "2026-06-13", "title": "استمرار الاستعدادات لتوسعة المعهد", "desc": "يواصل معهد الإمام النووي استعداداته وخططه طويلة المدى لتطوير بنيته التحتية؛ بهدف توسيع خدماته التعليمية وزيادة الطاقة الاستيعابية قبول الطلاب من مختلف المناطق..." },
+        { "date": "2026-06-13", "title": "معهد الإمام النووي يطلق موقعه الإلكتروني الرسمي", "desc": "في خطوة أخرى لتعزيز التواصل وتوسيع نطاق الاستفادة من العلم، أطلق معهد الإمام النووي موقعه الإلكتروني الرسمي ليكون في خدمة الطلاب وأولياء الأمور والمهتمين..." }
+      ]
+    },
+    "library_section": {
+      "title": "مكتبة المعرفة",
+      "subtitle": "استفد من مجموعة غنية من المحاضرات، المرئيات، المنشورات، والكتب التي تساعد في بناء المعرفة وتعميق الفهم.",
+      "btn_open": "فتح",
+      "cards": [
+        { "title": "المكتبة الصوتية", "desc": "استمع إلى المحاضرات والدروس العلمية المتنوعة." },
+        { "title": "المكتبة المرئية", "desc": "شاهد الفيديوهات التعليمية والمحاضرات المرئية المختلفة." },
+        { "title": "المقالات والمنشورات", "desc": "اقرأ المقالات والبحوث النافعة والمميزة." },
+        { "title": "الكتب والمراجع", "desc": "تصفح وحمل كتباً متنوعة في العلوم الشرعية واللغة العربية." }
+      ]
+    },
+    "quran_blockquote": {
+      "section_title": "آية كريمة في فضل العلم",
+      "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "translation": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "reference": "سورة طه: ١١٤"
+    },
+    "bottom_cta": {
+      "title": "مرحباً بكم للتعلم والاستفادة",
+      "desc": "تابع آخر الأخبار والمنشورات، وتعرف أكثر على معهد الإمام النووي، وكن من المستفيدين من العلم الشرعي النافع.",
+      "btn_about": "عن المعهد",
+      "btn_contact": "اتصل بنا"
+    }
+  }
+}
+

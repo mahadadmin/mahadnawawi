@@ -1,0 +1,123 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Mawasiliano | Ma'had Al-Imam An-Nawawi",
+      "description": "Wasiliana na Ma'had Al-Imam An-Nawawi Zanzibar kwa maswali, maoni au maelezo zaidi kuhusu usajili na kozi za masomo.",
+      "keywords": "mawasiliano, anwani, simu, barua pepe, ramani, Mwera, Zanzibar, Ma'had An-Nawawi"
+    },
+    "hero": {
+      "title": "Mawasiliano"
+    },
+    "contact_info": {
+      "cards": [
+        {
+          "title": "Anwani Yetu",
+          "desc": "Mwera, Zanzibar<br>Karibu na Msikiti wa Aisha"
+        },
+        {
+          "title": "Namba za Simu",
+          "desc": "+255 776 000 598"
+        },
+        {
+          "title": "Barua Pepe",
+          "desc": "info@mahadnawawi.org"
+        }
+      ]
+    },
+    "contact_form": {
+      "title": "Tuma Ujumbe",
+      "subtitle": "Ikiwa una swali, maoni au unahitaji msaada wowote, tafadhali jaza fomu hii hapa chini na timu yetu itakujibu haraka iwezekanavyo.",
+      "label_name": "Jina Kamili",
+      "label_email": "Barua Pepe",
+      "label_subject": "Somo la Ujumbe",
+      "label_message": "Ujumbe Wako",
+      "btn_send": "Tuma Ujumbe Sasa"
+    },
+    "map_section": {
+      "title": "Ofisi Zetu",
+      "subtitle": "Tunapatikana Mwera, Zanzibar. Unaweza kutumia ramani hii hapa chini ili kufika katika kituo chetu kwa urahisi.",
+      "iframe_title": "Ramani ya Mahali Tulipo"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Contact Us | Ma'had Al-Imam An-Nawawi",
+      "description": "Contact Ma'had Al-Imam An-Nawawi Zanzibar for inquiries, feedback, or more details regarding registration and courses.",
+      "keywords": "contact, address, phone, email, map, Mwera, Zanzibar, Ma'had An-Nawawi"
+    },
+    "hero": {
+      "title": "Contact Us"
+    },
+    "contact_info": {
+      "cards": [
+        {
+          "title": "Our Address",
+          "desc": "Mwera, Zanzibar<br>Near Aisha Mosque"
+        },
+        {
+          "title": "Phone Numbers",
+          "desc": "+255 776 000 598"
+        },
+        {
+          "title": "Email Address",
+          "desc": "info@mahadnawawi.org"
+        }
+      ]
+    },
+    "contact_form": {
+      "title": "Send a Message",
+      "subtitle": "If you have any questions, feedback, or need assistance, please fill out the form below and our team will get back to you shortly.",
+      "label_name": "Full Name",
+      "label_email": "Email Address",
+      "label_subject": "Subject",
+      "label_message": "Your Message",
+      "btn_send": "Send Message Now"
+    },
+    "map_section": {
+      "title": "Our Location",
+      "subtitle": "We are located in Mwera, Zanzibar. You can use the map below to easily find and navigate to our center.",
+      "iframe_title": "Google Map Location"
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "اتصل بنا | معهد الإمام النووي",
+      "description": "اتصل بمعهد الإمام النووي في زنجبار للاستفسارات، الملاحظات، أو لمزيد من التفاصيل حول التسجيل والدورات الدراسية.",
+      "keywords": "اتصل بنا، العنوان، الهاتف، البريد الإلكتروني، الخريطة، مويرا، زنجبار، معهد النووي"
+    },
+    "hero": {
+      "title": "اتصل بنا"
+    },
+    "contact_info": {
+      "cards": [
+        {
+          "title": "العنوان الرئيسي",
+          "desc": "مويرا، زنجبار<br>بالقرب من مسجد عائشة"
+        },
+        {
+          "title": "أرقام الهواتف",
+          "desc": "+٢٥٥ ٧٧٦ ٠٠٠ ٥٩٨"
+        },
+        {
+          "title": "البريد الإلكتروني",
+          "desc": "info@mahadnawawi.org"
+        }
+      ]
+    },
+    "contact_form": {
+      "title": "أرسل رسالة",
+      "subtitle": "إذا كان لديك أي سؤال أو استفسار أو تحتاج إلى مساعدة، يرجى ملء النموذج أدناه وسيقوم فريقنا بالرد عليك في أقرب وقت ممكن.",
+      "label_name": "الاسم الكامل",
+      "label_email": "البريد الإلكتروني",
+      "label_subject": "موضوع الرسالة",
+      "label_message": "نص الرسالة",
+      "btn_send": "إرسال الرسالة الآن"
+    },
+    "map_section": {
+      "title": "موقع المعهد",
+      "subtitle": "نحن نتواجد في منطقة مويرا، زنجبار. يمكنك استخدام الخريطة أدناه للوصول إلى مركزنا بكل سهولة.",
+      "iframe_title": "خريطة جوجل للموقع"
+    }
+  }
+}
+

@@ -1,0 +1,120 @@
+﻿{
+  "sw": {
+    "preloader": {
+      "loading": "Inapakia..."
+    },
+    "nav": {
+      "brand_alt": "Ma'had Al-Imam An-Nawawi",
+      "home": "Nyumbani",
+      "about": "Kuhusu",
+      "education": "Elimu",
+      "courses": "Kozi Zinazotolewa",
+      "admission": "Usajili & Udahili",
+      "articles": "Makala",
+      "gallery": "Matunzio",
+      "audio": "Maktaba ya Sauti",
+      "video": "Maktaba ya Video",
+      "publications": "Machapisho & Vitabu",
+      "news": "Habari",
+      "latest_news": "Habari Mpya",
+      "upcoming_events": "Matukio Yajayo",
+      "contact": "Mawasiliano",
+      "toggle_theme": "Badilisha Theme"
+    },
+    "footer": {
+      "description": "Chuo cha elimu za Kiislamu na lugha ya Kiarabu kinachojitolea kufundisha kwa mujibu wa Qur'an na Sunnah kwa uelewa wa Salafus-Salih.",
+      "useful_links": "Viungo Muhimu",
+      "knowledge_library": "Maktaba ya Maarifa",
+      "contact_title": "Mawasiliano",
+      "address": "Mwera, Zanzibar<br>Karibu na Msikiti wa Aisha",
+      "phone": "Simu: +255 776 000 598",
+      "email": "Barua Pepe:<br>info@mahadnawawi.org",
+      "copyright": "© 2026 Ma'had Al-Imam An-Nawawi. Haki zote zimehifadhiwa.",
+      "educational_disclaimer": "Maudhui ya tovuti hii yameandaliwa kwa madhumuni ya elimu na da'wah. Kunukuu au kusambaza maudhui kwa njia inayozingatia uaminifu wa kielimu na kutaja chanzo kunaruhusiwa.",
+      "privacy": "Sera ya Faragha",
+      "terms": "Masharti ya Matumizi",
+      "copyright_policy": "Hati Miliki",
+      "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+      "sitemap": "Ramani ya Tovuti"
+    }
+  },
+  "en": {
+    "preloader": {
+      "loading": "Loading..."
+    },
+    "nav": {
+      "brand_alt": "Ma'had Al-Imam An-Nawawi",
+      "home": "Home",
+      "about": "About",
+      "education": "Education",
+      "courses": "Courses Offered",
+      "admission": "Registration & Admission",
+      "articles": "Articles",
+      "gallery": "Gallery",
+      "audio": "Audio Library",
+      "video": "Video Library",
+      "publications": "Publications & Books",
+      "news": "News",
+      "latest_news": "Latest News",
+      "upcoming_events": "Upcoming Events",
+      "contact": "Contact",
+      "toggle_theme": "Toggle Theme"
+    },
+    "footer": {
+      "description": "An Islamic educational center dedicated to teaching the Qur'an, Sunnah, and the Arabic language according to the understanding of the Salafus-Salih.",
+      "useful_links": "Useful Links",
+      "knowledge_library": "Knowledge Library",
+      "contact_title": "Contact Us",
+      "address": "Mwera, Zanzibar<br>Near Aisha Mosque",
+      "phone": "Phone: +255 776 000 598",
+      "email": "Email:<br>info@mahadnawawi.org",
+      "copyright": "© 2026 Ma'had Al-Imam An-Nawawi. All rights reserved.",
+      "educational_disclaimer": "The content on this website is prepared for educational and da'wah purposes. Citation or distribution of content in a manner that respects academic integrity and references the source is permitted.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "copyright_policy": "Copyright",
+      "faq": "FAQs",
+      "sitemap": "Sitemap"
+    }
+  },
+  "ar": {
+    "preloader": {
+      "loading": "جاري التحميل..."
+    },
+    "nav": {
+      "brand_alt": "معهد الإمام النووي",
+      "home": "الرئيسية",
+      "about": "عن المعهد",
+      "education": "التعليم",
+      "courses": "الدورات المقدمة",
+      "admission": "التسجيل والقبول",
+      "articles": "المقالات",
+      "gallery": "المكتبة الوسائطية",
+      "audio": "المكتبة الصوتية",
+      "video": "المكتبة المرئية",
+      "publications": "المنشورات والكتب",
+      "news": "الأخبار",
+      "latest_news": "آخر الأخبار",
+      "upcoming_events": "الفعاليات القادمة",
+      "contact": "اتصل بنا",
+      "toggle_theme": "تغيير المظهر"
+    },
+    "footer": {
+      "description": "مركز تعليمي إسلامي يعنى بتدريس القرآن الكريم، والسنة النبوية، واللغة العربية وفق فهم السلف الصالح.",
+      "useful_links": "روابط مهمة",
+      "knowledge_library": "مكتبة المعرفة",
+      "contact_title": "اتصل بنا",
+      "address": "مويرا، زنجبار<br>بالقرب من مسجد عائشة",
+      "phone": "الهاتف: +٢٥٥ ٧٧٦ ٠٠٠ ٥٩٨",
+      "email": "البريد الإلكتروني:<br>info@mahadnawawi.com",
+      "copyright": "© ٢٠٢٦ معهد الإمام النووي. جميع الحقوق محفوظة.",
+      "educational_disclaimer": "تم إعداد محتوى هذا الموقع لأغراض التعليم والدعوة. يُسمح بالاقتباس أو توزيع المحتوى بطريقة تلتزم بالأمانة العلمية مع ذكر المصدر.",
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الاستخدام",
+      "copyright_policy": "حقوق الطبع والنشر",
+      "faq": "الأسئلة الشائعة",
+      "sitemap": "خريطة الموقع"
+    }
+  }
+}
+

@@ -1,0 +1,102 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Makala & Mafundisho | Ma'had Al-Imam An-Nawawi",
+      "description": "Soma makala, tafiti, na mafundisho mbalimbali ya Kiislamu kutoka kwa walimu na masheikh wa Ma'had Al-Imam An-Nawawi Zanzibar.",
+      "keywords": "makala, mafundisho, elimu ya dini, kiarabu, ushauri, kiislamu, sunnah, zanzibar"
+    },
+    "hero": {
+      "title": "Makala & Mafundisho"
+    },
+    "articles_section": {
+      "read_time": "Kusoma",
+      "written_by": "Na",
+      "btn_read": "Soma Zaidi",
+      "items": [
+        {
+          "id": 1,
+          "title": "Umuhimu wa Kusoma Lugha ya Kiarabu katika Kuelewa Dini",
+          "author": "Ustadh Abul Abbass",
+          "date": "20 Juni 2026",
+          "excerpt": "Lugha ya Kiarabu ndio ufunguo mkuu wa kufungua milango ya ufahamu wa usahihi wa Qur'ani Tukufu na Sunnah za Mtume wetu Muhammad ﷺ.",
+          "duration": "Dakika 5"
+        },
+        {
+          "id": 2,
+          "title": "Adabu za Mwanafunzi wa Elimu Sahihi ya Dini",
+          "author": "Ustadh Abul Hassan",
+          "date": "20 Juni 2026",
+          "excerpt": "Kutafuta elimu ni ibada adhimu inayohitaji nia safi (ikhlas) na mapambo ya adabu njema kabla na baada ya kupata elimu hiyo.",
+          "duration": "Dakika 7"
+        }
+      ]
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Articles & Teachings | Ma'had Al-Imam An-Nawawi",
+      "description": "Read various Islamic articles, research, and insights from the instructors and scholars at Ma'had Al-Imam An-Nawawi Zanzibar.",
+      "keywords": "articles, teachings, islamic education, arabic, insights, sunnah, zanzibar"
+    },
+    "hero": {
+      "title": "Articles & Teachings"
+    },
+    "articles_section": {
+      "read_time": "Read Time",
+      "written_by": "By",
+      "btn_read": "Read More",
+      "items": [
+        {
+          "id": 1,
+          "title": "The Importance of Studying the Arabic Language in Understanding Religion",
+          "author": "Ustadh Abul Abul Abbass",
+          "date": "20 June 2026",
+          "excerpt": "The Arabic language is the primary key to unlocking the proper understanding of the Holy Qur'an and the Sunnah of our Prophet Muhammad ﷺ.",
+          "duration": "5 Minutes"
+        },
+        {
+          "id": 2,
+          "title": "The Etiquettes of a Student of Proper Islamic Knowledge",
+          "author": "Ustadh Abul Hassan",
+          "date": "20 June 2026",
+          "excerpt": "Seeking knowledge is a great act of worship that requires absolute sincerity (Ikhlas) and beautiful manners both before and after acquiring it.",
+          "duration": "7 Minutes"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "المقالات والبحوث | معهد الإمام النووي",
+      "description": "اقرأ المقالات والبحوث والتوجيهات الإسلامية المتنوعة بقلم معلمي ومشايخ معهد الإمام النووي بزنجبار.",
+      "keywords": "مقالات، بحوث، العلوم الشرعية، اللغة العربية، توجيهات، السنة، زنجبار"
+    },
+    "hero": {
+      "title": "المقالات والبحوث"
+    },
+    "articles_section": {
+      "read_time": "وقت القراءة",
+      "written_by": "بقلم",
+      "btn_read": "اقرأ المزيد",
+      "items": [
+        {
+          "id": 1,
+          "title": "أهمية دراسة اللغة العربية في فهم العلوم الشرعية",
+          "author": "الأستاذ أبو العباس",
+          "date": "٢٠ يونيو ٢٠٢٦ م",
+          "excerpt": "اللغة العربية هي المفتاح الأساسي لفتح أبواب الفهم الصحيح للقرآن الكريم وسنة نبينا محمد ﷺ.",
+          "duration": "٥ دقائق"
+        },
+        {
+          "id": 2,
+          "title": "آداب طالب العلم الشرعي الصحيح",
+          "author": "الأستاذ أبو الحسن",
+          "date": "٢٠ يونيو ٢٠٢٦ م",
+          "excerpt": "طلب العلم عبادة عظيمة تستوجب إخلاص النية لله تعالى والتحلي بالآداب الفاضلة قبل العلم وبعده.",
+          "duration": "٧ دقائق"
+        }
+      ]
+    }
+  }
+}
+

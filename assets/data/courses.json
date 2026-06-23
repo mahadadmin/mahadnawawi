@@ -1,0 +1,120 @@
+{
+  "sw": {
+    "meta": {
+      "title": "Kozi Zinazotolewa | Ma'had Al-Imam An-Nawawi",
+      "description": "Orodha kamili ya kozi na masomo ya Lugha ya Kiarabu na Elimu ya Kiislamu yanayotolewa Ma'had Al-Imam An-Nawawi.",
+      "keywords": "kozi, masomo, kiarabu, quran, tajwidi, fiqhi, hadithi, nahw, sarf, chuo, zanzibar"
+    },
+    "hero": {
+      "title": "Kozi Zinazotolewa"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Orodha kamili ya kozi na masomo ya Lugha ya Kiarabu na Elimu ya Kiislamu yanayotolewa."
+    },
+    "courses": {
+      "section_title": "Mitaala na Masomo Yetu",
+      "items": [
+        {"name": "Qur'ani Tukufu"},
+        {"name": "Tajwidi"},
+        {"name": "Uandishi"},
+        {"name": "Lugha ya Kiarabu"},
+        {"name": "Hadithi"},
+        {"name": "Sayansi ya Hadithi"},
+        {"name": "Fasaha"},
+        {"name": "Nahw"},
+        {"name": "Sarf"},
+        {"name": "Insha"},
+        {"name": "Fiqhi"},
+        {"name": "Tafsiri"},
+        {"name": "Adhkari"},
+        {"name": "Tawhidi"},
+        {"name": "Usomaji"},
+        {"name": "Historia ya Mtume"},
+        {"name": "Adabu na Maadili"},
+        {"name": "Imla"},
+        {"name": "Manhaj"},
+        {"name": "Muunganisho"}
+      ]
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Courses Offered | Ma'had Al-Imam An-Nawawi",
+      "description": "Complete list of Arabic language and Islamic studies courses offered at Ma'had Al-Imam An-Nawawi.",
+      "keywords": "courses, subjects, arabic, quran, tajweed, fiqh, hadith, nahw, sarf, college, zanzibar"
+    },
+    "hero": {
+      "title": "Courses Offered"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Complete list of Arabic language and Islamic studies courses offered."
+    },
+    "courses": {
+      "section_title": "Our Curriculum & Subjects",
+      "items": [
+        {"name": "The Holy Qur'an"},
+        {"name": "Tajweed (Elocution)"},
+        {"name": "Handwriting & Calligraphy"},
+        {"name": "Arabic Language"},
+        {"name": "Hadith (Prophetic Traditions)"},
+        {"name": "Hadith Sciences"},
+        {"name": "Balaghah (Rhetoric)"},
+        {"name": "Nahw (Grammar)"},
+        {"name": "Sarf (Morphology)"},
+        {"name": "Composition & Essay Writing"},
+        {"name": "Fiqh (Jurisprudence)"},
+        {"name": "Tafsir (Exegesis)"},
+        {"name": "Adhkar (Supplications)"},
+        {"name": "Tawheed (Monotheism)"},
+        {"name": "Reading & Comprehension"},
+        {"name": "Seerah (Prophetic Biography)"},
+        {"name": "Islamic Manners & Ethics"},
+        {"name": "Imla (Dictation)"},
+        {"name": "Manhaj (Methodology)"},
+        {"name": "Synthesis & Integration"}
+      ]
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "الدورات والمواد الدراسية | معهد الإمام النووي",
+      "description": "قائمة كاملة بالدورات والمواد الدراسية للغة العربية والعلوم الإسلامية المقدمة في معهد الإمام النووي.",
+      "keywords": "الدورات, المواد الدراسية, العربية, القرآن, التجويد, الفقه, الحديث, النحو, الصرف, معهد, زنجبار"
+    },
+    "hero": {
+      "title": "الدورات والمواد الدراسية"
+    },
+    "organization": {
+      "name": "معهد الإمام النووي",
+      "description": "قائمة كاملة بالدورات والمواد الدراسية للغة العربية والعلوم الإسلامية المقدمة."
+    },
+    "courses": {
+      "section_title": "المناهج والمواد الدراسية لدينا",
+      "items": [
+        {"name": "القرآن الكريم"},
+        {"name": "التجويد"},
+        {"name": "الكتابة"},
+        {"name": "اللغة العربية للناطقين بغيرها"},
+        {"name": "الحديث"},
+        {"name": "علوم الحديث"},
+        {"name": "البلاغة"},
+        {"name": "النحو"},
+        {"name": "الصرف"},
+        {"name": "التعبير"},
+        {"name": "الفقه"},
+        {"name": "التفسير"},
+        {"name": "الأذكار"},
+        {"name": "التوحيد"},
+        {"name": "القراءة"},
+        {"name": "السيرة"},
+        {"name": "الآداب"},
+        {"name": "الإملاء"},
+        {"name": "المنهج"},
+        {"name": "الدمج والتكامل"}
+      ]
+    }
+  }
+}
+

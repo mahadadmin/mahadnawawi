@@ -1,0 +1,111 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Maktaba ya Video",
+      "description": "Tazama darsa, mihadhara na video mbalimbali za elimu ya Kiislamu kutoka kwa walimu wetu katika Maktaba ya Video.",
+      "keywords": "video, darsa, mihadhara, ma'had, an-nawawi, elimu ya kiislamu, zanzibar, kiswahili"
+    },
+    "hero": {
+      "title": "Maktaba ya Video"
+    },
+    "video_section": {
+      "search_placeholder": "Tafuta video au mwalimu...",
+      "download_video": "Pakua Video"
+    },
+    "organization": {
+      "name": "Maktaba ya Ma'had",
+      "description": "Taasisi ya elimu inayotoa darsa, vitabu, na video za kiislamu."
+    },
+    "video": [
+      {
+        "id": 1,
+        "kichwa": "Utangulizi wa Somo la Nahw",
+        "mwalimu": "Ustadh Abul Abbass",
+        "tarehe": "20 June 2026",
+        "faili": "assets/video/nahw_utangulizi.mp4",
+        "duration": "PT10M"
+      },
+      {
+        "id": 2,
+        "kichwa": "Ufafanuzi wa Hadithi za Arbauna An-Nawawiyyah",
+        "mwalimu": "Ustadh Abul Abbass",
+        "tarehe": "20 June 2026",
+        "faili": "assets/video/hadithi_Arbauna.mp4",
+        "duration": "PT45M"
+      }
+    ]
+  },
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Video Library",
+      "description": "Watch various Islamic lessons, lectures, and videos from our instructors in the Video Library.",
+      "keywords": "video, lectures, lessons, ma'had, an-nawawi, islamic education, zanzibar, english"
+    },
+    "hero": {
+      "title": "Video Library"
+    },
+    "video_section": {
+      "search_placeholder": "Search video or teacher...",
+      "download_video": "Download Video"
+    },
+    "organization": {
+      "name": "Ma'had Library",
+      "description": "Educational institution providing lessons, books, and Islamic videos."
+    },
+    "video": [
+      {
+        "id": 1,
+        "kichwa": "Introduction to Nahw (Arabic Grammar)",
+        "mwalimu": "Ustadh Abul Abbass",
+        "tarehe": "20 June 2026",
+        "faili": "assets/video/nahw_utangulizi.mp4",
+        "duration": "PT10M"
+      },
+      {
+        "id": 2,
+        "kichwa": "Explanation of Hadith Arba'een An-Nawawiyyah",
+        "mwalimu": "Ustadh Abul Abbass",
+        "tarehe": "20 June 2026",
+        "faili": "assets/video/hadithi_Arbauna.mp4",
+        "duration": "PT45M"
+      }
+    ]
+  },
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | المكتبة المرئية",
+      "description": "شاهد الدروس والمحاضرات والمقاطع المرئية الإسلامية المتنوعة من مشايخنا في المكتبة المرئية.",
+      "keywords": "مرئيات, دروس, محاضرات, معهد, النووي, التعليم الإسلامي, زنجبار, العربية"
+    },
+    "hero": {
+      "title": "المكتبة المرئية"
+    },
+    "video_section": {
+      "search_placeholder": "البحث عن فيديو أو معلم...",
+      "download_video": "تحميل الفيديو"
+    },
+    "organization": {
+      "name": "مكتبة المعهد",
+      "description": "مؤسسة تعليمية تقدم دروساً وكتباً ومقاطع مرئية إسلامية."
+    },
+    "video": [
+      {
+        "id": 1,
+        "kichwa": "مقدمة in علم النحو",
+        "mwalimu": "الأستاذ أبو العباس",
+        "tarehe": "٢٠ يونيو ٢٠٢٦ م",
+        "faili": "assets/video/nahw_utangulizi.mp4",
+        "duration": "PT10M"
+      },
+      {
+        "id": 2,
+        "kichwa": "شرح الأربعين النووية",
+        "mwalimu": "الأستاذ أبو العباس",
+        "tarehe": "٢٠ يونيو ٢٠٢٦ م",
+        "faili": "assets/video/hadithi_Arbauna.mp4",
+        "duration": "PT45M"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,125 @@
+{
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Machapisho & Vitabu",
+      "description": "Soma na pakua vitabu, machapisho na miongozo mbalimbali ya elimu ya Kiislamu kutoka Ma'had Al-Imam An-Nawawi.",
+      "keywords": "vitabu, machapisho, maktaba, ma'had, an-nawawi, elimu ya kiislamu, zanzibar, kiswahili, pdf"
+    },
+    "hero": {
+      "title": "Machapisho & Vitabu"
+    },
+    "publications_section": {
+      "search_placeholder": "Tafuta kitabu au mwandishi..."
+    },
+    "organization": {
+      "name": "Maktaba ya Ma'had",
+      "description": "Taasisi ya elimu inayotoa darsa, vitabu, na video za kiislamu."
+    },
+    "ui": {
+    "read_book": "Soma", 
+    "download_pdf": "Pakua"
+      
+    },
+    "publications": [
+      {
+        "id": 1,
+        "title": "Njia mpya ya kufundisha Kiarabu, Juzuu ya Kwanza",
+        "author": "Ustadh Muhammad Amin Al-Misri",
+        "description": "Kitabu kwa ajili ya kusaidia wanafunzi kujifunza lugha ya Kiarabu kwa njia rahisi.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1tCvttEQ2KTepgOBr0S-Sg6vOl43OtYj3"
+      },
+      {
+        "id": 2,
+        "title": "Njia mpya ya kufundisha Kiarabu, Juzuu ya Pili",
+        "author": "Ustadh Muhammad Amin Al-Misri",
+        "description": "Kitabu kwa ajili ya kusaidia wanafunzi kujifunza lugha ya Kiarabu kwa njia rahisi.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1y1VAok3vN_EbEFKmW9-2XaxdUM_JNSoz"
+      }
+    ]
+  },
+
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Publications & Books",
+      "description": "Read and download various Islamic books, publications, and guides from Ma'had Al-Imam An-Nawawi.",
+      "keywords": "books, publications, library, ma'had, an-nawawi, islamic education, zanzibar, english, pdf"
+    },
+    "hero": {
+      "title": "Publications & Books"
+    },
+    "publications_section": {
+      "search_placeholder": "Search book or author..."
+    },
+    "organization": {
+      "name": "Ma'had Library",
+      "description": "Educational institution providing lessons, books, and Islamic videos."
+    },
+    "ui": {
+    "read_book": "Read",
+    "download_pdf": "Download"
+      
+    },
+    "publications": [
+      {
+        "id": 1,
+        "title": "A New Method for Teaching Arabic, First Volume",
+        "author": "Ustadh Muhammad Amin Al-Misri",
+        "description": "This book was prepared to help students learn the Arabic language in an easy way.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1tCvttEQ2KTepgOBr0S-Sg6vOl43OtYj3"
+      },
+      {
+        "id": 2,
+        "title": "A New Method for Teaching Arabic, Second Volume",
+        "author": "Ustadh Muhammad Amin Al-Misri",
+        "description": "This book was prepared to help students learn the Arabic language in an easy way.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1y1VAok3vN_EbEFKmW9-2XaxdUM_JNSoz"
+      }
+    ]
+  },
+
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | المطبوعات والكتب",
+      "description": "اقرأ وحمّل مختلف الكتب والمطبوعات والإرشادات الإسلامية من معهد الإمام النووي.",
+      "keywords": "كتب, مطبوعات, مكتبة, معهد, النووي, التعليم الإسلامي, زنجبار, العربية, pdf"
+    },
+    "hero": {
+      "title": "المطبوعات والكتب"
+    },
+    "publications_section": {
+      "search_placeholder": "البحث عن كتاب أو مؤلف..."
+    },
+    "organization": {
+      "name": "مكتبة المعهد",
+      "description": "مؤسسة تعليمية تقدم دروساً وكتباً ومقاطع مرئية إسلامية."
+    },
+    "ui": {
+    "read_book": "قراءة",
+    "download_pdf": "تحميل"
+      
+    },
+    "publications": [
+      {
+        "id": 1,
+        "title": "طريقة جديدة في تعليم العربية، الجزء الأول",
+        "author": "الأستاذ محمد أمين المصري",
+        "description": "اعد هذا الكتاب لمساعدة الطلاب على تعلم اللغة العربية بطريقة سهلة.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1tCvttEQ2KTepgOBr0S-Sg6vOl43OtYj3"
+      },
+      {
+        "id": 2,
+        "title": "طريقة جديدة في تعليم العربية، الجزء الثاني",
+        "author": "الأستاذ محمد أمين المصري",
+        "description": "اعد هذا الكتاب لمساعدة الطلاب على تعلم اللغة العربية بطريقة سهلة.",
+        "cover": "assets/img/kitabu.png",
+        "link": "https://drive.google.com/uc?export=download&id=1y1VAok3vN_EbEFKmW9-2XaxdUM_JNSoz"
+      }
+    ]
+  }
+}
+

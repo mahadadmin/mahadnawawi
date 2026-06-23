@@ -1,0 +1,144 @@
+﻿{
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Maktaba ya Sauti",
+      "description": "Sikiliza darsa na mihadhara mbalimbali ya elimu ya Kiislamu kutoka kwa walimu wetu katika Maktaba ya Sauti.",
+      "keywords": "sauti, darsa, mihadhara, ma'had, an-nawawi, elimu ya kiislamu, zanzibar, kiswahili"
+    },
+    "hero": {
+      "title": "Maktaba ya Sauti"
+    },
+    "audio_section": {
+      "search_placeholder": "Tafuta darsa au mzungumzaji..."
+    },
+    "organization": {
+      "name": "Maktaba ya Ma'had",
+      "description": "Taasisi ya elimu inayotoa darsa za sauti."
+    },
+    "ui": {
+    "download_audio": "Pakua Sauti",
+    "audio_not_supported": "Browser haitumii audio player.",
+    "no_audio": "Hakuna darsa zilizopatikana."
+
+    },
+    "sauti": [
+      {
+        "id": 1,
+        "kichwa": "Darsa la Akida - Sehemu ya 1",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_1.mp3"
+      },
+      {
+        "id": 2,
+        "kichwa": "Haki za Mzazi katika Uislamu",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT18M40S",
+        "faili": "assets/audio/haki_za_wazazi.mp3"
+      },
+      {
+        "id": 3,
+        "kichwa": "Darsa la Akida - Sehemu ya 2",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_2.mp3"
+      }
+    ]
+  },
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Audio Library",
+      "description": "Listen to various Islamic lectures and lessons from our instructors in the Audio Library.",
+      "keywords": "audio, lectures, lessons, ma'had, an-nawawi, islamic education, zanzibar, english"
+    },
+    "hero": {
+      "title": "Audio Library"
+    },
+    "audio_section": {
+      "search_placeholder": "Search lecture or speaker..."
+    },
+    "organization": {
+      "name": "Ma'had Library",
+      "description": "Educational institution providing audio lectures."
+
+   },
+   "ui": {
+   "download_audio": "Download Audio",
+   "audio_not_supported": "Your browser does not support audio.",
+   "no_audio": "No audio lessons found."
+
+    },
+    "sauti": [
+      {
+        "id": 1,
+        "kichwa": "Aqeedah Lesson - Part 1",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_1.mp3"
+      },
+      {
+        "id": 2,
+        "kichwa": "Rights of Parents in Islam",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT18M40S",
+        "faili": "assets/audio/haki_za_wazazi.mp3"
+      },
+      {
+        "id": 3,
+        "kichwa": "Aqeedah Lesson - Part 2",
+        "mzungumzaji": "Ustadh Abul Abass",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_2.mp3"
+      }
+    ]
+  },
+
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | المكتبة الصوتية",
+      "description": "استمع إلى مختلف الدروس والمحاضرات الإسلامية من مشايخنا في المكتبة الصوتية.",
+      "keywords": "صوتيات, دروس, محاضرات, معهد, النووي, التعليم الإسلامي, زنجبار, العربية"
+    },
+    "hero": {
+      "title": "المكتبة الصوتية"
+    },
+    "audio_section": {
+      "search_placeholder": "البحث عن درس أو متحدث..."
+    },
+    "organization": {
+      "name": "مكتبة المعهد",
+      "description": "مؤسسة تعليمية تقدم دروساً ومحاضرات صوتية."
+
+    },
+   "ui": {
+   "download_audio": "تحميل الصوت",
+    "audio_not_supported": "المتصفح لا يدعم مشغل الصوت",
+    "no_audio": "لم يتم العثور على دروس صوتية"
+
+  },
+    "sauti": [
+      {
+        "id": 1,
+        "kichwa": "درس العقيدة - الجزء ١",
+        "mzungumzaji": "الأستاذ أبو العباس",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_1.mp3"
+      },
+      {
+        "id": 2,
+        "kichwa": "حقوق الوالدين في الإسلام",
+        "mzungumzaji": "الأستاذ أبو العباس",
+        "muda": "PT18M40S",
+        "faili": "assets/audio/haki_za_wazazi.mp3"
+      },
+      {
+        "id": 3,
+        "kichwa": "درس العقيدة - الجزء ٢",
+        "mzungumzaji": "الأستاذ أبو العباس",
+        "muda": "PT24M15S",
+        "faili": "assets/audio/akida_sehemu_2.mp3"
+      }
+    ]
+  }
+}
+
