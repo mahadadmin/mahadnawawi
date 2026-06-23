@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="sw" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title"></title>
+    <meta name="description" content="" data-i18n-attr="content:meta.description">
+    <meta name="keywords" content="" data-i18n-attr="content:meta.keywords">
+    
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm" aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" alt="Ma'had Al-Imam An-Nawawi" data-i18n-attr="alt:nav.brand_alt">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="kuhusu.html" data-i18n="nav.about"></a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="elimuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.education"></a>
+                        <ul class="dropdown-menu" aria-labelledby="elimuDropdown">
+                            <li><a class="dropdown-item" href="kozi.html" data-i18n="nav.courses"></a></li>
+                            <li><a class="dropdown-item" href="udahili.html" data-i18n="nav.admission"></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="makala.html" data-i18n="nav.articles"></a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="matunzioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.gallery"></a>
+                        <ul class="dropdown-menu" aria-labelledby="matunzioDropdown">
+                            <li><a class="dropdown-item" href="sauti.html" data-i18n="nav.audio"></a></li>
+                            <li><a class="dropdown-item" href="video.html" data-i18n="nav.video"></a></li>
+                            <li><a class="dropdown-item" href="machapisho.html" data-i18n="nav.publications"></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="habariDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.news"></a>
+                        <ul class="dropdown-menu" aria-labelledby="habariDropdown">
+                            <li><a class="dropdown-item" href="habari.html" data-i18n="nav.latest_news"></a></li>
+                            <li><a class="dropdown-item" href="matukio.html" data-i18n="nav.upcoming_events"></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="mawasiliano.html" data-i18n="nav.contact">Mawasiliano</a></li>
+
+                    <li class="nav-item ms-lg-2 d-flex align-items-center">
+                        <div class="language-switcher" role="group" aria-label="Language Switcher">
+                            <button class="lang-btn" data-lang="sw" title="Kiswahili" aria-pressed="false">SW</button>
+                            <button class="lang-btn" data-lang="en" title="English" aria-pressed="false">EN</button>
+                            <button class="lang-btn arabic-btn" data-lang="ar" title="العربية" aria-pressed="false">AR</button>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2 d-flex align-items-center">
+                        <button class="theme-toggle" id="themeToggle" title="Badilisha Theme" aria-label="Toggle dark mode" data-i18n-attr="title:nav.toggle_theme,aria-label:nav.toggle_theme">
+                            <i class="bi bi-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-success text-white py-5 position-relative section-pattern-bg">
+
+    <img
+        src="assets/img/publications-banner.jpg"
+        alt=""
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="object-fit: cover; z-index:0;"
+    >
+    
+<div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" style="z-index:0;"></div>
+
+    <div class="container text-center py-3 position-relative z-1">
+        <h1 class="display-5 fw-bold mb-2" data-i18n="hero.title"></h1>
+        <p class="breadcrumbs mb-0 small opacity-75">
+            <span class="me-2">
+                <a href="index.html" class="text-white text-decoration-none" data-i18n="nav.home"></a>
+                <i class="bi bi-chevron-right ms-1"></i>
+            </span>
+            <span class="me-2" data-i18n="nav.education"></span>
+            <i class="bi bi-chevron-right ms-1"></i>
+            <span class="text-gold" data-i18n="nav.courses"></span>
+        </p>
+    </div>
+</header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center" id="courses-container">
+                </div>
+        </div>
+    </section>
+
+    <footer class="mt-5" aria-label="Site Footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+
+                    <img src="assets/img/logo_footer.svg" alt="Ma'had Logo" class="mb-3" style="height: 120px;">
+
+                    <p data-i18n="footer.description"></p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 data-i18n="footer.useful_links"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-i18n="nav.home"></a></li>
+                        <li><a href="kuhusu.html" data-i18n="nav.about"></a></li>
+                        <li><a href="kozi.html" data-i18n="nav.courses"></a></li>
+                        <li><a href="udahili.html" data-i18n="nav.admission"></a></li>
+                        <li><a href="habari.html" data-i18n="nav.news"></a></li>
+                        <li><a href="mawasiliano.html" data-i18n="nav.contact"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-i18n="footer.knowledge_library"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sauti.html" data-i18n="nav.audio"></a></li>
+                        <li><a href="video.html" data-i18n="nav.video"></a></li>
+                        <li><a href="machapisho.html" data-i18n="nav.publications"></a></li>
+                        <li><a href="makala.html" data-i18n="nav.articles"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 data-i18n="footer.contact_title"></h5>
+                    <p data-i18n="footer.address"><br></p>
+                    <p data-i18n="footer.phone"></p>
+                    <p data-i18n="footer.email"><br></p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+ <hr class="my-4">
+
+            <div class="text-center">
+                <p class="mb-2" data-i18n="footer.copyright">
+                    </p>
+                <small class="text-muted d-block mb-3" data-i18n="footer.educational_disclaimer">
+                    </small>
+
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <a href="#" privacy-policy.html" data-i18n="footer.privacy"></a>
+                    <span>|</span>
+                    <a href="#" terms-of-use.html" data-i18n="footer.terms"></a>
+                    <span>|</span>
+                    <a href="#" copyright.html" data-i18n="footer.copyright_policy"></a>
+                    <span>|</span>
+                    <a href="#" faq.html" data-i18n="footer.faq"></a>
+                    <span>|</span>
+                    <a href="#"sitemap.html" data-i18n="footer.sitemap"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" https://wa.me/255766163475?text=Assalamu%20alaykum,%20naomba%20kufahamu%20kuhusu%20Ma'had." 
+       class="whatsapp-float" target="_blank" aria-label="Wasiliana nasi kupitia WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app-courses.js"></script>
+</body>
+</html>
