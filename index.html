@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title"></title>
     
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
-
+    <link class="content-favicon" rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+
+    <div id="preloader" role="alert" aria-busy="true" aria-live="polite">
+        <div class="preloader-content text-center">
+            <img src="assets/img/preloader_watermark.png" alt="Ma'had Logo" class="preloader-logo">
+            <div class="spinner-border gold-spinner" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden" data-i18n="preloader.loading"></span>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm" aria-label="Main Navigation">
         <div class="container">
@@ -24,7 +32,7 @@
             
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home"></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="nav.home"></a></li>
                     <li class="nav-item"><a class="nav-link" href="kuhusu.html" data-i18n="nav.about"></a></li>
                     
                     <li class="nav-item dropdown">
@@ -54,59 +62,316 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link active" href="mawasiliano.html" data-i18n="nav.contact">Mawasiliano</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mawasiliano.html" data-i18n="nav.contact">Mawasiliano</a></li>
+
+                    <li class="nav-item ms-lg-2 d-flex align-items-center">
+                        <div class="language-switcher" role="group" aria-label="Language Switcher">
+                            <button class="lang-btn" data-lang="sw" title="Kiswahili" aria-pressed="false">SW</button>
+                            <button class="lang-btn" data-lang="en" title="English" aria-pressed="false">EN</button>
+                            <button class="lang-btn arabic-btn" data-lang="ar" title="العربية" aria-pressed="false">AR</button>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2 d-flex align-items-center">
+                        <button class="theme-toggle" id="themeToggle" title="Badilisha Theme" aria-label="Toggle dark mode" data-i18n-attr="title:nav.toggle_theme,aria-label:nav.toggle_theme">
+                            <i class="bi bi-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-   <header class="bg-success text-white py-5 position-relative section-pattern-bg">
-        <img
-            src="assets/img/publications-banner.jpg"
-            alt=""
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="object-fit: cover; z-index:0;"
-        >
-        
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50" style="z-index:0;"></div>
+    <header class="hero position-relative overflow-hidden py-5 text-center" aria-labelledby="heroTitle">
+        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000" style="z-index: 1;">
+            <div class="carousel-indicators" style="z-index: 3;">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="assets/img/hero-1.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Hero Image 1">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/img/hero-2.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Hero Image 2">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/img/hero-3.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Hero Image 3">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" style="z-index: 3;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" style="z-index: 3;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-        <div class="container text-center py-3 position-relative z-1">
-            <h1 class="display-5 fw-bold mb-2" data-i18n="hero.title"></h1>
+        <div class="container container-narrow position-relative py-5 text-white" style="z-index: 2;">
+            <h1 class="hero-title mb-4 text-white" id="heroTitle" data-i18n="hero.title"></h1>
+            <p class="lead mb-5 text-white" data-i18n="hero.subtitle">.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="udahili.html" class="btn btn-primary-brand">
+                    <i class="bi bi-person-plus-fill me-2 text-white" aria-hidden="true"></i><span class="text-white" data-i18n="hero.cta_register">Cpu</span>
+                </a>
+                <a href="kuhusu.html" class="btn btn-secondary-brand">
+                    <i class="bi bi-info-circle me-2 text-white" aria-hidden="true"></i><span class="text-white" data-i18n="hero.cta_about"></span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <section class="py-5 bg-light">
+    <section class="py-5" aria-label="Statistics">
         <div class="container">
-            <div class="row g-5">
-                
-                <div class="col-lg-6">
-                    <div class="custom-card p-4 h-100 d-flex flex-column">
-                        <h2 class="h4 mb-3 card-title fw-bold text-success" data-i18n="map_section.title"></h2>
-
-                        <p class="text-muted small mb-4" data-i18n="map_section.subtitle"></p>
-
-                        <!-- ✅ ONLY CHANGE HERE -->
-                        <div class="flex-grow-1 position-relative rounded overflow-hidden" style="min-height: 400px;">
-                            
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31734.17534503731!2d39.22284530561137!3d-6.16129370484917!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd700696ca863%3A0x932a09de60fa5b7b!2sMasjid%20Aisha!5e0!3m2!1sen!2stz!4v1781454266450!5m2!1sen!2stz"
-                                class="w-100 h-100 border-0 position-absolute top-0 start-0"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                                data-i18n-attr="title:map_section.iframe_title">
-                            </iframe>
-
-                        </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="custom-card h-100 p-4 shadow-sm">
+                        <div class="icon-box mx-auto"><i class="bi bi-calendar4-range" aria-hidden="true"></i></div>
+                        <h2 class="mb-2 fw-bold text-gold" data-i18n="stats.years.value"></h2>
+                        <p class="mb-0 text-muted" data-i18n="stats.years.label"></p>
                     </div>
                 </div>
-
+                <div class="col-md-3 col-6">
+                    <div class="custom-card h-100 p-4 shadow-sm">
+                        <div class="icon-box mx-auto"><i class="bi bi-calendar-week" aria-hidden="true"></i></div>
+                        <h2 class="mb-2 fw-bold text-gold" data-i18n="stats.days.value">5</h2>
+                        <p class="mb-0 text-muted" data-i18n="stats.days.label"></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="custom-card h-100 p-4 shadow-sm">
+                        <div class="icon-box mx-auto"><i class="bi bi-moon-stars" aria-hidden="true"></i></div>
+                        <h2 class="mb-2 fw-bold text-gold" data-i18n="stats.start.value"></h2>
+                        <p class="mb-0 text-muted" data-i18n="stats.start.label"></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="custom-card h-100 p-4 shadow-sm">
+                        <div class="icon-box mx-auto"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+                        <h2 class="mb-2 fw-bold text-gold" data-i18n="stats.location.value"></h2>
+                        <p class="mb-0 text-muted" data-i18n="stats.location.label"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="py-5" aria-labelledby="featuresHeading">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" id="featuresHeading" data-i18n="features.title"></h2>
+                <p class="text-muted" data-i18n="features.subtitle"></p>
+            </div>
+            <div class="row g-4" id="featuresContainer">
+                </div>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="levelsHeading">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" id="levelsHeading" data-i18n="levels.title"></h2>
+                <p class="text-muted" data-i18n="levels.subtitle"></p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="custom-card shadow-sm h-100">
+                        <div class="card-body p-5">
+                            <div class="icon-box mb-4"><i class="bi bi-journal-bookmark" aria-hidden="true"></i></div>
+                            <h3 class="fw-bold text-gold" data-i18n="levels.primary.title"></h3>
+                            <p class="text-muted" data-i18n="levels.primary.desc"></p>
+                            <ul class="list-unstyled mt-3 mb-0" id="primarySubjects"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card shadow-sm h-100">
+                        <div class="card-body p-5">
+                            <div class="icon-box mb-4"><i class="bi bi-mortarboard" aria-hidden="true"></i></div>
+                            <h3 class="fw-bold text-gold" data-i18n="levels.preparatory.title"></h3>
+                            <p class="text-muted" data-i18n="levels.preparatory.desc"></p>
+                            <ul class="list-unstyled mt-3 mb-0" id="preparatorySubjects"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="admissionHeading">
+        <div class="container">
+            <div class="custom-card border-gold-top shadow-sm">
+                <div class="card-body p-5 text-center">
+                    <div class="icon-box mx-auto mb-4"><i class="bi bi-person-plus" aria-hidden="true"></i></div>
+                    <h2 class="mb-4 fw-bold" id="admissionHeading" data-i18n="admission_cta.title"></h2>
+                    <p class="container-narrow text-muted" data-i18n="admission_cta.desc"></p>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-3 col-6 mb-3">
+                            <h3 class="fw-bold text-gold mb-1" data-i18n="admission_cta.stats_years_val"></h3>
+                            <small class="text-muted" data-i18n="admission_cta.stats_years_lbl"></small>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <h3 class="fw-bold text-gold mb-1" data-i18n="admission_cta.stats_start_val"></h3>
+                            <small class="text-muted" data-i18n="admission_cta.stats_start_lbl"></small>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <h3 class="fw-bold text-gold mb-1" data-i18n="admission_cta.stats_days_val">5</h3>
+                            <small class="text-muted" data-i18n="admission_cta.stats_days_lbl"></small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-5">
+                        <a href="udahili.html" class="btn btn-primary-brand">
+                            <i class="bi bi-file-earmark-text me-2" aria-hidden="true"></i><span data-i18n="admission_cta.btn_reqs"></span>
+                        </a>
+                        <a href="mawasiliano.html" class="btn btn-secondary-brand">
+                            <i class="bi bi-whatsapp me-2" aria-hidden="true"></i><span data-i18n="admission_cta.btn_contact"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="newsHeading">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" id="newsHeading" data-i18n="news_section.title"></h2>
+                <p class="text-muted" data-i18n="news_section.subtitle"></p>
+            </div>
+            <div class="row g-4" id="newsArticlesContainer"></div>
+            <div class="text-center mt-5">
+                <a href="habari.html" class="btn btn-primary-brand">
+                    <i class="bi bi-newspaper me-2" aria-hidden="true"></i><span data-i18n="news_section.btn_view_all"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="libraryHeading">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" id="libraryHeading" data-i18n="library_section.title"</h2>
+                <p class="text-muted" data-i18n="library_section.subtitle"></p>
+            </div>
+            <div class="row g-4" id="libraryCardsContainer"></div>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="quranHeading">
+        <div class="container container-narrow">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" id="quranHeading" data-i18n="quran_blockquote.section_title"></h2>
+            </div>
+            <blockquote class="text-center p-5 custom-card rounded">
+                <p class="mb-3 fw-bold" data-i18n="quran_blockquote.translation"></p>
+                <small class="text-muted" data-i18n="quran_blockquote.reference"></small>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="bottomCtaHeading">
+        <div class="container">
+            <div class="custom-card border-gold-top shadow-sm">
+                <div class="card-body text-center p-5">
+                    <div class="icon-box mx-auto mb-4"><i class="bi bi-mortarboard" aria-hidden="true"></i></div>
+                    <h2 class="mb-4 fw-bold" id="bottomCtaHeading" data-i18n="bottom_cta.title"></h2>
+                    <p class="container-narrow text-muted" data-i18n="bottom_cta.desc"></p>
+                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-5">
+                        <a href="kuhusu.html" class="btn btn-primary-brand">
+                            <i class="bi bi-info-circle me-2" aria-hidden="true"></i><span data-i18n="bottom_cta.btn_about"></span>
+                        </a>
+                        <a href="mawasiliano.html" class="btn btn-secondary-brand">
+                            <i class="bi bi-envelope me-2" aria-hidden="true"></i><span data-i18n="bottom_cta.btn_contact"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5" aria-label="Site Footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+
+                    <img src="assets/img/logo_footer.svg" alt="Ma'had Logo" class="mb-3" style="height: 120px;">
+
+                    <p data-i18n="footer.description"></p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 data-i18n="footer.useful_links"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-i18n="nav.home"></a></li>
+                        <li><a href="kuhusu.html" data-i18n="nav.about"></a></li>
+                        <li><a href="kozi.html" data-i18n="nav.courses"></a></li>
+                        <li><a href="udahili.html" data-i18n="nav.admission"></a></li>
+                        <li><a href="habari.html" data-i18n="nav.news"></a></li>
+                        <li><a href="mawasiliano.html" data-i18n="nav.contact"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-i18n="footer.knowledge_library"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sauti.html" data-i18n="nav.audio"></a></li>
+                        <li><a href="video.html" data-i18n="nav.video"></a></li>
+                        <li><a href="machapisho.html" data-i18n="nav.publications"></a></li>
+                        <li><a href="makala.html" data-i18n="nav.articles"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 data-i18n="footer.contact_title"></h5>
+                    <p data-i18n="footer.address"><br></p>
+                    <p data-i18n="footer.phone"></p>
+                    <p data-i18n="footer.email"><br></p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+ <hr class="my-4">
+
+            <div class="text-center">
+                <p class="mb-2" data-i18n="footer.copyright">
+                    </p>
+                <small class="text-muted d-block mb-3" data-i18n="footer.educational_disclaimer">
+                    </small>
+
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <a href="#" privacy-policy.html" data-i18n="footer.privacy"></a>
+                    <span>|</span>
+                    <a href="#" terms-of-use.html" data-i18n="footer.terms"></a>
+                    <span>|</span>
+                    <a href="#" copyright.html" data-i18n="footer.copyright_policy"></a>
+                    <span>|</span>
+                    <a href="#" faq.html" data-i18n="footer.faq"></a>
+                    <span>|</span>
+                    <a href="#"sitemap.html" data-i18n="footer.sitemap"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" https://wa.me/255766163475?text=Assalamu%20alaykum,%20naomba%20kufahamu%20kuhusu%20Ma'had." 
+       class="whatsapp-float" target="_blank" aria-label="Wasiliana nasi kupitia WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/app-contact.js"></script>
+    <script src="assets/js/app-index.js"></script>
 </body>
 </html>
+
