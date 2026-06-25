@@ -28,7 +28,7 @@ function renderNewsComponents(lang, fullLocalData) {
     currentLang = lang;
     currentLabel = data.news_section?.published_label || "Ilichapishwa";
     cachedNewsItems = data.news;
-    
+
     MwagaHabari(cachedNewsItems);
     anzishaUtafutaji();
 }
@@ -43,28 +43,32 @@ function MwagaHabari(habariList) {
         container.innerHTML = `
             <div class="col-12 text-center py-5">
                 <i class="bi bi-newspaper text-muted fs-1"></i>
-                <p class="text-muted mt-2">Hakuna habari au matukio yaliyopatikana.</p>
+                <p class="text-muted mt-2">
+                    Hakuna habari au matukio yaliyopatikana.
+                </p>
             </div>
         `;
         return;
     }
 
     const readMoreLabels = {
-        "sw": "Soma Zaidi",
-        "en": "Read More",
-        "ar": "اقرأ المزيد"
+        sw: "Soma Zaidi",
+        en: "Read More",
+        ar: "اقرأ المزيد"
     };
+
     const readMoreText = readMoreLabels[currentLang] || "Read More";
 
     habariList.forEach(h => {
         let tareheSanifu = h.date;
+
         try {
             const mabadilikoyaTarehe = new Date(h.date);
             if (!isNaN(mabadilikoyaTarehe.getTime())) {
                 tareheSanifu = new Intl.DateTimeFormat(currentLang, {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
                 }).format(mabadilikoyaTarehe);
             }
         } catch (e) {
@@ -74,25 +78,33 @@ function MwagaHabari(habariList) {
         const paragraphs = h.paragraphs || [];
         const fullText = paragraphs.join("\n\n");
         const charLimit = 250;
-        
         let descriptionHtml = "";
-        
+
         if (fullText.length > charLimit) {
-            // Kuchukua aya ya kwanza tu kama dondoo fupi (excerpt)
             const firstParagraph = paragraphs[0] || "";
-            
-            // Kuzalisha HTML ya aya zote kamili zilizofungwa kwenye <p> tags
             const fullParagraphsHtml = paragraphs.map((p, idx) => {
-                // Aya ya kwanza isiongeze margin ya juu ili isisukume maudhui chini ya heading
                 const mtClass = idx === 0 ? "mt-0" : "";
-                return `<p class="${mtClass} mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`;
-            }).join('');
-            
+                return `
+                    <p class="${mtClass} mb-2" style="text-align: justify;">
+                        ${escapeHtml(p)}
+                    </p>`;
+            }).join("");
+
             descriptionHtml = `
                 <div class="news-description text-secondary">
                     <div class="news-excerpt">
-                        <p class="mt-0 mb-2" style="text-align: justify;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
-                        <a href="#" class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle" onclick="const container = this.closest('.news-description'); container.querySelector('.news-excerpt').classList.add('d-none'); container.querySelector('.news-full').classList.remove('d-none'); return false;">${escapeHtml(readMoreText)}</a>
+                        <p class="mt-0 mb-1" style="text-align: justify;">
+                           ${escapeHtml(firstParagraph.substring(0, charLimit))}...
+                        </p>
+                        <a href="#" class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle"
+                           onclick="
+                               const container = this.closest('.news-description');
+                               container.querySelector('.news-excerpt').classList.add('d-none');
+                               container.querySelector('.news-full').classList.remove('d-none');
+                               return false;
+                           ">
+                           ${escapeHtml(readMoreText)}
+                        </a>
                     </div>
                     <div class="news-full d-none">
                         ${fullParagraphsHtml}
@@ -102,8 +114,12 @@ function MwagaHabari(habariList) {
         } else {
             const fullParagraphsHtml = paragraphs.map((p, idx) => {
                 const mtClass = idx === 0 ? "mt-0" : "";
-                return `<p class="${mtClass} mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`;
-            }).join('');
+                return `
+                    <p class="${mtClass} mb-2" style="text-align: justify;">
+                        ${escapeHtml(p)}
+                    </p>`;
+            }).join("");
+
             descriptionHtml = `
                 <div class="news-description text-secondary">
                     ${fullParagraphsHtml}
@@ -117,15 +133,19 @@ function MwagaHabari(habariList) {
             <div class="card shadow-sm border-gold-top p-3 bg-light">
                 <div class="card-body">
                     <small class="text-success fw-bold d-block mb-1">
-                        <i class="bi bi-clock me-1"></i> ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
+                        <i class="bi bi-clock me-1"></i>
+                        ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
                     </small>
-                    <h4 class="card-title fw-bold text-dark mt-0 mb-0" style="margin-bottom: 0px !important;">${escapeHtml(h.title)}</h4>
-                    <div class="card-text text-secondary" style="margin-top: 6px !important;">
+                    <h4 class="card-title fw-bold text-dark mt-0 mb-0">
+                        ${escapeHtml(h.title)}
+                    </h4>
+                    <div class="card-text text-secondary" style="margin-top:0 !important;">
                         ${descriptionHtml}
                     </div>
                 </div>
             </div>
         `;
+
         container.appendChild(col);
     });
 }
@@ -141,15 +161,24 @@ function anzishaUtafutaji() {
         const term = e.target.value.toLowerCase().trim();
         const filtered = cachedNewsItems.filter(h => {
             const paragraphsText = (h.paragraphs || []).join(" ").toLowerCase();
-            return h.title.toLowerCase().includes(term) || paragraphsText.includes(term);
+            return (
+                h.title.toLowerCase().includes(term) ||
+                paragraphsText.includes(term)
+            );
         });
+
         MwagaHabari(filtered);
     });
 }
 
 function escapeHtml(str) {
     if (!str) return "";
-    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 function generateNewsSchema(lang, fullLocalData) {
@@ -177,11 +206,7 @@ function generateNewsSchema(lang, fullLocalData) {
         },
         "publisher": {
             "@type": "EducationalOrganization",
-            "name": data.organization?.name || "Ma'had Al-Imam An-Nawawi",
-            "logo": {
-                "@type": "ImageObject",
-                "url": window.location.origin + "/assets/img/logo.png"
-            }
+            "name": data.organization?.name || "Ma'had Al-Imam An-Nawawi"
         }
     }));
 
