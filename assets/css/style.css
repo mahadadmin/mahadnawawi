@@ -805,10 +805,44 @@ footer a:hover {
     }
 }
 
+/* --------------------------------------------------------------------------
+   12. Media Queries & Responsive Overrides
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        background-color: var(--bg-surface);
+        padding: var(--space-md);
+        border-radius: var(--radius-sm);
+        margin-top: var(--space-sm);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .nav-link {
+        margin: var(--space-xs) 0;
+        padding: var(--space-sm) var(--space-md) !important;
+    }
+
+    .dropdown-menu {
+        border-top: none;
+        border-left: 3px solid var(--accent-gold);
+        box-shadow: none;
+        padding-left: var(--space-md);
+    }
+}
+
 @media (max-width: 767.98px) {
-    h1 { font-size: 2.25rem; }
-    h2 { font-size: 1.9rem; }
-    h3 { font-size: 1.5rem; }
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
 
     .bismillah-branding {
         font-size: 2.2rem;
@@ -822,35 +856,62 @@ footer a:hover {
         bottom: 15px;
         right: 15px;
         padding: 8px 12px;
-   }
-
-@media (max-width:991.98px){
-    .language-switcher{
-        width:100%;
-        margin-top:1rem;
     }
 
-    .lang-btn{
-        flex:1;
-        text-align:center;
-
+    .language-switcher {
+        width: 100%;
+        margin-top: 1rem;
     }
 
- /* ===== Subtle Notice ===== */
-        .notice-soft {
-            background: #faf7f2;
-            border: 1px solid #e8e1d8;
-            color: #6c757d;
-            font-size: 14px;
-            padding: 10px 14px;
-            border-radius: 8px;
-            line-height: 1.5;
-        }
+    .lang-btn {
+        flex: 1;
+        text-align: center;
+    }
 
-        .notice-soft i {
-            color: #c6a85a;
-            font-size: 16px;
-
+    .notice-soft {
+        background: var(--bg-main);
+        border: 1px solid var(--border-light);
+        color: var(--text-muted);
+        font-size: 14px;
+        padding: 10px 14px;
+        border-radius: var(--radius-sm);
+        line-height: 1.5;
     }
 }
 
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.85rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+    .bismillah-branding {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1320px;
+    }
+}
+
+/* ==========================================================================
+   Navbar Hamburger Dark Mode Fix
+   ========================================================================== */
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg),
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
