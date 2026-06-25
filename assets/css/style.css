@@ -1,214 +1,154 @@
-/*
- Ma'had Al-Imam An-Nawawi - Production CSS
- Refactored safety version
-*/
+/* ==========================================================================
+   Ma'had Al-Imam An-Nawawi - Custom Stylesheet
+   Version: 2.0.0 (Bootstrap 5 Extended & Refactored)
+   ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   1. Design Tokens & Design System (--variables)
+   -------------------------------------------------------------------------- */
 :root {
-    --bg-main:#faf7f2;
-    --bg-surface:#ffffff;
-    --text-main:#2b302e;
-    --text-muted:#6c757d;
+    /* Color Palette - Light Mode Variables */
+    --bg-main: #faf7f2;
+    --bg-surface: #ffffff;
+    --text-main: #2b302e;
+    --text-muted: #6c757d;
 
-    --primary-green:#115740;
-    --primary-green-dark:#0b3d2c;
-
-    --accent-gold:#d4af37;
-    --accent-gold-dark:#b8962e;
-
-    --brand-whatsapp:#25d366;
-    --brand-whatsapp-dark:#1cbd55;
-
-    --border-light:rgba(0,0,0,.08);
-
-    --radius-sm:8px;
-    --radius-md:16px;
-
-    --shadow-sm:0 2px 6px rgba(0,0,0,.06);
-    --shadow-md:0 10px 30px rgba(0,0,0,.1);
-
-    --transition:.3s ease;
-
-    --font-sans:'Inter',sans-serif;
-    --font-serif:'Traditional Arabic','Amiri',serif;
+    --primary-green: #115740;     /* Core brand green */
+    --accent-gold: #d4af37;      /* Balanced brand gold */
+    --accent-gold-soft: #c9a227; /* Soft gold variant */
+    --light-cream: #faf7f2;      /* Soft, calm off-white background */
+    --border-light: rgba(0, 0, 0, 0.05);
+    
+    /* Interactive & Branding Utility Tokens */
+    --brand-whatsapp: #25d366;
+    --brand-whatsapp-dark: #1cbd55;
+    --primary-green-dark: #0b3d2c;
+    --accent-gold-dark: #b8962e;
+    
+    /* Typography Scales */
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Traditional Arabic', 'Amiri', 'Times New Roman', serif;
+    
+    /* Spacing & Layout System */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 3rem;
+    
+    /* Global Component Properties */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 9999px;
+    --shadow-sm: 0 2px 6px rgba(0,0,0,.06);
+    --shadow-md: 0 10px 30px rgba(0,0,0,.10);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+    --shadow-btn-hover: 0 10px 24px rgba(0, 0, 0, 0.15);
+    
+    /* Motion */
+    --transition-smooth: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-[data-theme="dark"]{
-    --bg-main:#0f172a;
-    --bg-surface:#1e293b;
-    --text-main:#e5e7eb;
-    --text-muted:#9ca3af;
+/* Unified Dark Mode System */
+[data-theme="dark"] {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
 
-    --primary-green:#1f7a5a;
-    --primary-green-dark:#145c43;
+    --border-light: rgba(255,255,255,0.08);
 
-    --border-light:rgba(255,255,255,.1);
+    /* Brand adjustments for dark */
+    --primary-green: #1f7a5a;
+    --primary-green-dark: #145c43;
+    --accent-gold: #d4af37;
+    --accent-gold-dark: #b8962e;
 }
 
-*,
-*::before,
-*::after{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    background:var(--bg-main);
-    color:var(--text-main);
-    font-family:var(--font-sans);
-    line-height:1.8;
-    transition:background var(--transition),color var(--transition);
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-p,
-span,
-li,
-h1,h2,h3,h4,h5,h6{
-    color:var(--text-main);
-}
-
-a{
-    color:var(--primary-green);
-    text-decoration:none;
-    transition:var(--transition);
-}
-
-a:hover{
-    color:var(--accent-gold);
-}
-
-
-/* Bootstrap dark compatibility */
-
+/* --------------------------------------------------------------------------
+   1.5 Dark Mode Overrides & Specific Fixes
+   -------------------------------------------------------------------------- */
 [data-theme="dark"] .card,
-[data-theme="dark"] .dropdown-menu,
-[data-theme="dark"] .navbar,
-[data-theme="dark"] .custom-card{
-    background:var(--bg-surface);
-    color:var(--text-main);
-    border-color:var(--border-light);
+[data-theme="dark"] .custom-card {
+    border-color: var(--border-light);
 }
 
-[data-theme="dark"] .text-dark,
-[data-theme="dark"] .text-body{
-    color:var(--text-main)!important;
+/* Bootstrap Overrides within Dark Mode */
+[data-theme="dark"] .text-dark {
+    color: #e5e7eb !important;
 }
 
-[data-theme="dark"] .bg-light{
-    background:var(--bg-surface)!important;
+[data-theme="dark"] .bg-light {
+    background-color: #1e293b !important;
 }
 
+[data-theme="dark"] .text-black,
+[data-theme="dark"] .text-body {
+    color: var(--text-main) !important;
+}
 
-/* Navbar */
+[data-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
 
-.navbar{
-    background:var(--bg-surface);
-    border-bottom:3px solid var(--primary-green);
+/* Theme Toggle Button Components */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, var(--transition-smooth);
+    font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-green);
+    color: var(--bg-surface);
+    transform: scale(1.2) translateY(-2px);
+}
+
+/* Global Dark Text Fix */
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] li,
+[data-theme="dark"] small {
+    color: var(--text-main) !important;
+}
+
+/* -------------------------------
+   Language Switcher
+------------------------------- */
+.language-switcher{
+    display:flex;
+    align-items:center;
+    background:var(--bg-main);
+    border:1px solid var(--border-light);
+    border-radius:999px;
+    overflow:hidden;
     box-shadow:var(--shadow-sm);
 }
 
-.nav-link{
-    color:var(--text-main)!important;
-    border-radius:var(--radius-sm);
-    transition:var(--transition);
-}
-
-.nav-link:hover,
-.nav-link.active{
-    background:var(--primary-green);
-    color:#fff!important;
-}
-
-
-/* Cards */
-
-.card,
-.custom-card{
-    background:var(--bg-surface);
-    border:1px solid var(--border-light);
-    border-radius:var(--radius-md);
-    transition:var(--transition);
-}
-
-.card:hover,
-.custom-card:hover{
-    transform:translateY(-5px);
-    box-shadow:var(--shadow-md);
-}
-
-
-/* Buttons */
-
-.btn-primary-brand,
-.btn-download,
-.btn-donate,
-.btn-whatsapp{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:var(--radius-md);
-    padding:.75rem 1.5rem;
-
-    border:2px solid transparent;
-    font-weight:600;
-
-    transition:var(--transition);
-}
-
-.btn-primary-brand{
-    background:var(--primary-green);
-    color:#fff;
-}
-
-.btn-primary-brand:hover{
-    background:var(--primary-green-dark);
-    color:#fff;
-}
-
-.btn-download,
-.btn-donate{
-    background:var(--accent-gold);
-    color:#fff;
-}
-
-.btn-whatsapp{
-    background:var(--brand-whatsapp);
-    color:#fff;
-}
-
-.btn-primary-brand:hover,
-.btn-download:hover,
-.btn-donate:hover,
-.btn-whatsapp:hover{
-    transform:translateY(-2px);
-}
-
-
-/* Language */
-
-.language-switcher{
-    display:flex;
-    border-radius:999px;
-    overflow:hidden;
-    background:var(--bg-surface);
-    border:1px solid var(--border-light);
-}
-
 .lang-btn{
-    flex:1;
-    border:0;
+    border:none;
     background:transparent;
     color:var(--text-main);
-    padding:.5rem 1rem;
+    padding:.55rem .9rem;
+    font-size:.9rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:var(--transition-smooth);
+}
+
+.lang-btn:hover{
+    background:rgba(17,87,64,.08);
+    color:var(--primary-green);
 }
 
 .lang-btn.active{
@@ -216,62 +156,701 @@ a:hover{
     color:white;
 }
 
-
-/* Floating WhatsApp */
-
-.whatsapp-float{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-
-    background:var(--brand-whatsapp);
-    color:white;
-
-    padding:12px 18px;
-    border-radius:999px;
-
-    z-index:9999;
-}
-
-
-/* Arabic */
-
-.arabic-text{
+.arabic-btn{
     font-family:var(--font-serif);
-    direction:rtl;
 }
 
+/* --------------------------------------------------------------------------
+   2. Global Resets & Base Elements
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-/* Responsive */
+html {
+    scroll-behavior: smooth;
+}
 
-@media(max-width:991.98px){
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    .navbar-collapse{
-        background:var(--bg-surface);
-        padding:1rem;
-        border-radius:var(--radius-sm);
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+::selection {
+    background-color: var(--accent-gold);
+    color: var(--bg-surface);
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+/* Homepage Hero Layout Base */
+.hero,
+section {
+    background-color: var(--bg-main);
+}
+
+.hero {
+    padding: 120px 0;
+}
+
+.hero,
+.hero * {
+    color: var(--text-main);
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. Professional Typography System
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-main);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+}
+
+h1 { 
+     font-size: clamp(3rem, 6vw, 4.5rem);
+     font-weight: 800;
+}
+
+h2 { 
+     font-size: clamp(2rem, 4vw, 3rem);
+     font-weight: 700;
+}
+
+h3 { 
+     font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p, span, li {
+    color: var(--text-main);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+a:hover {
+    color: var(--accent-gold);
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: var(--space-xs);
+}
+
+blockquote {
+    padding: var(--space-sm) var(--space-md);
+    margin: 0 0 var(--space-md);
+    border-left: 4px solid var(--accent-gold);
+    background-color: rgba(201, 162, 39, 0.05);
+    font-style: italic;
+}
+
+small, .text-small {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Specialized Arabic Typography Styling */
+.arabic-text {
+    font-family: var(--font-serif);
+    font-weight: bold;
+    direction: rtl;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------------
+   4. Preloader Section
+   -------------------------------------------------------------------------- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInTogether 1.5s ease-out forwards;
+}
+
+.preloader-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: var(--space-lg);
+}
+
+.bismillah-branding {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-green);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.gold-spinner {
+    color: var(--accent-gold) !important;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Navigation Bar & Dropdowns / Cards
+   -------------------------------------------------------------------------- */
+.card,
+.navbar,
+.dropdown-menu {
+    background-color: var(--bg-surface);
+}
+
+.navbar {
+    border-bottom: 3px solid var(--primary-green);
+    padding: 0.8rem 0;
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(12px);
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+    padding: var(--space-xs) 0;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 500;
+    padding: var(--space-sm) var(--space-md) !important;
+    margin: 0 var(--space-xs);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.nav-link::after {
+    content:'';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    height: 2px;
+    background: var(--accent-gold);
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: #fff !important;
+    background-color: var(--primary-green);
+}
+
+.nav-link:hover::after {
+    transform:scaleX(1);
+}
+
+/* Dropdown Menu Architecture */
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--shadow-md);
+    border-top: 3px solid var(--accent-gold);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   6. Buttons Customization & CTA System
+   -------------------------------------------------------------------------- */
+.btn-success {
+    background-color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    color: var(--bg-surface) !important;
+    transition: var(--transition-smooth);
+}
+
+.btn-success:hover, 
+.btn-success:focus {
+    background-color: var(--primary-green-dark) !important;
+    border-color: var(--primary-green-dark) !important;
+}
+
+.btn-outline-gold {
+    color: var(--accent-gold);
+    border: 2px solid var(--accent-gold);
+    background-color: transparent;
+    transition: var(--transition-smooth);
+}
+
+.btn-outline-gold:hover, 
+.btn-outline-gold:focus {
+    background-color: var(--accent-gold);
+    color: var(--bg-surface);
+}
+
+/* Concrete CTA Implementations */
+.btn-primary-brand {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--bg-surface);
+}
+
+.btn-primary-brand:hover,
+.btn-primary-brand:focus {
+    background-color: var(--primary-green-dark);
+    border-color: var(--primary-green-dark);
+    color: var(--bg-surface);
+}
+
+.btn-secondary-brand {
+    background-color: transparent;
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-secondary-brand:hover,
+.btn-secondary-brand:focus {
+    background-color: var(--primary-green);
+    color: var(--bg-surface);
+}
+
+.btn-download {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--bg-surface);
+}
+
+.btn-download:hover,
+.btn-download:focus {
+    background-color: var(--accent-gold-dark);
+    border-color: var(--accent-gold-dark);
+    color: var(--bg-surface);
+}
+
+.btn-submit {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--bg-surface);
+    width: 100%;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: var(--primary-green-dark);
+    border-color: var(--primary-green-dark);
+    color: var(--bg-surface);
+}
+
+.btn-whatsapp {
+    background-color: var(--brand-whatsapp);
+    border-color: var(--brand-whatsapp);
+    color: var(--bg-surface);
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+    background-color: var(--brand-whatsapp-dark);
+    border-color: var(--brand-whatsapp-dark);
+    color: var(--bg-surface);
+}
+
+.btn-donate {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--bg-surface);
+}
+
+.btn-donate:hover,
+.btn-donate:focus {
+    background-color: var(--accent-gold-dark);
+    border-color: var(--accent-gold-dark);
+    color: var(--bg-surface);
+}
+
+/* Base CTA Typographic Layout styling */
+.btn-primary-brand,
+.btn-secondary-brand,
+.btn-download,
+.btn-submit,
+.btn-whatsapp,
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-rendering: optimizeLegibility; 
+    line-height: 1.5;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary-brand,
+.btn-download,
+.btn-donate {
+    min-height: 52px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+/* Unified Hover & Active States */
+.btn-primary-brand:hover,
+.btn-secondary-brand:hover,
+.btn-download:hover,
+.btn-submit:hover,
+.btn-whatsapp:hover,
+.btn-donate:hover,
+.btn-success:hover,
+.nav-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-btn-hover);
+}
+
+.btn-primary-brand:active,
+.btn-secondary-brand:active,
+.btn-download:active,
+.btn-submit:active,
+.btn-whatsapp:active,
+.btn-donate:active,
+.btn-success:active,
+.nav-link:active {
+    transform: translateY(0);
+}
+
+.btn-primary-brand:focus-visible,
+.btn-secondary-brand:focus-visible,
+.btn-download:focus-visible,
+.btn-submit:focus-visible,
+.btn-whatsapp:focus-visible,
+.btn-donate:focus-visible,
+.btn-success:focus-visible,
+.nav-link:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   7. Cards & Complex Grid Items
+   -------------------------------------------------------------------------- */
+.card {
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md) !important;
+}
+
+.custom-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-main);
+    color: var(--primary-green);
+    border: 2px solid var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: var(--transition-bounce);
+    margin-bottom: var(--space-md);
+}
+
+.custom-card:hover .icon-box {
+    background-color: var(--primary-green);
+    color: var(--bg-surface);
+    transform: rotate(360deg);
+}
+
+.news-description {
+     white-space: pre-line;
+}
+
+/* --------------------------------------------------------------------------
+   8. Auxiliary Components (Breadcrumbs, Floating Widgets)
+   -------------------------------------------------------------------------- */
+.breadcrumb-block {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-md);
+    padding: 10px 15px;
+    border: 1px solid var(--border-light);
+    margin-bottom: var(--space-lg);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--brand-whatsapp);
+    color: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    padding: 10px 15px;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    background-color: var(--brand-whatsapp-dark);
+    color: var(--bg-surface);
+    box-shadow: var(--shadow-btn-hover);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   9. Footer Architecture
+   -------------------------------------------------------------------------- */
+footer {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-main) !important;
+    border-top: 4px solid var(--accent-gold);
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-lg);
+}
+
+footer p,
+footer span,
+footer li,
+footer a {
+    color: var(--text-muted) !important;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5 {
+    color: var(--text-main) !important;
+}
+
+footer a:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. Utility & Contextual Helper Classes
+   -------------------------------------------------------------------------- */
+.border-gold-top {
+    border-top: 4px solid var(--accent-gold) !important;
+}
+
+.bg-success-light {
+    background-color: color-mix(in srgb, var(--primary-green) 15%, transparent) !important;
+    color: var(--primary-green);
+}
+
+.text-gold {
+    color: var(--accent-gold) !important;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.container-narrow {
+    max-width: 900px;
+    margin: auto;
+}
+
+.hover-lift {
+    transition: var(--transition-smooth);
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* --------------------------------------------------------------------------
+   11. Micro-animations & Loading States
+   -------------------------------------------------------------------------- */
+.skeleton-box {
+    background: linear-gradient(
+        90deg,
+        var(--bg-surface) 25%,
+        rgba(255, 255, 255, 0.1) 50%,
+        var(--bg-surface) 75%
+    );
+    background-size: 200% 100%;
+    animation: loadingSkeleton 1.5s infinite linear;
+    border-radius: var(--radius-sm);
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+}
+
+@keyframes loadingSkeleton {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes fadeInTogether {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------------------------------------------------------
+   12. Media Queries & Responsive Overrides
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--bg-surface);
+        padding: var(--space-md);
+        border-radius: var(--radius-sm);
+        margin-top: var(--space-sm);
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .nav-link {
+        margin: var(--space-xs) 0;
+        padding: var(--space-sm) var(--space-md) !important;
+    }
+    
+    .dropdown-menu {
+        border-top: none;
+        border-left: 3px solid var(--accent-gold);
+        box-shadow: none;
+        padding-left: var(--space-md);
+    }
+}
+
+@media (max-width: 767.98px) {
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.9rem; }
+    h3 { font-size: 1.5rem; }
+
+    .bismillah-branding {
+        font-size: 2.2rem;
     }
 
+    .preloader-logo {
+        width: 120px;
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px;
+   }
+
+@media (max-width:991.98px){
     .language-switcher{
         width:100%;
         margin-top:1rem;
     }
-}
 
+    .lang-btn{
+        flex:1;
+        text-align:center;
 
-@media(max-width:767.98px){
+    }
 
-    h1{font-size:2.25rem}
-    h2{font-size:1.9rem}
+ /* ===== Subtle Notice ===== */
+        .notice-soft {
+            background: #faf7f2;
+            border: 1px solid #e8e1d8;
+            color: #6c757d;
+            font-size: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
 
-    .whatsapp-float{
-        right:15px;
-        bottom:15px;
+        .notice-soft i {
+            color: #c6a85a;
+            font-size: 16px;
+
     }
 }
 
-
-@media(max-width:360px){
-
-    h1{font-size:1.85rem}
-}
