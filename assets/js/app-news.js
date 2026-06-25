@@ -87,7 +87,7 @@ function MwagaHabari(habariList) {
             descriptionHtml = `
                 <div class="news-description text-secondary">
                     <div class="news-excerpt">
-                        <p style="text-align: justify;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
+                        <p style="text-align: justify; margin-bottom: 0.5rem;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
                         <a href="#" class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle" onclick="const container = this.closest('.news-description'); container.querySelector('.news-excerpt').classList.add('d-none'); container.querySelector('.news-full').classList.remove('d-none'); return false;">${escapeHtml(readMoreText)}</a>
                     </div>
                     <div class="news-full d-none">
@@ -112,8 +112,8 @@ function MwagaHabari(habariList) {
                     <small class="text-success fw-bold">
                         <i class="bi bi-clock me-1"></i> ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
                     </small>
-                    <h4 class="card-title fw-bold text-dark mt-2">${escapeHtml(h.title)}</h4>
-                    <div class="card-text text-secondary mt-3">
+                    <h4 class="card-title fw-bold text-dark mt-2 mb-1">${escapeHtml(h.title)}</h4>
+                    <div class="card-text text-secondary mt-1">
                         ${descriptionHtml}
                     </div>
                 </div>
