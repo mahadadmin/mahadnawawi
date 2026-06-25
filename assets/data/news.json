@@ -1,148 +1,233 @@
-﻿{
-"sw": {
-"meta": {
-"title": "Ma'had Al-Imam An-Nawawi | Habari Mpya & Matukio",
-"description": "Pata habari za hivi punde, matukio, na taarifa rasmi kutoka Ma'had Al-Imam An-Nawawi.",
-"keywords": "habari, matukio, taarifa, ma'had, an-nawawi, elimu ya kiislamu, zanzibar, kiswahili"
-},
-"hero": {
-"title": "Habari Mpya & Matukio"
-},
-"news_section": {
-"search_placeholder": "Tafuta habari au tukio...",
-"published_label": "Ilichapishwa"
-},
-"organization": {
-"name": "Ma'had Al-Imam An-Nawawi",
-"description": "Taasisi ya elimu inayotoa darsa, vitabu, na video za kiislamu."
-},
-"news": [
-
 {
-"id": 1,
-"title": "Ma'had Al-Imam An-Nawawi Yafunguliwa Rasmi Na Masomo Kuanza",
-"date": "2026-06-13",
-"description": "Uongozi wa Ma'had Al-Imam An-Nawawi unafurahi kuwajulisha wanafunzi, wazazi, walezi na jamii kwa ujumla kwamba Ma'had imefunguliwa rasmi leo, Jumamosi tarehe 13 Juni 2026, sawa na 27 Dhul-Hijjah 1447 H, na shughuli za masomo zimeanza kwa idhini ya Allah ﷻ.\nAwali, ufunguzi wa Ma'had na kuanza kwa masomo ulipangwa kufanyika mwanzoni mwa mwaka mpya wa Kiislamu, tarehe 1 Muharram 1448 H. Hata hivyo, kutokana na kwamba tarehe hiyo itaangukia katikati ya wiki, uongozi wa Ma'had uliona ni vyema kuanza masomo mapema ili kuwezesha utekelezaji mzuri wa ratiba za masomo na kuwapa wanafunzi fursa ya kuanza muhula katika mazingira bora ya kielimu.\nKatika hatua ya mwanzo, Ma'had itatoa masomo mbalimbali ya msingi katika elimu za Kiislamu, yakiwemo Tawhid, Fiqh, Hadith, Qur'an Tukufu, Adhkar, Lugha ya Kiarabu, Kusoma na Kuandika. Masomo haya yatafundishwa kwa mujibu wa mitaala na vitabu vilivyochaguliwa kwa uangalifu ili kuhakikisha upatikanaji wa elimu sahihi na yenye manufaa.\nMa'had Al-Imam An-Nawawi imeanzishwa kwa lengo la kuchangia katika kueneza elimu sahihi ya Kiislamu, kulea kizazi kinachotambulika kwa elimu, uelewa na maadili mema, pamoja na kukuza utamaduni wa kujifunza na kutenda kwa mujibu wa Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم.\nUongozi wa Ma'had unawakaribisha wanafunzi wote wenye shauku ya kujifunza na kunufaika na elimu ya dini, na unamuomba Allah ﷻ aibariki Ma'had hii, ayajaalie masomo yake kuwa yenye manufaa, na awape walimu na wanafunzi tawfiki, ikhlasi na mafanikio.\nAamin."
-},
-
-{
-"id": 2,
-"title": "Maandalizi ya Upanuzi wa Ma'had Al-Imam An-Nawawi Yaendelea",
-"date": "2026-06-13",
-"description": "Ma'had Al-Imam An-Nawawi inaendelea na maandalizi ya muda mrefu ya kuimarisha miundombinu yake ili kuwezesha upanuzi wa huduma za elimu na kuongeza nafasi za udahili kwa wanafunzi kutoka maeneo mbalimbali.\nKwa sasa, Ma'had imefunguliwa kwa wanafunzi wa kiume pekee ambao wamekamilisha angalau elimu ya msingi au kiwango kinacholingana nacho. Udahili wa mwaka huu umeelekezwa kwa wanafunzi wa mfumo wa kutwa pekee kutokana na uwezo wa sasa wa miundombinu inayotumika katika shughuli za masomo.\nTangu kuanzishwa kwake, Ma'had imeweka lengo la kupokea wanafunzi wa kiume wa mfumo wa kutwa na wa bweni kutoka maeneo mbalimbali. Hata hivyo, kutokana na hatua ya mwanzo ya utekelezaji wa mradi huu wa kielimu, uongozi umeona ni busara kuanza kwa mfumo wa kutwa huku ukiendelea na maandalizi ya kupanua uwezo wa taasisi katika siku zijazo.\nUongozi wa Ma'had kwa sasa unaendelea na mikakati ya kuanzisha kituo kikubwa zaidi kitakachokuwa na uwezo wa kuhudumia wanafunzi wa kutwa na wa bweni kutoka Zanzibar, Tanzania Bara, nchi za Afrika Mashariki na maeneo mengine yatakayovutiwa na programu za elimu zinazotolewa na Ma'had.\nTayari eneo maalumu limetengwa kwa ajili ya ujenzi wa kituo hicho, na taratibu mbalimbali za awali za utekelezaji wa mradi zinaendelea kufanyiwa kazi. Inatarajiwa kwamba kukamilika kwa miundombinu hiyo kutaiwezesha Ma'had kuongeza nafasi za udahili na kuwahudumia wanafunzi wengi zaidi kutoka ndani na nje ya Tanzania.\nKwa sasa, shughuli za masomo zinaendelea katika madarasa yaliyopo karibu na Masjid Aisha, Mwera, Zanzibar. Hata hivyo, maono ya muda mrefu ya Ma'had ni kuanzisha kampasi kubwa na ya kisasa katika eneo la Kibele kuelekea Tunguu, Zanzibar, itakayokuwa kitovu cha elimu ya Kiislamu kwa wanafunzi wa kutwa na wa bweni.\nUongozi wa Ma'had unamshukuru Allah ﷻ kwa hatua zilizofikiwa hadi sasa na unaendelea kuwaomba wadau, wazazi, walezi na wapenda elimu kuunga mkono jitihada hizi ili kufanikisha maono ya kuanzisha taasisi imara ya elimu ya Kiislamu yenye manufaa kwa Ummah."
-},
-
-{
-"id": 3,
-"title": "Ma'had Al-Imam An-Nawawi Yazindua Tovuti Rasmi",
-"date": "2026-06-13",
-"description": "Katika hatua nyingine ya kuimarisha mawasiliano na upatikanaji wa elimu, Ma'had Al-Imam An-Nawawi imezindua rasmi tovuti yake kwa lengo la kuhudumia wanafunzi, wazazi, walezi, wadau wa elimu na jamii kwa ujumla. \nUzinduzi wa tovuti hii ni sehemu ya juhudi za Ma'had za kutumia njia za kisasa katika kueneza elimu sahihi ya Kiislamu na kurahisisha upatikanaji wa taarifa zinazohusu shughuli mbalimbali za taasisi. \nKupitia tovuti hii, wageni wataweza kupata taarifa kuhusu Ma'had, dira na dhima yake, programu za masomo, walimu, habari na matangazo, pamoja na njia mbalimbali za mawasiliano na uongozi wa taasisi. \nAidha, tovuti haitakuwa chombo cha mawasiliano pekee, bali pia itatumika kama jukwaa la kusambaza elimu na maarifa yenye manufaa. Miongoni mwa huduma zinazopatikana ni maktaba ya sauti, video, machapisho, vitabu na makala mbalimbali za kielimu. Sehemu kubwa ya maudhui haya itahusiana na masomo, mihadhara na shughuli za kielimu zinazoendeshwa na Ma'had, ili kuwapa wanafunzi na wadau wengine fursa ya kuendelea kunufaika na elimu hata nje ya mazingira ya darasani. \nVilevile, tovuti itakuwa hifadhi ya taarifa na nyaraka muhimu zinazohusiana na maendeleo ya Ma'had, shughuli za wanafunzi, miradi ya upanuzi wa miundombinu na matukio mengine ya taasisi. \nUongozi wa Ma'had unaamini kwamba matumizi sahihi ya teknolojia yanaweza kuwa nyenzo muhimu katika kueneza elimu, kuhifadhi urithi wa kielimu na kuwafikishia watu wengi zaidi manufaa ya Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم. \nMa'had Al-Imam An-Nawawi itaendelea kuiboresha tovuti yake hatua kwa hatua ili iwe kituo cha elimu, maarifa na taarifa za kuaminika kwa wanafunzi, wazazi, walezi na Ummah kwa ujumla. \nTunamuomba Allah ﷻ aijaalie tovuti hii kuwa sababu ya kuenea kwa elimu yenye manufaa, na aibariki katika kutumikia dini Yake na kuwanufaisha Waislamu. \nLinda dini yako kwa elimu sahihi na matendo mema."
-},
-
-{
-"id": 4,
-"title": "Kwa Nini Tumechagua Jina la Al-Imam An-Nawawi?",
-"date": "2026-06-13",
-"description": "Miongoni mwa maswali ambayo huulizwa kuhusu taasisi yetu ni sababu ya kuchagua jina la Imam Al-Nawawi رحمه الله kuwa utambulisho wa Ma'had yetu. Jibu la swali hili linahusiana na nafasi kubwa aliyokuwa nayo mwanazuoni huyu katika kuhudumia elimu ya Kiislamu na Ummah wa Mtume Muhammad ﷺ. \nImam Al-Nawawi رحمه الله ni miongoni mwa wanazuoni mashuhuri wa Kiislamu ambao Allah ﷻ aliwajaalia kukubaliwa na Ummah kutokana na juhudi zao katika kuhifadhi, kufundisha na kueneza elimu ya Qur'an Tukufu na Sunnah. Ingawa maisha yake hayakuwa marefu, aliacha urithi mkubwa wa kielimu ambao umeendelea kunufaisha Waislamu katika sehemu mbalimbali za dunia kwa karne nyingi. \nMiongoni mwa sifa zilizotuvutia katika maisha yake ni mapenzi yake makubwa kwa elimu, bidii katika kujifunza na kufundisha, kujitolea kwake katika kuitumikia dini, pamoja na ikhlasi iliyodhihiri katika kazi zake za kielimu. Vitabu vyake vimeendelea kuwa katika marejeo muhimu yanayonufaisha wanafunzi, walimu na watafiti katika nyanja mbalimbali za elimu za Kiislamu. \nMa'had Al-Imam An-Nawawi imechagua jina hili kama kumbukumbu ya thamani ya elimu, juhudi na kujitolea katika kuitumikia dini. Hata hivyo, tunasisitiza kwamba msingi wa mafunzo yetu unabaki kuwa Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم. Wanazuoni wa Ummah wanaheshimiwa kwa mchango wao katika kuhifadhi na kufafanua elimu hiyo, huku wakibaki kuwa watu wanaonufaisha na kunufaika na haki kwa kadiri Allah ﷻ alivyowajaalia. \nKupitia jina hili, tunalenga kuwajengea wanafunzi wetu mapenzi ya elimu, kuheshimu wanazuoni wa Kiislamu, kuthamini urithi wa kielimu wa Ummah, na kujifunza kwamba mafanikio ya kweli hupatikana kwa kuunganisha elimu sahihi, matendo mema, ikhlasi na subira. \nTunatarajia kwamba Ma'had hii itakuwa sehemu ya kulea kizazi kitakachofuata njia ya elimu, uadilifu na mwenendo mwema, huku kikijifunza na kunufaika na juhudi za wanazuoni waliotangulia, akiwemo Imam Al-Nawawi رحمه الله. \nTunamuomba Allah ﷻ aijaalie Ma'had yetu kuwa chanzo cha elimu yenye manufaa, awabariki walimu na wanafunzi wake, na awape tawfiki ya kushikamana na Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم."
-}
-]
-},
-
-"en": {
-"meta": {
-"title": "Ma'had Al-Imam An-Nawawi | Latest News & Events",
-"description": "Get the latest updates, events, and official announcements from Ma'had Al-Imam An-Nawawi.",
-"keywords": "news, events, updates, ma'had, an-nawawi, islamic education, zanzibar, english"
-},
-"hero": {
-"title": "Latest News & Events"
-},
-"news_section": {
-"search_placeholder": "Search news or event...",
-"published_label": "Published"
-},
-"organization": {
-"name": "Ma'had Al-Imam An-Nawawi",
-"description": "Educational institution providing lessons, books, and Islamic videos."
-},
-"news": [
-
-{
-"id": 1,
-"title": "Ma'had Al-Imam An-Nawawi Officially Opens and Classes Commence",
-"date": "2026-06-13",
-"description": "The administration of Ma'had Al-Imam An-Nawawi is pleased to inform students, parents, guardians, and the wider community that the institute has officially opened today, Saturday, 13 June 2026, corresponding to 27 Dhul-Hijjah 1447 AH, and that academic activities have commenced by the permission of Allah ﷻ.\nInitially, the official opening of the institute and the commencement of classes were scheduled for the beginning of the new Islamic year, on 1 Muharram 1448 AH. However, as that date falls in the middle of the week, the administration considered it more appropriate to begin classes earlier in order to facilitate the effective implementation of the academic timetable and to provide students with the opportunity to begin the term in a well-organized educational environment.\nDuring its initial phase, the institute will offer a range of foundational Islamic studies, including Tawhid, Fiqh, Hadith, the Noble Qur'an, Adhkar, the Arabic Language, as well as Reading and Writing. These subjects will be taught in accordance with carefully selected curricula and textbooks to ensure the delivery of authentic and beneficial knowledge.\nMa'had Al-Imam An-Nawawi was established with the objective of contributing to the dissemination of authentic Islamic knowledge, nurturing a generation distinguished by learning, understanding, and noble character, and promoting a culture of learning and practice in accordance with the Noble Qur'an and the Sunnah of the Prophet ﷺ, based upon the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم.\nThe administration warmly welcomes all students who aspire to seek and benefit from Islamic knowledge. It also supplicates to Allah ﷻ to bless this institute, make its educational efforts beneficial, and grant its teachers and students success, sincerity, and steadfastness.\nAmeen."
-},
-
-{
-"id": 2,
-"title": "Preparations for The Expansion of Ma'had Al-Imam An-Nawawi Continue",
-"date": "2026-06-13",
-"description": "Ma'had Al-Imam An-Nawawi continues its long-term preparations to strengthen its infrastructure in order to expand its educational services and increase admission capacity for students from various regions.\nAt present, the institute is open exclusively to male students who have completed at least primary education or an equivalent level of study. Admissions for the current academic year are limited to Day Scholars only, owing to the existing capacity of the facilities currently being utilized for educational activities.\nSince its establishment, the institute has envisioned accommodating both day and boarding male students from different regions. However, given that this educational project is still in its initial phase of implementation, the administration considered it prudent to commence operations with the day-school system while continuing preparations to expand the institution’s capacity in the future.\nThe administration is currently pursuing plans to establish a larger educational center capable of serving both day and boarding students from Zanzibar, Mainland Tanzania, East African countries, and other regions that may be attracted to the educational programs offered by the institute.\nA dedicated site has already been allocated for the development of the new campus, and various preliminary procedures related to the implementation of the project are currently underway. It is anticipated that the completion of this infrastructure will enable the institute to increase enrollment opportunities and serve a significantly larger number of students from within Tanzania and abroad.\nFor the time being, classes are being conducted in the existing facilities located near Masjid Aisha, Mwera, Zanzibar. Nevertheless, the institute’s long-term vision is to establish a large and modern campus in the Kibele area, along the road to Tunguu, Zanzibar, which will serve as a leading center of Islamic education for both day and boarding students.\nThe administration of Ma'had Al-Imam An-Nawawi expresses gratitude to Allah ﷻ for the progress achieved thus far and continues to appeal to stakeholders, parents, guardians, and supporters of education to assist and support these efforts in order to realize the vision of establishing a strong and beneficial institution of Islamic learning for the Ummah."
-},
-
-{
-"id": 3,
-"title": "Ma'had An-Imam An-Nawawi Launches its Official Website",
-"date": "2026-06-13",
-"description": "In another significant step towards enhancing communication and expanding access to knowledge, Ma'had Al-Imam An-Nawawi has officially launched its website to serve students, parents, guardians, educational stakeholders, and the wider community. \nThe launch of this website forms part of the institute's ongoing efforts to utilize modern means and technologies in disseminating authentic Islamic knowledge and facilitating access to information related to the institution’s various activities. \nThrough this website, visitors will be able to learn about the institute, its vision and mission, academic programs, faculty members, news and announcements, as well as various channels of communication with the administration. \nFurthermore, the website will not serve merely as a communication platform; it will also function as a center for the dissemination of beneficial knowledge and educational resources. Among the services available are an extensive library of audio recordings, videos, publications, books, and educational articles. A substantial portion of these resources will consist of lessons, lectures, and educational activities conducted by the institute, enabling students and other stakeholders to continue benefiting from knowledge beyond the classroom environment. \nThe website will also serve as a repository for important information and records concerning the development of the institute, student activities, infrastructure expansion projects, and other institutional events. \nThe administration believes that the proper use of technology can be an effective means of spreading knowledge, preserving educational heritage, and extending the benefits of the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم to a wider audience. \nMa'had Al-Imam An-Nawawi will continue to improve and expand the website gradually so that it becomes a trusted source of education, knowledge, and information for students, parents, guardians, and the Muslim Ummah at large. \nWe ask Allah ﷻ to make this website a means for the spread of beneficial knowledge and to bless its efforts in serving His religion and benefiting Muslims. \nPreserve your religion through authentic knowledge and righteous deeds."
-},
-
-{
-"id": 4,
-"title": "Why Did We Choose the Name of Imam An-Nawawi?",
-"date": "2026-06-13",
-"description": "Among the questions frequently asked about our institution is why we chose the name of Imam Al-Nawawi رحمه الله as the identity of our Ma'had. The answer lies in the remarkable role this distinguished scholar played in serving Islamic knowledge and the Ummah of Prophet Muhammad ﷺ. \nImam Al-Nawawi رحمه الله is among the most renowned scholars of Islam whom Allah ﷻ granted widespread acceptance among the Muslim Ummah due to his efforts in preserving, teaching, and disseminating the knowledge of the Noble Qur'an and the Sunnah. Although his life was relatively short, he left behind an extraordinary scholarly legacy that has continued to benefit Muslims across the world for many centuries. \nAmong the qualities that inspired us most are his profound love for knowledge, his dedication to learning and teaching, his commitment to serving the religion, and the sincerity that was evident throughout his scholarly works. His books continue to serve as essential references for students, teachers, and researchers in various fields of Islamic studies. \nMa'had Al-Imam An-Nawawi has adopted this name as a reminder of the value of knowledge, dedication, and service to the religion of Islam. At the same time, we emphasize that the foundation of our educational methodology remains the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم. The scholars of the Ummah are honored for their contributions to preserving and explaining this knowledge, while remaining human beings who benefit from and adhere to the truth according to what Allah ﷻ has granted them. \nThrough this name, we seek to instill in our students a love for knowledge, respect for Islamic scholars, appreciation for the intellectual heritage of the Muslim Ummah, and an understanding that true success is achieved through the combination of authentic knowledge, righteous deeds, sincerity, and patience. \nWe hope that this institute will contribute to nurturing a generation that follows the path of knowledge, integrity, and good character while learning from and benefiting from the efforts of the great scholars who preceded us, including Imam Al-Nawawi رحمه الله. \nWe ask Allah ﷻ to make our Ma'had a source of beneficial knowledge, to bless its teachers and students, and to grant them success in adhering to the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم."
-}
-]
-},
-
-"ar": {
-"meta": {
-"title": "معهد الإمام النووي | آخر الأخبار والفعاليات",
-"description": "احصل على آخر التحديثات والفعاليات والإعلانات الرسمية من معهد الإمام النووي.",
-"keywords": "أخبار, فعاليات, تحديثات, معهد, النووي, التعليم الإسلامي, زنجبار, العربية"
-},
-"hero": {
-"title": "آخر الأخبار والفعاليات"
-},
-"news_section": {
-"search_placeholder": "البحث عن الأخبار أو الفعاليات...",
-"published_label": "نُشر بتاريخ"
-},
-"organization": {
-"name": "معهد الإمام النووي",
-"description": "مؤسسة تعليمية تقدم دروساً وكتباً ومقاطع مرئية إسلامية."
-},
-"news": [
-
-{
-"id": 1,
-"title": "افتتاح معهد الإمام النووي رسميًّا وبدء الدراسة",
-"date": "2026-06-13",
-"description": "يسر إدارة معهد الإمام النووي أن تعلن للطلاب وأولياء الأمور والأوصياء ولعموم المجتمع أن المعهد قد افتُتح رسميًّا اليوم السبت 13 يونيو 2026م الموافق 27 ذو الحجة 1447هـ، وقد بدأت الدراسة فيه بإذن الله تعالى.\nوكان من مقرر في الأصل أن يكون افتتاح المعهد وبدء الدراسة مع مطلع العام الهجري الجديد في الأول من شهر المحرم لعام 1448هـ، إلا أن هذا التاريخ يوافق منتصف الأسبوع؛ فرأت إدارة المعهد أن من الأنسب تقديم موعد بدء الدراسة بما يضمن حسن تنفيذ الخطة الدراسية وتمكين الطلاب من استهلال الفصل الدراسي في بيئة تعليمية مناسبة ومنظمة.\nوسيقدم المعهد في مرحلته الأولى عددًا من العلوم الشرعية الأساسية، من بينها: التوحيد، والفقه، والحديث، والقرآن الكريم، والأذكار، واللغة العربية، ومهارات القراءة والكتابة. وستُدرَّس هذه المواد وفق مناهج وكتب مختارة بعناية؛ تحقيقًا لتقديم العلم الشرعي الصحيح النافع.\nوقد أُنشئ معهد الإمام النووي إسهامًا في نشر العلم الشرعي الصحيح، وتربية جيل متسلح بالعلم والفهم والأخلاق الفاضلة، وتعزيز ثقافة التعلم والعمل وفق هدي القرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم.\nوترحب إدارة المعهد بجميع الطلاب الراغبين في طلب العلم الشرعي والانتفاع به، وتسأل الله تعالى أن يبارك في هذا المعهد، وأن يجعل علمه وتعليمه نافعًا، وأن يوفق معلميه وطلابه للإخلاص والسداد والنجاح.\nآمين."
-},
-
-{
-"id": 2,
-"title": "استمرار الاستعدادات لتوسعة معهد الإمام النووي",
-"date": "2026-06-13",
-"description": "يواصل معهد الإمام النووي استعداداته وخططه طويلة المدى لتطوير بنيته التحتية؛ بهدف توسيع خدماته التعليمية وزيادة الطاقة الاستيعابية لقبول الطلاب من مختلف المناطق.\nويقتصر القبول في الوقت الحالي على الطلاب الذكور الذين أتموا مرحلة التعليم الأساسي أو ما يعادلها. كما خُصص القبول للعام الدراسي الحالي لطلاب نظام الدوام النهاري فقط؛ نظرًا للإمكانات الحالية للمرافق المستخدمة في العملية التعليمية.\nومنذ تأسيسه، وضع المعهد ضمن أهدافه استقبال الطلاب الذكور بنظامي الدوام النهاري والإقامة الداخلية (السكن الطلابي) من مختلف المناطق. إلا أن إدارة المعهد رأت - بحكم أن المشروع لا يزال في مراحله الأولى - أن تبدأ العمل بنظام الدوام النهاري مع مواصلة الاستعدادات الرامية إلى توسيع قدرات المؤسسة في المستقبل.\nوتعمل الإدارة حاليًّا على تنفيذ خطط لإنشاء مركز تعليمي أكبر قادر على خدمة طلاب الدوام النهاري والإقامة الداخلية من زنجبار وتنزانيا القارية ودول شرق أفريقيا وغيرها من المناطق التي قد تستفيد من البرامج التعليمية التي يقدمها المعهد.\nوقد خُصصت بالفعل أرض مناسبة لإقامة هذا المشروع، كما تتواصل الإجراءات التمهيدية المختلفة المتعلقة بتنفيذه. ومن المتوقع أن يسهم اكتمال هذه البنية التحتية في زيادة فرص القبول وتمكين المعهد من خدمة أعداد أكبر من الطلاب من داخل تنزانيا وخارجها.\nوفي الوقت الراهن، تُقام الدروس في القاعات الدراسية الحالية الواقعة بالقرب من مسجد عائشة بمنطقة مويرا في زنجبار. غير أن الرؤية المستقبلية للمعهد تتمثل في إنشاء حرم تعليمي كبير وحديث في منطقة كيبيلي باتجاه تونغوو في زنجبار، ليكون مركزًا رائدًا للتعليم الإسلامي لطلاب الدوام النهاري والإقامة الداخلية.\nوتحمد إدارة معهد الإمام النووي الله تعالى على ما تحقق من إنجازات حتى الآن، كما تدعو أصحاب المصلحة وأولياء الأمور والأوصياء ومحبي العلم إلى دعم هذه الجهود والمساهمة في إنجاح هذه الرؤية الهادفة إلى تأسيس مؤسسة تعليمية إسلامية راسخة ونافعة للأمة الإسلامية."
-},
-
-{
-"id": 3,
-"title": "معهد الإمام النووي يطلق موقعه الإلكتروني الرسمي",
-"date": "2026-06-13",
-"description": "في خطوة أخرى لتعزيز التواصل وتوسيع نطاق الاستفادة من العلم، أطلق معهد الإمام النووي موقعه الإلكتروني الرسمي؛ ليكون في خدمة الطلاب وأولياء الأمور والأوصياء والمهتمين بالشأن التعليمي وعموم المجتمع.\nويأتي إطلاق هذا الموقع ضمن جهود المعهد الرامية إلى توظيف الوسائل الحديثة والتقنيات المعاصرة في نشر العلم الشرعي الصحيح وتيسير الوصول إلى المعلومات المتعلقة بمختلف أنشطة المعهد وبرامجه.\nومن خلال هذا الموقع سيتمكن الزوار من التعرف على المعهد ورؤيته ورسالته وبرامجه التعليمية وهيئته التدريسية، بالإضافة إلى متابعة الأخبار والإعلانات ووسائل التواصل المختلفة مع إدارة المعهد.\nكما أن الموقع لن يكون مجرد وسيلة للتواصل فحسب، بل سيكون منصة لنشر العلم والمعرفة النافعة. ومن الخدمات التي يوفرها مكتبة تضم المواد الصوتية والمرئية، والمنشورات، والكتب، والمقالات العلمية والتعليمية. وسيخصص جزء كبير من هذه المواد للدروس والمحاضرات والأنشطة التعليمية التي يقدمها المعهد، بما يتيح للطلاب وغيرهم من المستفيدين مواصلة الانتفاع بالعلم خارج نطاق الفصول الدراسية.\nوسيكون الموقع كذلك أرشيفًا للمعلومات والوثائق المهمة المتعلقة بمسيرة المعهد، وأنشطة الطلاب، ومشروعات تطوير البنية التحتية، وغير ذلك من الفعاليات والبرامج المؤسسية.\nوتؤمن إدارة المعهد بأن الاستخدام الأمثل للتقنية يمثل وسيلة فعالة لنشر العلم، والمحافظة على التراث العلمي، وإيصال فوائد القرآن الكريم وسنة النبي ﷺ وفق فهم السلف الصالح رضي الله عنهم إلى أكبر عدد ممكن من الناس.\nوسيواصل معهد الإمام النووي تطوير موقعه الإلكتروني وتحسينه بصورة تدريجية؛ ليكون مرجعًا موثوقًا للتعليم والمعرفة والمعلومات للطلاب وأولياء الأمور والأوصياء وعموم الأمة الإسلامية.\nونسأل الله تعالى أن يجعل هذا الموقع سببًا في نشر العلم النافع، وأن يبارك في جهوده لخدمة دينه ونفع المسلمين.\nاحفظ دينك بالعلم الصحيح والعمل الصالح."
-},
-
-{
-"id": 4,
-"title": "لماذا اخترنا اسم الإمام النووي؟",
-"date": "2026-06-13",
-"description": "من بين الأسئلة التي تُطرح حول مؤسستنا سبب اختيار اسم الإمام النووي رحمه الله ليكون عنوانًا لمعهدنا وهويته. وتكمن الإجابة في المكانة العظيمة التي تبوأها هذا الإمام الجليل في خدمة العلم الشرعي وأمة النبي محمد ﷺ.\nفالإمام النووي رحمه الله من كبار علماء الإسلام الذين جعل الله لهم قبولًا واسعًا في الأمة بفضل جهودهم في حفظ العلم الشرعي وتعليمه ونشره، ولا سيما علوم القرآن الكريم والسنة النبوية. وعلى الرغم من قصر عمره، فقد ترك تراثًا علميًّا عظيمًا لا يزال المسلمون ينتفعون به في شتى أنحاء العالم منذ قرون طويلة.\nومن أبرز الصفات التي جذبتنا في سيرته حبه العميق للعلم، واجتهاده في طلبه وتعليمه، وتفانيه في خدمة الدين، والإخلاص الذي ظهر جليًّا في مؤلفاته وأعماله العلمية. ولا تزال كتبه من أهم المراجع التي ينتفع بها الطلاب والمعلمون والباحثون في مختلف مجالات العلوم الإسلامية.\nوقد اختار معهد الإمام النووي هذا الاسم تذكيرًا بقيمة العلم والاجتهاد والتفاني في خدمة الدين. ومع ذلك فإننا نؤكد أن الأساس الذي تقوم عليه مناهجنا التعليمية هو القرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم. كما نُجلّ علماء الأمة ونقدر جهودهم في حفظ هذا العلم وبيانه، مع الإقرار بأنهم بشر يُصيبون ويُخطئون، وينتفعون بالحق ويَدْعون إليه بما وفقهم الله تعالى إليه.\nومن خلال هذا الاسم نسعى إلى غرس محبة العلم في نفوس طلابنا، وتعظيم مكانة العلماء، وتقدير التراث العلمي للأمة الإسلامية، وترسيخ حقيقة أن النجاح الحقيقي إنما يتحقق بالجمع بين العلم الصحيح والعمل الصالح والإخلاص والصبر.\nونأمل أن يكون هذا المعهد لبنةً في إعداد جيل يسير على طريق العلم والاستقامة وحسن الخلق، مستفيدًا من جهود العلماء الذين سبقوه، وفي مقدمتهم الإمام النووي رحمه الله.\nونسأل الله تعالى أن يجعل معهدنا منبعًا للعلم النافع، وأن يبارك في معلميه وطلابه، وأن يوفقهم للتمسك بالقرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم."
-}
-]
-}
+  "sw": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Habari Mpya & Matukio",
+      "description": "Pata habari za hivi punde, matukio, na taarifa rasmi kutoka Ma'had Al-Imam An-Nawawi.",
+      "keywords": "habari, matukio, taarifa, ma'had, an-nawawi, elimu ya kiislamu, zanzibar, kiswahili"
+    },
+    "hero": {
+      "title": "Habari Mpya & Matukio"
+    },
+    "news_section": {
+      "search_placeholder": "Tafuta habari au tukio...",
+      "published_label": "Ilichapishwa"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Kituo cha elimu kinavyotoa darsa, vitabu, na video za kiislamu."
+    },
+    "news": [
+      {
+        "id": 1,
+        "title": "Ma'had Al-Imam An-Nawawi Yafunguliwa Rasmi Na Masomo Kuanza",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Uongozi wa Ma'had Al-Imam An-Nawawi unafurahi kuwajulisha wanafunzi, wazazi, walezi na jamii kwa ujumla kwamba Ma'had imefunguliwa rasmi leo, Jumamosi tarehe 13 Juni 2026, sawa na 27 Dhul-Hijjah 1447 H, na shughuli za masomo zimeanza kwa idhini ya Allah ﷻ.",
+          "Awali, ufunguzi wa Ma'had Na kuanza kwa masomo ulipangwa kufanyika mwanzoni mwa mwaka mpya wa Kiislamu, tarehe 1 Muharram 1448 H. Hata hivyo, kutokana na kwamba tarehe hiyo itaangukia katikati ya wiki, uongozi wa Ma'had uliona ni vyema kuanza masomo mapema ili kuwezesha utekelezaji mzuri wa ratiba za masomo na kuwapa wanafunzi fursa ya kuanza muhula katika mazingira bora ya kielimu.",
+          "Katika hatua ya mwanzo, Ma'had itatoa masomo mbalimbali ya msingi katika elimu za Kiislamu, yakiwemo Tawhid, Fiqh, Hadith, Qur'an Tukufu, Adhkar, Lugha ya Kiarabu, Kusoma na Kuandika. Masomo haya yatafundishwa kwa mujibu wa mitaala na vitabu vilivyochaguliwa kwa uangalifu ili kuhakikisha upatikanaji wa elimu sahihi na yenye manufaa.",
+          "Ma'had Al-Imam An-Nawawi imeanzishwa kwa lengo la kuchangia katika kueneza elimu sahihi ya Kiislamu, kulea kizazi kinachotambulika kwa elimu, uelewa na maadili mema, pamoja na kukuza utamaduni wa kujifunza na kutenda kwa mujibu wa Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم.",
+          "Uongozi wa Ma'had unawakaribisha wanafunzi wote wenye shauku ya kujifunza na kunufaika na elimu ya dini, na unamuomba Allah ﷻ aibariki Ma'had hii, ayajaalie masomo yake kuwa yenye manufaa, na awape walimu na wanafunzi tawfiki, ikhlasi na mafanikio.",
+          "Aamin."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Maandalizi ya Upanuzi wa Ma'had Al-Imam An-Nawawi Yaendelea",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Ma'had Al-Imam An-Nawawi inaendelea na maandalizi ya muda mrefu ya kuimarisha miundombinu yake ili kuwezesha upanuzi wa huduma za elimu and kuongeza nafasi za udahili kwa wanafunzi kutoka maeneo mbalimbali.",
+          "Kwa sasa, Ma'had imefunguliwa kwa wanafunzi wa kiume pekee ambao wamekamilisha angalau elimu ya msingi au kiwango kinacholingana nacho. Udahili wa mwaka huu umeelekezwa kwa wanafunzi wa mfumo wa kutwa pekee kutokana na uwezo wa sasa wa miundombinu inayotumika katika shughuli za masomo.",
+          "Tangi kuanzishwa kwake, Ma'had imeweka lengo la kupokea wanafunzi wa kiume wa mfumo wa kutwa na wa bweni kutoka maeneo mbalimbali. Hata hivyo, kutokana na hatua ya mwanzo ya utekelezaji wa mradi huu wa kielimu, uongozi umeona ni busara kuanza kwa mfumo wa kutwa huku ukiendelea na maandalizi ya kupanua uwezo wa kituo katika siku zijazo.",
+          "Uongozi wa Ma'had kwa sasa unaendelea na mikakati ya kuanzisha kituo kikubwa zaidi kitakachokuwa na uwezo wa kuhudumia wanafunzi wa kutwa na wa bweni kutoka Zanzibar, Tanzania Bara, nchi za Afrika Mashariki na maeneo mengine yatakayovutiwa na programu za elimu zinazotolewa na Ma'had.",
+          "Tayari eneo maalumu limetengwa kwa ajili ya ujenzi wa kituo hicho, na taratibu mbalimbali za awali za utekelezaji wa mradi zinaendelea kufanyiwa kazi. Inatarajiwa kwamba kukamilika kwa miundominbu hiyo kutaiwezesha Ma'had kuongeza nafasi za udahili na kuwahudumia wanafunzi wengi zaidi kutoka ndani na nje ya Tanzania.",
+          "Kwa sasa, shughuli za masomo zinaendelea katika madarasa yaliyopo karibu na Masjid Aisha, Mwera, Zanzibar. Hata hivyo, maono ya muda mrefu ya Ma'had ni kuanzia kampasi kubwa na ya kisasa katika eneo la Kibele kuelekea Tunguu, Zanzibar, itakayokuwa kitovu cha elimu ya Kiislamu kwa wanafunzi wa kutwa na wa bweni.",
+          "Uongozi wa Ma'had unamshukuru Allah ﷻ kwa hatua zilizofikiwa hadi sasa na unaendelea kuwaomba wadau, wazazi, walezi na wapenda elimu kuunga mkono jitihada hizi ili kufanikisha maono ya kuanzisha kituo imara cha elimu ya Kiislamu chenye manufaa kwa Ummah."
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Ma'had Al-Imam An-Nawawi Yazindua Tovuti Rasmi",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Katika hatua nyingine ya kuimarisha mawasiliano na upatikanaji wa elimu, Ma'had Al-Imam An-Nawawi imezindua rasmi tovuti yake kwa lengo la kuhudumia wanafunzi, wazazi, walezi, wadau wa elimu na jamii kwa ujumla.",
+          "Uzinduzi wa tovuti hii ni sehemu ya juhudi za Ma'had za kutumia njia za kisasa katika kueneza elimu sahihi ya Kiislamu na kurahisisha upatikanaji wa taarifa zinazohusu shughuli mbalimbali za kituo.",
+          "Kupitia tovuti hii, wageni wataweza kupata taarifa kuhusu Ma'had, dira na dhima yake, programu za masomo, walimu, habari na matangazo, pamoja na njia mbalimbali za mawasiliano na uongozi wa kituo.",
+          "Aidha, tovuti haitakuwa chombo cha mawasiliano pekee, bali pia itatumika kama jukwaa la kusambaza elimu na maarifa yenye manufaa. Miongoni mwa huduma zinazopatikana ni maktaba ya sauti, video, machapisho, vitabu na makala mbalimbali za kielimu. Sehemu kubwa ya maudhui haya itahusiana na masomo, mihadhara na shughuli za kielimu zinazoendeshwa na Ma'had, ili kuwapa wanafunzi na wadau wengine fursa ya kuendelea kunufaika na elimu hata nje ya mazingira ya darasani.",
+          "Vilevile, tovuti itakuwa hifadhi ya taarifa na nyaraka muhimu zinazohusiana na maendeleo ya Ma'had, shughuli za wanafunzi, miradi ya upanuzi wa miundombinu na matukio mengine ya kituo.",
+          "Uongozi wa Ma'had unaamini kwamba matumizi sahihi ya teknolojia yanaweza kuwa nyenzo muhimu katika kueneza elimu, kuhifadhi urithi wa kielimu na kuwafikishia watu wengi zaidi manufaa ya Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رeni Allahu anhum.",
+          "Ma'had Al-Imam An-Nawawi itaendelea kuiboresha tovuti yake hatua kwa hatua ili iwe kituo cha elimu, maarifa na taarifa za kuaminika kwa wanafunzi, wazazi, walezi na Ummah kwa ujumla.",
+          "Tunamuomba Allah ﷻ aijaalie tovuti hii kuwa sababu ya kuenea kwa elimu yenye manufaa, na aibariki katika kutumikia dini Yake na kuwanufaisha Waislamu.",
+          "Linda dini yako kwa elimu sahihi na matendo mema."
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Kwa Nini Tumechagua Jina la Al-Imam An-Nawawi?",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Miongoni mwa maswali ambayo huulizwa kuhusu kituo chetu ni sababu ya kuchagua jina la Imam Al-Nawawi رحمه الله kuwa utambulisho wa Ma'had yetu. Jibu la swali hili linahusiana na nafasi kubwa aliyokuwa nayo mwanazuoni huyu katika kuhudumia elimu ya Kiislamu na Ummah wa Mtume Muhammad ﷺ.",
+          "Imam Al-Nawawi رحمه الله is miongoni mwa wanazuoni mashuhuri wa Kiislamu ambao Allah ﷻ aliwajaalia kukubaliwa na Ummah kutokana na juhudi zao katika kuhifadhi, kufundisha na kueneza elimu ya Qur'an Tukufu na Sunnah. Ingawa maisha yake hayakuwa marefu, aliacha urithi mkubwa wa kielimu ambao umeendelea kunufaisha Waislamu katika sehemu mbalimbali za dunia kwa karne nyingi.",
+          "Miongoni mwa sifa zilizotuvutia katika maisha yake ni mapenzi yake makubwa kwa elimu, bidii katika kujifunza na kufundisha, kujitolea kwake katika kuitumikia dini, pamoja na ikhlasi iliyodhihiri katika kazi zake za kielimu. Vitabu vyake vimeendelea kuwa katika marejeo muhimu yanayonufaisha wanafunzi, walimu na watafiti katika nyanja mbalimbali za elimu za Kiislamu.",
+          "Ma'had Al-Imam An-Nawawi imechagua jina hili kama kumbukumbu ya thamani ya elimu, juhudi na kujitolea katika kuitumikia dini. Hata hivyo, tunasisitiza kwamba msingi wa mafunzo yetu unabaki kuwa Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم. Wanazuoni wa Ummah wanaheshimiwa kwa mchango wao katika kuhifadhi na kufafanua elimu hiyo, huku wakibaki kuwa watu wanaonufaisha na kunufaika na haki kwa kadiri Allah ﷻ alivyowajaalia.",
+          "Kupitia jina hili, tunalenga kuwajengea wanafunzi wetu mapenzi ya elimu, kuheshimu wanazuoni wa Kiislamu, kuthamini urithi wa kielimu wa Ummah, na kujifunza kwamba mafanikio ya kweli hupatikana kwa kuunganisha elimu sahihi, matendo mema, ikhlasi na subira.",
+          "Tunatarajia kwamba Ma'had hii itakuwa sehemu ya kulea kizazi kitakachofuata njia ya elimu, uadilifu na mwenendo mwema, huku kikijifunza na kunufaika na juhudi za wanazuoni waliotangulia, akiwemo Imam Al-Nawawi رحمه الله.",
+          "Tunamuomba Allah ﷻ aijaalie Ma'had yetu kuwa chanzo cha elimu yenye manufaa, awabariki walimu na wanafunzi wake, na awape tawfiki ya kushikamana na Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم."
+        ]
+      }
+    ]
+  },
+  "en": {
+    "meta": {
+      "title": "Ma'had Al-Imam An-Nawawi | Latest News & Events",
+      "description": "Get the latest updates, events, and official announcements from Ma'had Al-Imam An-Nawawi.",
+      "keywords": "news, events, updates, ma'had, an-nawawi, islamic education, zanzibar, english"
+    },
+    "hero": {
+      "title": "Latest News & Events"
+    },
+    "news_section": {
+      "search_placeholder": "Search news or event...",
+      "published_label": "Published"
+    },
+    "organization": {
+      "name": "Ma'had Al-Imam An-Nawawi",
+      "description": "Educational center providing lessons, books, and Islamic videos."
+    },
+    "news": [
+      {
+        "id": 1,
+        "title": "Ma'had Al-Imam An-Nawawi Officially Opens and Classes Commence",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "The administration of Ma'had Al-Imam An-Nawawi is pleased to inform students, parents, guardians, and the wider community that the center has officially opened today, Saturday, 13 June 2026, corresponding to 27 Dhul-Hijjah 1447 AH, and that academic activities have commenced by the permission of Allah ﷻ.",
+          "Initially, the official opening of the center and the commencement of classes were scheduled for the beginning of the new Islamic year, on 1 Muharram 1448 AH. However, as that date falls in the middle of the week, the administration considered it more appropriate to begin classes earlier in order to facilitate the effective implementation of the academic timetable and to provide students with the opportunity to begin the term in a well-organized educational environment.",
+          "During its initial phase, the center will offer a range of foundational Islamic studies, including Tawhid, Fiqh, Hadith, the Noble Qur'an, Adhkar, the Arabic Language, as well as Reading and Writing. These subjects will be taught in accordance with carefully selected curricula and textbooks to ensure the delivery of authentic and beneficial knowledge.",
+          "Ma'had Al-Imam An-Nawawi was established with the objective of contributing to the dissemination of authentic Islamic knowledge, nurturing a generation distinguished by learning, understanding, and noble character, and promoting a culture of learning and practice in accordance with the Noble Qur'an and the Sunnah of the Prophet ﷺ, based upon the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم.",
+          "The administration warmly welcomes all students who aspire to seek and benefit from Islamic knowledge. It also supplicates to Allah ﷻ to bless this center, make its educational efforts beneficial, and grant its teachers and students success, sincerity, and steadfastness.",
+          "Ameen."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Preparations for The Expansion of Ma'had Al-Imam An-Nawawi Continue",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Ma'had Al-Imam An-Nawawi continues its long-term preparations to strengthen its infrastructure in order to expand its educational services and increase admission capacity for students from various regions.",
+          "At present, the center is open exclusively to male students who have completed at least primary education or an equivalent level of study. Admissions for the current academic year are limited to Day Scholars only, owing to the existing capacity of the facilities currently being utilized for educational activities.",
+          "Since its establishment, the center has envisioned accommodating both day and boarding male students from different regions. However, given that this educational project is still in its initial phase of implementation, the administration considered it prudent to commence operations with the day-school system while continuing preparations to expand the center’s capacity in the future.",
+          "The administration is currently pursuing plans to establish a larger educational center capable of serving both day and boarding students from Zanzibar, Mainland Tanzania, East African countries, and other regions that may be attracted to the educational programs offered by the center.",
+          "A dedicated site has already been allocated for the development of the new campus, and various preliminary procedures related to the implementation of the project are currently underway. It is anticipated that the completion of this infrastructure will enable the center to increase enrollment opportunities and serve a significantly larger number of students from within Tanzania and abroad.",
+          "For the time being, classes are being conducted in the existing facilities located near Masjid Aisha, Mwera, Zanzibar. Nevertheless, the center’s long-term vision is to establish a large and modern campus in the Kibele area, along the road to Tunguu, Zanzibar, which will serve as a leading center of Islamic education for both day and boarding students.",
+          "The administration of Ma'had Al-Imam An-Nawawi expresses gratitude to Allah ﷻ for the progress achieved thus far and continues to appeal to stakeholders, parents, guardians, and supporters of education to assist and support these efforts in order to realize the vision of establishing a strong and beneficial center of Islamic learning for the Ummah."
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Ma'had An-Imam An-Nawawi Launches its Official Website",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "In another significant step towards enhancing communication and expanding access to knowledge, Ma'had Al-Imam An-Nawawi has officially launched its website to serve students, parents, guardians, educational stakeholders, and the wider community.",
+          "The launch of this website forms part of the center's ongoing efforts to utilize modern means and technologies in disseminating authentic Islamic knowledge and facilitating access to information related to the center’s various activities.",
+          "Through this website, visitors will be able to learn about the center, its vision and mission, academic programs, faculty members, news and announcements, as well as various channels of communication with the administration.",
+          "Furthermore, the website will not serve merely as a communication platform; it will also function as a center for the dissemination of beneficial knowledge and educational resources. Among the services available are an extensive library of audio recordings, videos, publications, books, and educational articles. A substantial portion of these resources will consist of lessons, lectures, and educational activities conducted by the center, enabling students and other stakeholders to continue benefiting from knowledge beyond the classroom environment.",
+          "The website will also serve as a repository for important information and records concerning the development of the center, student activities, infrastructure expansion projects, and other institutional events.",
+          "The administration believes that the proper use of technology can be an effective means of spreading knowledge, preserving educational heritage, and extending the benefits of the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم to a wider audience.",
+          "Ma'had Al-Imam An-Nawawi will continue to improve and expand the website gradually so that it becomes a trusted source of education, knowledge, and information for students, parents, guardians, and the Muslim Ummah at large.",
+          "We ask Allah ﷻ to make this website a means for the spread of beneficial knowledge and to bless its efforts in serving His religion and benefiting Muslims.",
+          "Preserve your religion through authentic knowledge and righteous deeds."
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Why Did We Choose the Name of Imam An-Nawawi?",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "Among the questions frequently asked about our center is why we chose the name of Imam Al-Nawawi رحمه الله as the identity of our Ma'had. The answer lies in the remarkable role this distinguished scholar played in serving Islamic knowledge and the Ummah of Prophet Muhammad ﷺ.",
+          "Imam Al-Nawawi رحمه الله is among the most renowned scholars of Islam whom Allah ﷻ granted widespread acceptance among the Muslim Ummah due to his efforts in preserving, teaching, and disseminating the knowledge of the Noble Qur'an and the Sunnah. Although his life was relatively short, he left behind an extraordinary scholarly legacy that has continued to benefit Muslims across the world for many centuries.",
+          "Among the qualities that inspired us most are his profound love for knowledge, his dedication to learning and teaching, his commitment to serving the religion, and the sincerity that was evident throughout his scholarly works. His books continue to serve as essential references for students, teachers, and researchers in various fields of Islamic studies.",
+          "Ma'had Al-Imam An-Nawawi has adopted this name as a reminder of the value of knowledge, dedication, and service to the religion of Islam. At the same time, we emphasize that the foundation of our educational methodology remains the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم. The scholars of the Ummah are honored for their contributions to preserving and explaining this knowledge, while remaining human beings who benefit from and adhere to the truth according to what Allah ﷻ has granted them.",
+          "Through this name, we seek to instill in our students a love for knowledge, respect for Islamic scholars, appreciation for the intellectual heritage of the Muslim Ummah, and an understanding that true success is achieved through the combination of authentic knowledge, righteous deeds, sincerity, and patience.",
+          "We hope that this center will contribute to nurturing a generation that follows the path of knowledge, integrity, and good character while learning from and benefiting from the efforts of the great scholars who preceded us, including Imam Al-Nawawi رحمه الله.",
+          "We ask Allah ﷻ to make our Ma'had a source of beneficial knowledge, to bless its teachers and students, and to grant them success in adhering to the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of the Righteous Predecessors (As-Salaf As-Salih) رضي الله عنهم."
+        ]
+      }
+    ]
+  },
+  "ar": {
+    "meta": {
+      "title": "معهد الإمام النووي | آخر الأخبار والفعاليات",
+      "description": "احصل على آخر التحديثات والفعاليات والإعلانات الرسمية من معهد الإمام النووي.",
+      "keywords": "أخبار, فعاليات, تحديثات, معهد, النووي, التعليم الإسلامي, زنجبار, العربية"
+    },
+    "hero": {
+      "title": "آخر الأخبار والفعاليات"
+    },
+    "news_section": {
+      "search_placeholder": "البحث عن الأخبار أو الفعاليات...",
+      "published_label": "نُشر بتاريخ"
+    },
+    "organization": {
+      "name": "معهد الإمام النووي",
+      "description": "مركز تعليمي يقدم دروساً وكتباً ومقاطع مرئية إسلامية."
+    },
+    "news": [
+      {
+        "id": 1,
+        "title": "افتتاح معهد الإمام النووي رسميًّا وبدء الدراسة",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "يسر إدارة معهد الإمام النووي أن تعلن للطلاب وأولياء الأمور والأوصياء ولعموم المجتمع أن المركز قد افتُتح رسميًّا اليوم السبت 13 يونيو 2026م الموافق 27 ذو الحجة 1447هـ، وقد بدأت الدراسة فيه بإذن الله تعالى.",
+          "وكان من مقرر في الأصل أن يكون افتتاح المركز وبدء الدراسة مع مطلع العام الهجري الجديد في الأول من شهر المحرم لعام 1448هـ، إلا أن هذا التاريخ يوافق منتصف الأسبوع؛ فرأت إدارة المركز أن من الأنسب تقديم موعد بدء الدراسة بما يضمن حسن تنفيذ الخطة الدراسية وتمكين الطلاب من استهلال الفصل الدراسي في بيئة تعليمية مناسبة ومنظمة.",
+          "وسيقدم المركز في مرحلته الأولى عددًا من العلوم الشرعية الأساسية، من بينها: التوحيد، والفقه، والحديث، والقرآن الكريم، والأذكار، واللغة العربية، ومهارات القراءة والكتابة. وستُدرَّس هذه المواد وفق مناهج وكتب مختارة بعناية؛ تحقيقًا لتقديم العلم الشرعي الصحيح النافع.",
+          "وقد أُنشئ معهد الإمام النووي إسهامًا في نشر العلم الشرعي الصحيح، وتربية جيل متسلح بالعلم والفهم والأخلاق الفاضلة، وتعزيز ثقافة التعلم والعمل وفق هدي القرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم.",
+          "وترحب إدارة المركز بجميع الطلاب الراغبين في طلب العلم الشرعي والانتفاع به، وتسأل الله تعالى أن يبارك في هذا المركز، وأن يجعل علمه وتعليمه نافعًا، وأن يوفق معلميه وطلابه للإخلاص والسداد والنجاح.",
+          "آمين."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "استمرار الاستعدادات لتوسعة معهد الإمام النووي",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "يواصل معهد الإمام النووي استعداداته وخططه طويلة المدى لتطوير بنيته التحتية؛ بهدف توسيع خدماته التعليمية وزيادة الطاقة الاستيعابية قبول الطلاب من مختلف المناطق.",
+          "ويقتصر القبول في الوقت الحالي على الطلاب الذكور الذين أتموا مرحلة التعليم الأساسي أو ما يعادلها. كما خُصص القبول للعام الدراسي الحالي لطلاب نظام الدوام النهاري فقط؛ نظرًا للإمكانات الحالية للمرافق المستخدمة في العملية التعليمية.",
+          "ومنذ تأسيسه، وضع المركز ضمن أهدافه استقبال الطلاب الذكور بنظامي الدوام النهاري والإقامة الداخلية (السكن الطلابي) من مختلف المناطق. إلا أن إدارة المركز رأت - بحكم أن المشروع لا يزال في مراحله الأولى - أن تبدأ العمل بنظام الدوام النهاري مع مواصلة الاستعدادات الرامية إلى توسيع قدرات المركز في المستقبل.",
+          "وتعمل الإدارة حاليًّا على تنفيذ خطط لإنشاء مركز تعليمي أكبر قادر على خدمة طلاب الدوام النهاري والإقامة الداخلية من زنجبار وتنزانيا القارية ودول شرق أفريقيا وغيرها من المناطق التي قد تستفيد من البرامج التعليمية التي يقدمها المركز.",
+          "وقد خُصصت بالفعل أرض مناسبة لإقامة هذا المشروع، كما تتواصل الإجراءات التمهيدية المختلفة المتعلقة بتنفيذه. ومن المتوقع أن يسهم اكتمال هذه البنية التحتية في زيادة فرص القبول وتمكين المركز من خدمة أعداد أكبر من الطلاب من داخل تنزانيا وخارجها.",
+          "وفي الوقت الراهن، تُقام الدروس في القاعات الدراسية الحالية الواقعة بالقرب من مسجد عائشة بمنطقة مويرا في زنجبار. غير أن الرؤية المستقبلية للمركز تتمثل في إنشاء حرم تعليمي كبير وحديث في منطقة كيبيلي باتجاه تونغوو في زنجبار، ليكون مركزًا رائدًا للتعليم الإسلامي لطلاب الدوام النهاري والإقامة الداخلية.",
+          "وتحمد إدارة معهد الإمام النووي الله تعالى على ما تحقق من إنجازات حتى الآن، كما تدعو أصحاب المصلحة وأولياء الأمور والأوصياء ومحبي العلم إلى دعم هذه الجهود والمساهمة في إنجاح هذه الرؤية الهادفة إلى تأسيس مركز تعليمي إسلامي راسخ ونافع للأمة الإسلامية."
+        ]
+      },
+      {
+        "id": 3,
+        "title": "معهد الإمام النووي يطلق موقعه الإلكتروني الرسمي",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "في خطوة أخرى لتعزيز التواصل وتوسيع نطاق الاستفادة من العلم، أطلق معهد الإمام النووي موقعه الإلكتروني الرسمي؛ ليكون في خدمة الطلاب وأولياء الأمور والأوصياء والمهتمين بالشأن التعليمي وعموم المجتمع.",
+          "ويأتي إطلاق هذا الموقع ضمن جهود المركز الرامية إلى توظيف الوسائل الحديثة والتقنيات المعاصرة في نشر العلم الشرعي الصحيح وتيسير الوصول إلى المعلومات المتعلقة بمختلف أنشطة المركز وبرامجه.",
+          "ومن خلال هذا الموقع سيتمكن الزوار من التعرف على المركز ورؤيته ورسالة وبرامجه التعليمية وهيئته التدريسية، بالإضافة إلى متابعة الأخبار والإعلانات ووسائل التواصل المختلفة مع إدارة المركز.",
+          "كما أن الموقع لن يكون مجرد وسيلة للتواصل فحسب، بل سيكون منصة لنشر العلم والمعرفة النافعة. ومن الخدمات التي يوفرها مكتبة تضم المواد الصوتية والمرئية، والمنشورات، والكتب، والمقالات العلمية والتعليمية. وسيخصص جزء كبير من هذه المواد للدروس والمحاضرات والأنشطة التعليمية التي يقدمها المركز، بما يتيح للطلاب وغيرهم من المستفيدين مواصلة الانتفاع بالعلم خارج نطاق الفصول الدراسية.",
+          "وسيكون الموقع كذلك أرشيفًا للمعلومات والوثائق المهمة المتعلقة بمسيرة المركز، وأنشطة الطلاب، ومشروعات تطوير البنية التحتية، وغير ذلك من الفعاليات والبرامج المؤسسية.",
+          "وتؤمن إدارة المركز بأن الاستخدام الأمثل للتقنية يمثل وسيلة فعالة لنشر العلم، والمحافظة على التراث العلمي، وإيصال فوائد القرآن الكريم وسنة النبي ﷺ وفق فهم السلف الصالح رضي الله عنهم إلى أكبر عدد ممكن من الناس.",
+          "وسيواصل معهد الإمام النووي تطوير موقعه الإلكتروني وتحسينه بصورة تدريجية؛ ليكون مرجعًا موثوقًا للتعليم والمعرفة والمعلومات للطلاب وأولياء الأمور والأوصياء وعموم الأمة الإسلامية.",
+          "ونسأل الله تعالى أن يجعل هذا الموقع سببًا في نشر العلم النافع، وأن يبارك في جهوده لخدمة دينه ونفع المسلمين.",
+          "احفظ دينك بالعلم الصحيح والعمل الصالح."
+        ]
+      },
+      {
+        "id": 4,
+        "title": "لماذا اخترنا اسم الإمام النووي؟",
+        "date": "2026-06-13",
+        "paragraphs": [
+          "من بين الأسئلة التي تُطرح حول مركزنا سبب اختيار اسم الإمام النووي رحمه الله ليكون عنوانًا لمعهدنا وهويته. وتكمن الإجابة في المكانة العظيمة التي تبوأها هذا الإمام الجليل في خدمة العلم الشرعي وأمة النبي محمد ﷺ.",
+          "فالإمام النووي رحمه الله من كبار علماء الإسلام الذين جعل الله لهم قبولًا واسعًا في الأمة بفضل جهودهم في حفظ العلم الشرعي وتعليمه ونشره، ولا سيما علوم القرآن الكريم والسنة النبوية. وعلى الرغم من قصر عمره، فقد ترك تراثًا علميًّا عظيمًا لا يزال المسلمون ينتفعون به في شتى أنحاء العالم منذ قرون طويلة.",
+          "ومن أبرز الصفات التي جذبتنا في سيرته حبه العميق للعلم، واجتهاده في طلبه وتعليمه، وتفانيه في خدمة الدين، والإخلاص الذي ظهر جليًّا في مؤلفاته وأعماله العلمية. ولا تزال كتبه من أهم المراجع التي ينتفع بها الطلاب والمعلمون والباحثون في مختلف مجالات العلوم الإسلامية.",
+          "وقد اختار معهد الإمام النووي هذا الاسم تذكيرًا بقيمة العلم والاجتهاد والتفاني في خدمة الدين. ومع ذلك فإننا نؤكد أن الأساس الذي تقوم عليه مناهجنا التعليمية هو القرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم. كما نُجلّ علماء الأمة ونقدر جهودهم في حفظ هذا العلم وبيانه، مع الإقرار بأنهم بشر يُصيبون ويُخطئون، وينتفعون بالحق ويَدْعون إليه بما وفقهم الله تعالى إليه.",
+          "ومن خلال هذا الاسم نسعى إلى غرس محبة العلم في نفوس طلابنا، وعظمة مكانة العلماء، وتقدير التراث العلمي للأمة الإسلامية، وترسيخ حقيقة أن النجاح الحقيقي إنما يتحقق بالجمع بين العلم الصحيح والعمل الصالح والإخلاص والصبر.",
+          "ونأمل أن يكون هذا المركز لبنةً في إعداد جيل يسير على طريق العلم والاستقامة وحسن الخلق، مستفيدًا من جهود العلماء الذين سبقوه، وفي مقدمتهم الإمام النووي رحمه الله.",
+          "ونسأل الله تعالى أن يجعل معهدنا منبعًا للعلم النافع، وأن يبارك في معلميه وطلابه، وأن يوفقهم للتمسك بالقرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم."
+        ]
+      }
+    ]
+  }
 }
