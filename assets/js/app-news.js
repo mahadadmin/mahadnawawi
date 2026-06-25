@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Specialized Sub-runtime Context for News & Events Page Optimization
  * Consumes state streams provided by window.GlobalAppCore.
  */
@@ -49,7 +49,6 @@ function MwagaHabari(habariList) {
         return;
     }
 
-    // Localized Read More text mapping matching the application state
     const readMoreLabels = {
         "sw": "Soma Zaidi",
         "en": "Read More",
@@ -58,7 +57,6 @@ function MwagaHabari(habariList) {
     const readMoreText = readMoreLabels[currentLang] || "Read More";
 
     habariList.forEach(h => {
-        // Kubadili tarehe kwenda mfumo wa lugha iliyochaguliwa (Mfano: "June 3, 2026" au "٣ يونيو ٢٠٢٦")
         let tareheSanifu = h.date;
         try {
             const mabadilikoyaTarehe = new Date(h.date);
@@ -73,17 +71,37 @@ function MwagaHabari(habariList) {
             console.error("Mfumo wa tarehe una hitilafu:", e);
         }
 
-        const fullDescription = h.description || "";
-        const charLimit = 200;
+        const paragraphs = h.paragraphs || [];
+        const fullText = paragraphs.join("\n\n");
+        const charLimit = 250;
         
         let descriptionHtml = "";
         
-        // ILI KUZUIA nafasi kubwa za pre-line, tumeweka HTML yote kwenye mstari mmoja ulionyooka bila tab-spaces za kushoto
-        if (fullDescription.length > charLimit) {
-            const excerpt = fullDescription.substring(0, charLimit);
-            descriptionHtml = `<div class="news-description text-secondary" style="text-align: justify;"><span class="news-excerpt">${escapeHtml(excerpt)}...</span><span class="news-full d-none">${escapeHtml(fullDescription)}</span><a href="#" class="btn btn-link p-0 ms-2 text-gold fw-bold text-decoration-none read-more-toggle" onclick="this.previousElementSibling.classList.remove('d-none'); this.previousElementSibling.previousElementSibling.classList.add('d-none'); this.remove(); return false;">${escapeHtml(readMoreText)}</a></div>`;
+        if (fullText.length > charLimit) {
+            // Kuchukua aya ya kwanza tu kama dondoo fupi (excerpt)
+            const firstParagraph = paragraphs[0] || "";
+            
+            // Kuzalisha HTML ya aya zote kamili zilizofungwa kwenye <p> tags
+            const fullParagraphsHtml = paragraphs.map(p => `<p class="mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`).join('');
+            
+            descriptionHtml = `
+                <div class="news-description text-secondary">
+                    <div class="news-excerpt">
+                        <p style="text-align: justify;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
+                        <a href="#" class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle" onclick="const container = this.closest('.news-description'); container.querySelector('.news-excerpt').classList.add('d-none'); container.querySelector('.news-full').classList.remove('d-none'); return false;">${escapeHtml(readMoreText)}</a>
+                    </div>
+                    <div class="news-full d-none">
+                        ${fullParagraphsHtml}
+                    </div>
+                </div>
+            `;
         } else {
-            descriptionHtml = `<div class="news-description text-secondary" style="text-align: justify;">${escapeHtml(fullDescription)}</div>`;
+            const fullParagraphsHtml = paragraphs.map(p => `<p class="mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`).join('');
+            descriptionHtml = `
+                <div class="news-description text-secondary">
+                    ${fullParagraphsHtml}
+                </div>
+            `;
         }
 
         const col = document.createElement("div");
@@ -95,7 +113,7 @@ function MwagaHabari(habariList) {
                         <i class="bi bi-clock me-1"></i> ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
                     </small>
                     <h4 class="card-title fw-bold text-dark mt-2">${escapeHtml(h.title)}</h4>
-                    <div class="card-text text-secondary mt-2">
+                    <div class="card-text text-secondary mt-3">
                         ${descriptionHtml}
                     </div>
                 </div>
@@ -114,10 +132,10 @@ function anzishaUtafutaji() {
 
     newInput.addEventListener("input", (e) => {
         const term = e.target.value.toLowerCase().trim();
-        const filtered = cachedNewsItems.filter(h => 
-            h.title.toLowerCase().includes(term) || 
-            h.description.toLowerCase().includes(term)
-        );
+        const filtered = cachedNewsItems.filter(h => {
+            const paragraphsText = (h.paragraphs || []).join(" ").toLowerCase();
+            return h.title.toLowerCase().includes(term) || paragraphsText.includes(term);
+        });
         MwagaHabari(filtered);
     });
 }
@@ -143,7 +161,8 @@ function generateNewsSchema(lang, fullLocalData) {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
         "headline": h.title,
-        "description": h.description,
+        "description": (h.paragraphs || [])[0] || h.title,
+        "articleBody": (h.paragraphs || []).join("\n\n"),
         "datePublished": h.date,
         "author": {
             "@type": "Organization",
@@ -175,4 +194,3 @@ function generateNewsSchema(lang, fullLocalData) {
         document.head.appendChild(scriptNews);
     }
 }
-
