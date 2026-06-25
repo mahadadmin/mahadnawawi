@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://mahadnawawi.org/</loc>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Kurasa za Ndani -->
+  <url>
+    <loc>https://mahadnawawi.org/kuhusu.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/kozi.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/udahili.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/makala.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/Sauti.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/video.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/machapisho.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/habari.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/matukio.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahadnawawi.org/mawasiliano.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
