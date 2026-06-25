@@ -18,23 +18,27 @@
         {"name": "Qur'ani Tukufu"},
         {"name": "Tajwidi"},
         {"name": "Uandishi"},
-        {"name": "Lugha ya Kiarabu"},
+        {"name": "Lugha ya Kiarabu kwa Wasiozungumza Kiarabu"},
         {"name": "Hadithi"},
         {"name": "Sayansi ya Hadithi"},
-        {"name": "Fasaha"},
-        {"name": "Nahw"},
-        {"name": "Sarf"},
-        {"name": "Insha"},
+        {"name": "Fasaha (Balaghah)"},
+        {"name": "Nahw (Sarufi)"},
+        {"name": "Sarf (Mofolojia)"},
+        {"name": "Insha na Tabiiri"},
         {"name": "Fiqhi"},
         {"name": "Tafsiri"},
         {"name": "Adhkari"},
         {"name": "Tawhidi"},
-        {"name": "Usomaji"},
-        {"name": "Historia ya Mtume"},
+        {"name": "Usomaji na Fahamu"},
+        {"name": "Historia ya Mtume (Seerah)"},
         {"name": "Adabu na Maadili"},
         {"name": "Imla"},
         {"name": "Manhaj"},
-        {"name": "Muunganisho"}
+        {"name": "Kanuni za Fiqhi (Qawa'id Fiqhiyyah)"},
+        {"name": "Misingi ya Fiqhi (Usul al-Fiqh)"},
+        {"name": "Aqidah"},
+        {"name": "Misingi ya Tafsiri (Usul at-Tafsir)"},
+        {"name": "Historia (Tarehe)"}
       ]
     }
   },
@@ -57,13 +61,13 @@
         {"name": "The Holy Qur'an"},
         {"name": "Tajweed (Elocution)"},
         {"name": "Handwriting & Calligraphy"},
-        {"name": "Arabic Language"},
+        {"name": "Arabic Language for Non-Native Speakers"},
         {"name": "Hadith (Prophetic Traditions)"},
         {"name": "Hadith Sciences"},
         {"name": "Balaghah (Rhetoric)"},
         {"name": "Nahw (Grammar)"},
         {"name": "Sarf (Morphology)"},
-        {"name": "Composition & Essay Writing"},
+        {"name": "Composition & Expression"},
         {"name": "Fiqh (Jurisprudence)"},
         {"name": "Tafsir (Exegesis)"},
         {"name": "Adhkar (Supplications)"},
@@ -73,7 +77,11 @@
         {"name": "Islamic Manners & Ethics"},
         {"name": "Imla (Dictation)"},
         {"name": "Manhaj (Methodology)"},
-        {"name": "Synthesis & Integration"}
+        {"name": "Legal Maxims (Al-Qawa'id Al-Fiqhiyyah)"},
+        {"name": "Principles of Jurisprudence (Usul al-Fiqh)"},
+        {"name": "Aqeedah (Creed)"},
+        {"name": "Principles of Tafsir (Usul at-Tafsir)"},
+        {"name": "History (Tareekh)"}
       ]
     }
   },
@@ -112,9 +120,12 @@
         {"name": "الآداب"},
         {"name": "الإملاء"},
         {"name": "المنهج"},
-        {"name": "الدمج والتكامل"}
+        {"name": "القواعد الفقهية"},
+        {"name": "أصول الفقه"},
+        {"name": "العقيدة"},
+        {"name": "أصول التفسير"},
+        {"name": "التاريخ"}
       ]
     }
   }
 }
-
