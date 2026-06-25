@@ -82,12 +82,16 @@ function MwagaHabari(habariList) {
             const firstParagraph = paragraphs[0] || "";
             
             // Kuzalisha HTML ya aya zote kamili zilizofungwa kwenye <p> tags
-            const fullParagraphsHtml = paragraphs.map(p => `<p class="mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`).join('');
+            const fullParagraphsHtml = paragraphs.map((p, idx) => {
+                // Aya ya kwanza isiongeze margin ya juu ili isisukume maudhui chini ya heading
+                const mtClass = idx === 0 ? "mt-0" : "";
+                return `<p class="${mtClass} mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`;
+            }).join('');
             
             descriptionHtml = `
                 <div class="news-description text-secondary">
                     <div class="news-excerpt">
-                        <p style="text-align: justify; margin-bottom: 0.5rem;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
+                        <p class="mt-0 mb-2" style="text-align: justify;">${escapeHtml(firstParagraph.substring(0, charLimit))}...</p>
                         <a href="#" class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle" onclick="const container = this.closest('.news-description'); container.querySelector('.news-excerpt').classList.add('d-none'); container.querySelector('.news-full').classList.remove('d-none'); return false;">${escapeHtml(readMoreText)}</a>
                     </div>
                     <div class="news-full d-none">
@@ -96,7 +100,10 @@ function MwagaHabari(habariList) {
                 </div>
             `;
         } else {
-            const fullParagraphsHtml = paragraphs.map(p => `<p class="mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`).join('');
+            const fullParagraphsHtml = paragraphs.map((p, idx) => {
+                const mtClass = idx === 0 ? "mt-0" : "";
+                return `<p class="${mtClass} mb-3" style="text-align: justify;">${escapeHtml(p)}</p>`;
+            }).join('');
             descriptionHtml = `
                 <div class="news-description text-secondary">
                     ${fullParagraphsHtml}
@@ -109,11 +116,11 @@ function MwagaHabari(habariList) {
         col.innerHTML = `
             <div class="card shadow-sm border-gold-top p-3 bg-light">
                 <div class="card-body">
-                    <small class="text-success fw-bold">
+                    <small class="text-success fw-bold d-block mb-1">
                         <i class="bi bi-clock me-1"></i> ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
                     </small>
-                    <h4 class="card-title fw-bold text-dark mt-2 mb-1">${escapeHtml(h.title)}</h4>
-                    <div class="card-text text-secondary mt-1">
+                    <h4 class="card-title fw-bold text-dark mt-0 mb-0" style="margin-bottom: 0px !important;">${escapeHtml(h.title)}</h4>
+                    <div class="card-text text-secondary" style="margin-top: 6px !important;">
                         ${descriptionHtml}
                     </div>
                 </div>
