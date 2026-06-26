@@ -39,119 +39,256 @@ function renderNewsComponents(lang, fullLocalData) {
     currentNewLabel = data.news_section?.new_label || "Mpya";
     cachedNewsItems = data.news;
 
-    const searchInput = document.getElementById("newsSearch");
-    if (searchInput && data.news_section?.search_placeholder) {
-        searchInput.placeholder = data.news_section.search_placeholder;
-    }
-
-    // Tafsiri herobanner kiotomatiki hapa hapa kwenye app-news.js
-    const heroTitleEl = document.querySelector('[data-i18n="hero.title"]');
-    if (heroTitleEl && data.hero && data.hero.title) {
-        heroTitleEl.textContent = data.hero.title;
-    }
-
-    filterAndRenderNews(searchInput ? searchInput.value : "");
+    MwagaHabari(cachedNewsItems);
+    anzishaUtafutaji();
 }
 
-function filterAndRenderNews(searchTerm) {
-    const container = document.getElementById("newsContainer");
+/**
+ * Inatengeneza HTML ya aya kulingana na lugha ya sasa ya mfumo (RTL kwa 'ar' pekee)
+ */
+function formatParagraph(pText, lang, extraClass = "mb-3") {
+    if (!pText) return "";
+    
+    const isAr = (lang === "ar");
+    const direction = isAr ? 'dir="rtl"' : 'dir="ltr"';
+    const alignment = isAr ? 'text-align: right;' : 'text-align: justify;';
+    
+    return `<p class="m-0 ${extraClass}" ${direction} style="${alignment}">${pText}</p>`;
+}
+
+function MwagaHabari(habariList) {
+    const container = document.getElementById("courses-container");
     if (!container) return;
 
     container.innerHTML = "";
-    const term = searchTerm.trim().toLowerCase();
 
-    const filtered = cachedNewsItems.filter(item => {
-        if (!term) return true;
-        const matchesTitle = item.title?.toLowerCase().includes(term);
-        const matchesContent = item.paragraphs?.some(p => p.toLowerCase().includes(term));
-        return matchesTitle || matchesContent;
-    });
-
-    if (filtered.length === 0) {
+    if (habariList.length === 0) {
         container.innerHTML = `
             <div class="col-12 text-center py-5">
-                <i class="bi bi-search display-4 text-muted mb-3 d-block"></i>
-                <p class="text-muted fs-5 fw-medium">Hakuna habari au tukio lililopatikana.</p>
+                <i class="bi bi-newspaper text-muted fs-1"></i>
+                <p class="text-muted mt-2">Hakuna habari au matukio yaliyopatikana.</p>
             </div>
         `;
         return;
     }
 
-    const isRtl = currentLang === "ar";
+    const readMoreLabels = {
+        "sw": "Soma Zaidi",
+        "en": "Read More",
+        "ar": "اقرأ المزيد"
+    };
 
-    filtered.forEach((item, index) => {
-        const isFirstItem = index === 0 && !term;
-        const colClass = isFirstItem ? "col-12 mb-4" : "col-md-6 mb-4";
-        const cardClass = isFirstItem ? "card h-100 shadow-sm featured-news-card border-0 overflow-hidden" : "card h-100 shadow-sm border-0 news-grid-card";
-        const rowClass = isFirstItem ? "row g-0 h-100" : "";
-        
-        let cardBodyContent = `
-            <div class="card-body d-flex flex-column p-4">
-                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
-                    <span class="d-flex align-items-center gap-1">
-                        <i class="bi bi-calendar3"></i>
-                        <span>${item.date}</span>
+    const readMoreText = readMoreLabels[currentLang] || "Read More";
+
+    habariList.forEach((h, index) => {
+        let tareheSanifu = h.date || "";
+        const paragraphs = h.paragraphs || [];
+        const descriptionHtmlId = `news-desc-${index}`;
+        let descriptionHtml = "";
+
+        if (paragraphs.length > 0) {
+            // 1. Tenga utangulizi (hadi "Ama baad:") na aya za maudhui
+            let utanguliziAya = [];
+            let maudhuiAya = [];
+            let kizingitiMaudhui = false;
+
+            paragraphs.forEach(p => {
+                if (!kizingitiMaudhui) {
+                    utanguliziAya.push(p);
+                    if (p.includes("Ama baad:") || p.includes("أما بعد:")) {
+                        kizingitiMaudhui = true; 
+                    }
+                } else {
+                    maudhuiAya.push(p);
+                }
+            });
+
+            // Kama hakuna muundo wa "Ama baad:", chukua kila kitu kama maudhui
+            if (maudhuiAya.length === 0) {
+                utanguliziAya = [];
+                maudhuiAya = [...paragraphs];
+            }
+
+            // 2. Chukua aya ya kwanza ya maudhui na kuikata katikati (maneno 25 ya mwanzo)
+            const ayaYaKwanzaMaudhui = maudhuiAya[0] || "";
+            const kikomoManeno = 25; 
+            const maneno = ayaYaKwanzaMaudhui.split(/\s+/);
+            
+            let muhtasariMaudhui = ayaYaKwanzaMaudhui;
+            let mabakiMaudhui = "";
+            let inaMuendelezo = maudhuiAya.length > 1 || maneno.length > kikomoManeno;
+
+            if (maneno.length > kikomoManeno) {
+                muhtasariMaudhui = maneno.slice(0, kikomoManeno).join(" ") + "...";
+                mabakiMaudhui = "..." + maneno.slice(kikomoManeno).join(" ");
+            }
+
+            // UTANGULIZI SASA UNACHAPISHWA KIKAMILIFU HAPA (HAUONDOKI)
+            let htmlInayoonekana = utanguliziAya.map(p => formatParagraph(p, currentLang, "mb-2")).join("");
+            
+            // Hapa inaunganishwa na kile kipande cha kwanza cha aya ya kwanza ya maudhui
+            htmlInayoonekana += formatParagraph(muhtasariMaudhui, currentLang, "news-excerpt mb-0");
+
+            if (inaMuendelezo) {
+                // Hapa tunaweka mabaki yaliyofichwa (mabaki ya aya ya kwanza + aya zote zilizobaki)
+                let htmlIliyofichwa = "";
+                if (mabakiMaudhui) {
+                    htmlIliyofichwa += formatParagraph(mabakiMaudhui, currentLang, "mb-3 mt-2");
+                }
+                
+                maudhuiAya.slice(1).forEach((p, idx, arr) => {
+                    const isLast = (idx === arr.length - 1);
+                    htmlIliyofichwa += formatParagraph(p, currentLang, isLast ? "mb-0 mt-3" : "mb-3 mt-3");
+                });
+
+                descriptionHtml = `
+                <div id="${descriptionHtmlId}" class="text-secondary">
+                    <div class="news-visible-part">
+                        ${htmlInayoonekana}
+                    </div>
+                    <span class="news-full d-none">
+                        ${htmlIliyofichwa}
                     </span>
-                    ${isFirstItem ? `<span class="badge bg-danger px-2 py-1 align-middle rounded-1 fw-semibold text-uppercase d-flex align-items-center gap-1" style="font-size: 0.75rem;"><i class="bi bi-fire"></i> ${currentNewLabel}</span>` : ""}
+                    <div class="mt-2 read-more-wrapper">
+                        <a href="#"
+                           class="btn btn-link p-0 text-gold fw-bold text-decoration-none read-more-toggle"
+                           style="font-size: 0.9rem;"
+                           onclick="
+                               const parent = document.getElementById('${descriptionHtmlId}');
+                               parent.querySelector('.news-full').classList.remove('d-none');
+                               
+                               const excerptEl = parent.querySelector('.news-excerpt');
+                               if (excerptEl) { 
+                                   excerptEl.classList.remove('mb-0'); 
+                                   excerptEl.classList.add('mb-2');
+                                   if(excerptEl.innerText.endsWith('...')) {
+                                       excerptEl.innerText = excerptEl.innerText.slice(0, -3);
+                                   }
+                               }
+                               this.remove();
+                               return false;
+                           ">
+                            ${readMoreText} <i class="bi bi-chevron-down small"></i>
+                        </a>
+                    </div>
                 </div>
-                <h3 class="${isFirstItem ? "h2" : "h5"} card-title fw-bold mb-3 line-clamp-2">
-                    <a href="habari-id.html?id=${item.id}" class="text-decoration-none text-dark dynamic-news-link">${item.title}</a>
-                </h3>
-                <p class="card-text text-secondary mb-4 flex-grow-1 ${isFirstItem ? "line-clamp-3" : "line-clamp-2"}">
-                    ${item.paragraphs && item.paragraphs[0] ? item.paragraphs[0] : ""}
-                </p>
-                <div class="mt-auto pt-2">
-                    <a href="habari-id.html?id=${item.id}" class="btn ${isFirstItem ? "btn-primary btn-lg px-4" : "btn-outline-primary w-100"} fw-semibold d-inline-flex align-items-center justify-content-center gap-2 dynamic-news-link">
-                        <span>Soma Zaidi</span>
-                        <i class="bi ${isRtl ? "bi-arrow-left" : "bi-arrow-right"}"></i>
-                    </a>
+                `;
+            } else {
+                descriptionHtml = `<div class="text-secondary">${htmlInayoonekana}</div>`;
+            }
+        } else if (h.description) {
+            descriptionHtml = `<div class="text-secondary">${formatParagraph(h.description, currentLang, "mb-0")}</div>`;
+        }
+
+        // Mfumo wa Beji ya Mpya yenye uhuishaji wa Upole na rangi ya Gold maalum
+        const isNew = niMpya(h.date);
+        const newBadge = isNew 
+            ? `<span class="placeholder-glow me-2 d-inline-block"><span class="badge placeholder d-inline-block animate-pulse" style="animation: pulse 1.5s infinite ease-in-out; --bs-placeholder-opacity: 1; width: auto; background-color: #c5a059 !important; color: #fff;">${currentNewLabel}</span></span>` 
+            : "";
+
+        const col = document.createElement("div");
+        col.className = "col-12 mb-3";
+
+        const cardDirection = (currentLang === "ar") ? 'dir="rtl"' : 'dir="ltr"';
+
+        col.innerHTML = `
+            <div class="card shadow-sm border-gold-top p-3 bg-transparent" ${cardDirection}>
+                <div class="card-body p-0">
+                    <small class="text-success fw-bold d-block mb-3">
+                        <i class="bi bi-clock me-1"></i>
+                        ${newBadge}
+                        ${currentLabel}: ${tareheSanifu}
+                    </small>
+                    <h4 class="card-title fw-bold text-dark m-0 mb-2" style="line-height: 1.3; text-align: ${currentLang === 'ar' ? 'right' : 'left'};">
+                        ${h.title}
+                    </h4>
+                    <div class="card-text mt-2">
+                        ${descriptionHtml}
+                    </div>
                 </div>
             </div>
         `;
 
-        let finalHtml = "";
-        if (isFirstItem) {
-            finalHtml = `
-                <div class="${colClass}">
-                    <article class="${cardClass}">
-                        <div class="${rowClass}">
-                            <div class="col-lg-6 position-relative min-vh-25 min-vh-lg-100">
-                                <img src="assets/img/news-placeholder.jpg" alt="${item.title}" class="img-fluid w-100 h-100 object-fit-cover position-absolute top-0 start-0">
-                            </div>
-                            <div class="col-lg-6 d-flex flex-column justify-content-center">
-                                ${cardBodyContent}
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            `;
-        } else {
-            finalHtml = `
-                <div class="${colClass}">
-                    <article class="${cardClass}">
-                        <div class="position-relative" style="height: 220px;">
-                            <img src="assets/img/news-placeholder.jpg" alt="${item.title}" class="card-img-top h-100 w-100 object-fit-cover">
-                        </div>
-                        ${cardBodyContent}
-                    </article>
-                </div>
-            `;
-        }
-
-        container.insertAdjacentHTML("beforeend", finalHtml);
+        container.appendChild(col);
     });
 
-    setupSearchInputListener();
+    if (!document.getElementById("news-pulse-style")) {
+        const style = document.createElement("style");
+        style.id = "news-pulse-style";
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { opacity: 1; }
+                50% { opacity: 0.4; }
+                100% { opacity: 1; }
+            }
+        `;
+        document.head.appendChild(style);
+    }
 }
 
-function setupSearchInputListener() {
-    const searchInput = document.getElementById("newsSearch");
-    if (!searchInput || searchInput.dataset.listenerAttached) return;
+function niMpya(dateStr) {
+    if (!dateStr) return false;
+    try {
+        let cleanDate = dateStr;
+        if (dateStr.includes("/")) {
+            cleanDate = dateStr.split("/")[0].trim();
+        }
+        if (cleanDate.includes("،")) {
+            cleanDate = cleanDate.split("،")[1].trim();
+        } else if (cleanDate.includes(",")) {
+            cleanDate = cleanDate.split(",")[1].trim();
+        }
 
-    searchInput.addEventListener("input", (e) => {
-        filterAndRenderNews(e.target.value);
+        const arabicNorm = {"٠":"0","١":"1","٢":"2","٣":"3","٤":"4","٥":"5","٦":"6","٧":"7","٨":"8","٩":"9"};
+        cleanDate = cleanDate.replace(/[٠-٩]/g, function(d) { return arabicNorm[d]; });
+
+        const arabicMonths = {
+            "يناير": "January", "فبراير": "February", "مارس": "March", "أبريل": "April",
+            "مايو": "May", "يونيو": "June", "يوليو": "July", "أغسطس": "August",
+            "سبتمبر": "September", "أكتوبر": "October", "نوفمبر": "November", "ديسمبر": "December"
+        };
+        
+        for (const [arMonth, enMonth] of Object.entries(arabicMonths)) {
+            if (cleanDate.includes(arMonth)) {
+                cleanDate = cleanDate.replace(arMonth, enMonth);
+                break;
+            }
+        }
+
+        const leo = new Date();
+        const tareheHabari = new Date(cleanDate);
+
+        if (isNaN(tareheHabari.getTime())) return false;
+
+        const tofauti = (leo - tareheHabari) / (1000 * 60 * 60 * 24);
+        return tofauti >= 0 && tofauti <= 7;
+    } catch (e) {
+        return false;
+    }
+}
+
+function anzishaUtafutaji() {
+    const searchInput = document.getElementById("newsSearch");
+    if (!searchInput) return;
+
+    const newInput = searchInput.cloneNode(true);
+    searchInput.parentNode.replaceChild(newInput, searchInput);
+
+    newInput.addEventListener("input", (e) => {
+        const term = e.target.value.toLowerCase().trim();
+
+        const filtered = cachedNewsItems.filter(h => {
+            const searchableText = `
+                ${h.title}
+                ${h.description || ""}
+                ${(h.paragraphs || []).join(" ")}
+            `.toLowerCase();
+
+            return searchableText.includes(term);
+        });
+
+        MwagaHabari(filtered);
     });
-    searchInput.dataset.listenerAttached = "true";
 }
 
 function generateNewsSchema(lang, fullLocalData) {
@@ -161,6 +298,7 @@ function generateNewsSchema(lang, fullLocalData) {
     const organizationGraph = {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
+        "@id": "https://mahadnawawi.org/#organization",
         "name": data.organization?.name || "Ma'had Al-Imam An-Nawawi",
         "description": data.organization?.description || ""
     };
@@ -189,14 +327,14 @@ function generateNewsSchema(lang, fullLocalData) {
 
     const scriptOrg = document.createElement("script");
     scriptOrg.type = "application/ld+json";
-    scriptOrg.setAttribute(\"data-schema-dynamic\", \"news\");
+    scriptOrg.setAttribute("data-schema-dynamic", "news");
     scriptOrg.innerHTML = JSON.stringify(organizationGraph);
     document.head.appendChild(scriptOrg);
 
     if (newsGraph.length > 0) {
         const scriptNews = document.createElement("script");
         scriptNews.type = "application/ld+json";
-        scriptNews.setAttribute(\"data-schema-dynamic\", \"news\");
+        scriptNews.setAttribute("data-schema-dynamic", "news");
         scriptNews.innerHTML = JSON.stringify(newsGraph);
         document.head.appendChild(scriptNews);
     }
