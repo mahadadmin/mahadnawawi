@@ -1,11 +1,11 @@
 /**
  * Specialized Sub-runtime Context for News & Events Page Optimization
- * Consumes state streams provided by window.GlobalAppCore dynamically per locale.
+ * Consumes state streams provided by window.GlobalAppCore.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const initialLang = window.GlobalAppCore?.state?.lang || "sw";
-    window.GlobalAppCore.orchestrate(`assets/data/${initialLang}-news.json`);
+    // Tunapitisha pattern yenye token ya [lang] ili main.js iweze kuibadilisha kihaiba
+    window.GlobalAppCore.orchestrate("assets/data/[lang]-news.json");
 
     window.GlobalAppCore.events.on("corePipelineStabilized", (e) => {
         renderNewsComponents(e.detail.lang, e.detail.localData);
@@ -13,15 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     window.GlobalAppCore.events.on("localeEngineSynced", (e) => {
-        const mpyaLang = e.detail.lang;
-        
-        fetch(`assets/data/${mpyaLang}-news.json`)
-            .then(res => res.json())
-            .then(data => {
-                renderNewsComponents(mpyaLang, data);
-                generateNewsSchema(mpyaLang, data);
-            })
-            .catch(err => console.error("Imeshindwa kupakia faili la lugha mpya:", err));
+        // Tunatumia e.detail.localData iliyopakiwa upya kutoka kwenye Event wa main.js
+        renderNewsComponents(e.detail.lang, e.detail.localData);
+        generateNewsSchema(e.detail.lang, e.detail.localData);
     });
 });
 
@@ -31,14 +25,15 @@ let currentLabel = "Ilichapishwa";
 let currentNewLabel = "Mpya";
 
 function renderNewsComponents(lang, fullLocalData) {
-    const data = fullLocalData[lang] || fullLocalData;
+    // Kujihami: Kama muundo bado una lugha juu au upo direct
+    const data = (fullLocalData && fullLocalData[lang]) ? fullLocalData[lang] : fullLocalData;
     if (!data || !data.news) return;
 
     currentLang = lang;
     currentLabel = data.news_section?.published_label || "Ilichapishwa";
     currentNewLabel = data.news_section?.new_label || "Mpya";
     cachedNewsItems = data.news;
-
+    
     MwagaHabari(cachedNewsItems);
     anzishaUtafutaji();
 }
@@ -77,17 +72,16 @@ function MwagaHabari(habariList) {
         "en": "Read More",
         "ar": "اقرأ المزيد"
     };
-
     const readMoreText = readMoreLabels[currentLang] || "Read More";
 
     habariList.forEach((h, index) => {
-        let tareheSanifu = h.date || "";
+        let tareheSanifu = h.date;
         const paragraphs = h.paragraphs || [];
         const descriptionHtmlId = `news-desc-${index}`;
         let descriptionHtml = "";
 
         if (paragraphs.length > 0) {
-            // 1. Tenga utangulizi (hadi "Ama baad:") na aya za maudhui
+            // 1. Tenga utangulizi (hadi "Ama baad:" / "أما بعد:") na aya za maudhui
             let utanguliziAya = [];
             let maudhuiAya = [];
             let kizingitiMaudhui = false;
@@ -103,7 +97,7 @@ function MwagaHabari(habariList) {
                 }
             });
 
-            // Kama hakuna muundo wa "Ama baad:", chukua kila kitu kama maudhui
+            // Kama hakuna muundo wa utangulizi maalum, chukua kila kitu kama maudhui
             if (maudhuiAya.length === 0) {
                 utanguliziAya = [];
                 maudhuiAya = [...paragraphs];
@@ -123,7 +117,7 @@ function MwagaHabari(habariList) {
                 mabakiMaudhui = "..." + maneno.slice(kikomoManeno).join(" ");
             }
 
-            // UTANGULIZI SASA UNACHAPISHWA KIKAMILIFU HAPA (HAUONDOKI)
+            // UTANGULIZI SASA UNACHAPISHWA KIKAMILIFU HAPA (HAUONDOKI KWA KUFICHWA)
             let htmlInayoonekana = utanguliziAya.map(p => formatParagraph(p, currentLang, "mb-2")).join("");
             
             // Hapa inaunganishwa na kile kipande cha kwanza cha aya ya kwanza ya maudhui
@@ -168,7 +162,7 @@ function MwagaHabari(habariList) {
                                this.remove();
                                return false;
                            ">
-                            ${readMoreText} <i class="bi bi-chevron-down small"></i>
+                            ${escapeHtml(readMoreText)} <i class="bi bi-chevron-down small"></i>
                         </a>
                     </div>
                 </div>
@@ -183,7 +177,7 @@ function MwagaHabari(habariList) {
         // Mfumo wa Beji ya Mpya yenye uhuishaji wa Upole na rangi ya Gold maalum
         const isNew = niMpya(h.date);
         const newBadge = isNew 
-            ? `<span class="placeholder-glow me-2 d-inline-block"><span class="badge placeholder d-inline-block animate-pulse" style="animation: pulse 1.5s infinite ease-in-out; --bs-placeholder-opacity: 1; width: auto; background-color: #c5a059 !important; color: #fff;">${currentNewLabel}</span></span>` 
+            ? `<span class="placeholder-glow me-2 d-inline-block"><span class="badge placeholder d-inline-block animate-pulse" style="animation: pulse 1.5s infinite ease-in-out; --bs-placeholder-opacity: 1; width: auto; background-color: #c5a059 !important; color: #fff;">${escapeHtml(currentNewLabel)}</span></span>` 
             : "";
 
         const col = document.createElement("div");
@@ -197,10 +191,10 @@ function MwagaHabari(habariList) {
                     <small class="text-success fw-bold d-block mb-3">
                         <i class="bi bi-clock me-1"></i>
                         ${newBadge}
-                        ${currentLabel}: ${tareheSanifu}
+                        ${escapeHtml(currentLabel)}: ${escapeHtml(tareheSanifu)}
                     </small>
                     <h4 class="card-title fw-bold text-dark m-0 mb-2" style="line-height: 1.3; text-align: ${currentLang === 'ar' ? 'right' : 'left'};">
-                        ${h.title}
+                        ${escapeHtml(h.title)}
                     </h4>
                     <div class="card-text mt-2">
                         ${descriptionHtml}
@@ -208,7 +202,6 @@ function MwagaHabari(habariList) {
                 </div>
             </div>
         `;
-
         container.appendChild(col);
     });
 
@@ -291,8 +284,13 @@ function anzishaUtafutaji() {
     });
 }
 
+function escapeHtml(str) {
+    if (!str) return "";
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+}
+
 function generateNewsSchema(lang, fullLocalData) {
-    const data = fullLocalData[lang] || fullLocalData;
+    const data = (fullLocalData && fullLocalData[lang]) ? fullLocalData[lang] : fullLocalData;
     if (!data) return;
 
     const organizationGraph = {

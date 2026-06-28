@@ -10,14 +10,18 @@ window.GlobalAppCore = (() => {
         cache: new Map(),
         globalData: null,
         localData: null,
-        activeTheme: localStorage.getItem("theme") || "light"
+        newsData: null, // New State container to hold current active news slices
+        activeTheme: localStorage.getItem("theme") || "light",
+        localPathPattern: null 
     };
 
     const CONFIG = {
         supportedLangs: ["sw", "en", "ar"],
         defaultLang: "sw",
         paths: {
-            global: "assets/data/global.json"
+            global: "assets/data/global.json",
+            // Mapping dynamic news profiles smoothly based on standard pattern design
+            newsPattern: "assets/data/[lang]-news.json"
         }
     };
 
@@ -71,7 +75,7 @@ window.GlobalAppCore = (() => {
         static executeDomSync() {
             const activeLang = STATE.lang;
             const currentGlobal = STATE.globalData?.[activeLang];
-            const currentLocal = STATE.localData?.[activeLang];
+            const currentLocal = STATE.localData?.[activeLang] || STATE.localData;
 
             if (!currentGlobal) return;
 
@@ -118,15 +122,35 @@ window.GlobalAppCore = (() => {
             if (!CONFIG.supportedLangs.includes(targetLang)) targetLang = CONFIG.defaultLang;
             STATE.lang = targetLang;
             localStorage.setItem("language", targetLang);
+
+            // Fetch structural configuration if path contains dynamic token
+            if (STATE.localPathPattern && STATE.localPathPattern.includes("[lang]")) {
+                try {
+                    const dynamicPath = STATE.localPathPattern.replace("[lang]", targetLang);
+                    STATE.localData = await NetworkEngine.fetchJson(dynamicPath);
+                } catch (error) {
+                    console.error(`Marekebisho ya lugha yamefeli: ${targetLang}`, error);
+                }
+            }
+
+            // Fetch dynamic external news files seamlessly matching the active locale pipeline
+            try {
+                const dynamicNewsPath = CONFIG.paths.newsPattern.replace("[lang]", targetLang);
+                STATE.newsData = await NetworkEngine.fetchJson(dynamicNewsPath);
+            } catch (error) {
+                console.error(`News data hydration failed for: ${targetLang}`, error);
+            }
+
             this.executeDomSync();
-            EventBus.emit("localeEngineSynced", { lang: targetLang });
+            EventBus.emit("localeEngineSynced", { lang: targetLang, localData: STATE.localData });
+            EventBus.emit("newsPipelineReady", { lang: targetLang, newsData: STATE.newsData });
         }
     }
 
     class SEOEngine {
         static syncMetadata(localDataRoot) {
             if (!localDataRoot) return;
-            const activeMeta = localDataRoot[STATE.lang]?.meta;
+            const activeMeta = localDataRoot[STATE.lang]?.meta || localDataRoot.meta;
             if (!activeMeta) return;
 
             document.title = activeMeta.title;
@@ -221,7 +245,7 @@ window.GlobalAppCore = (() => {
         
         static applyTheme(theme) {
             const icon = document.getElementById("themeIcon");
-            const htmlNode = document.documentElement; // Inaamilisha [data-theme] kwenye <html> kama CSS yako inavyotaka
+            const htmlNode = document.documentElement;
 
             if (theme === "dark") {
                 htmlNode.setAttribute("data-theme", "dark");
@@ -239,13 +263,11 @@ window.GlobalAppCore = (() => {
         static kill() {
             const loader = document.getElementById("preloader");
             if (loader) {
-                // Inalinda muda wa preloader kwa sekunde 600ms ili isiondoke kama kwayp kabla ya page kukaa sawa
                 setTimeout(() => {
                     loader.style.transition = "opacity 0.4s ease-out, visibility 0.4s ease-out";
                     loader.style.opacity = "0";
                     loader.style.visibility = "hidden";
                     
-                    // Inasubiri transition ya kufifia iishe ndipo inaiondoa kabisa kwenye DOM ya HTML
                     setTimeout(() => loader.remove(), 400);
                 }, 600);
             }
@@ -254,16 +276,22 @@ window.GlobalAppCore = (() => {
 
     const bootstrapCoreOrchestration = async (localPathFile) => {
         try {
-            // Washa ThemeEngine hapa mwanzoni kabisa ili kuwahi sifa za giza/mwanga kabla ya network requests
             ThemeEngine.init();
 
-            const [globalData, localData] = await Promise.all([
+            STATE.localPathPattern = localPathFile;
+            const dynamicPath = localPathFile.replace("[lang]", STATE.lang);
+            const dynamicNewsPath = CONFIG.paths.newsPattern.replace("[lang]", STATE.lang);
+
+            // Fetch Global layout, Index structural content, and dynamic news arrays simultaneously
+            const [globalData, localData, newsData] = await Promise.all([
                 NetworkEngine.fetchJson(CONFIG.paths.global),
-                NetworkEngine.fetchJson(localPathFile)
+                NetworkEngine.fetchJson(dynamicPath),
+                NetworkEngine.fetchJson(dynamicNewsPath)
             ]);
 
             STATE.globalData = globalData;
             STATE.localData = localData;
+            STATE.newsData = newsData;
 
             I18nEngine.executeDomSync();
             SEOEngine.syncMetadata(localData);
@@ -276,8 +304,9 @@ window.GlobalAppCore = (() => {
             });
 
             EventBus.emit("corePipelineStabilized", { lang: STATE.lang, localData: localData });
+            // Signal index runtime to render standard dynamic components
+            EventBus.emit("newsPipelineReady", { lang: STATE.lang, newsData: newsData });
             
-            // Kuzima preloader kwa utaratibu uliodhibitiwa
             PreloaderEngine.kill();
         } catch (error) {
             console.error("Critical Failure in Application Lifecycle Initializer:", error);
@@ -297,4 +326,3 @@ window.GlobalAppCore = (() => {
         seo: SEOEngine
     };
 })();
-

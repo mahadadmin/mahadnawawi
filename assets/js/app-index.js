@@ -4,14 +4,21 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Direct initialization pass pointing back into structural json stores
+    // 1. Initialize pointing back into structural json stores
     window.GlobalAppCore.orchestrate("assets/data/index.json");
 
+    // 2. Render static layout once structural core stabilizes
     window.GlobalAppCore.events.on("corePipelineStabilized", (e) => {
         renderIndexComponents(e.detail.lang, e.detail.localData);
         generateIndexSchema(e.detail.lang);
     });
 
+    // 3. Render news component ONLY when dynamic language-specific news feeds are loaded
+    window.GlobalAppCore.events.on("newsPipelineReady", (e) => {
+        renderHomeNewsArticles(e.detail.lang, e.detail.newsData, window.GlobalAppCore.state.localData);
+    });
+
+    // 4. Re-sync structural pieces upon locale engine changes
     window.GlobalAppCore.events.on("localeEngineSynced", (e) => {
         renderIndexComponents(e.detail.lang, window.GlobalAppCore.state.localData);
         generateIndexSchema(e.detail.lang);
@@ -22,10 +29,10 @@ function renderIndexComponents(lang, fullLocalData) {
     const data = fullLocalData[lang];
     if (!data) return;
 
-    // Render Features Container Section Structure safely without innerHTML reflow mutation
+    // Render Features Container Section Structure
     const featuresContainer = document.getElementById("featuresContainer");
     if (featuresContainer) {
-        featuresContainer.innerHTML = ""; // Clear existing structural configurations
+        featuresContainer.innerHTML = ""; 
         data.features.items.forEach(item => {
             const col = document.createElement("div");
             col.className = "col-lg-4";
@@ -46,27 +53,6 @@ function renderIndexComponents(lang, fullLocalData) {
     renderSubjectLists("primarySubjects", data.levels.primary.subjects);
     renderSubjectLists("preparatorySubjects", data.levels.preparatory.subjects);
 
-    // Render News Section Feeds Arrays
-    const newsContainer = document.getElementById("newsArticlesContainer");
-    if (newsContainer) {
-        newsContainer.innerHTML = "";
-        data.news_section.articles.forEach(article => {
-            const col = document.createElement("div");
-            col.className = "col-lg-4";
-            col.innerHTML = `
-                <div class="custom-card shadow-sm h-100">
-                    <div class="card-body p-4 d-flex flex-column">
-                        <small class="text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i>${escapeHtml(article.date)}</small>
-                        <h4 class="mt-3 fw-bold">${escapeHtml(article.title)}</h4>
-                        <p class="text-muted mb-4">${escapeHtml(article.desc)}</p>
-                        <a href="habari.html" class="btn btn-secondary-brand mt-auto align-self-start">${escapeHtml(data.news_section.btn_read_more)}</a>
-                    </div>
-                </div>
-            `;
-            newsContainer.appendChild(col);
-        });
-    }
-
     // Render Library Cards Grid
     const libraryContainer = document.getElementById("libraryCardsContainer");
     if (libraryContainer) {
@@ -86,6 +72,69 @@ function renderIndexComponents(lang, fullLocalData) {
             `;
             libraryContainer.appendChild(col);
         });
+    }
+}
+
+// Function to handle rendering top 3 articles from active [lang]-news.json
+function renderHomeNewsArticles(lang, newsData, fullLocalData) {
+    const indexData = fullLocalData[lang];
+    const newsContainer = document.getElementById("newsArticlesContainer");
+    if (!newsContainer || !indexData || !newsData) return;
+
+    newsContainer.innerHTML = "";
+    
+    // Utafutaji wa safu ya habari kutoka kwenye muundo wa JSON
+    const articlesArray = newsData.news || newsData.articles || newsData;
+    if (!Array.isArray(articlesArray)) return;
+
+    // Kuchukua habari 3 za mwanzo
+    const topThreeArticles = articlesArray.slice(0, 3);
+
+    // Kupata neno la kibandiko cha "Mpya" kutoka kwenye index.json (kama halipo tunaweka 'Mpya')
+    const newLabel = indexData.news_section.new_label || (lang === "ar" ? "جديد" : lang === "en" ? "New" : "Mpya");
+
+    topThreeArticles.forEach(article => {
+        // Angalia kama habari ni mpya (Siku 3 tangu ichapishwe)
+        const isNew = checkIsNew(article.date);
+        const newBadgeHtml = isNew ? `<span class="badge bg-danger ms-2">${escapeHtml(newLabel)}</span>` : "";
+
+        const col = document.createElement("div");
+        col.className = "col-lg-4";
+        col.innerHTML = `
+            <div class="custom-card shadow-sm h-100 position-relative">
+                <div class="card-body p-4 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted">
+                            <i class="bi bi-clock me-1" aria-hidden="true"></i>${escapeHtml(article.date)}
+                        </small>
+                        ${newBadgeHtml}
+                    </div>
+                    <h4 class="mt-2 fw-bold">${escapeHtml(article.title)}</h4>
+                    <p class="text-muted mb-4">${escapeHtml(article.description || (article.paragraphs ? article.paragraphs[0] : ""))}</p>
+                    <a href="habari.html" class="btn btn-secondary-brand mt-auto align-self-start">${escapeHtml(indexData.news_section.btn_read_more)}</a>
+                </div>
+            </div>
+        `;
+        newsContainer.appendChild(col);
+    });
+}
+
+// Utendaji wa kuangalia kama tarehe ipo ndani ya siku 3 zilizopita (Kama ilivyo kwenye app-news.js)
+function checkIsNew(dateStr) {
+    if (!dateStr) return false;
+    try {
+        const cleanStr = dateStr.split("/")[0].replace(/[^,a-zA-Z0-9\s]/g, '').trim();
+        const commaIdx = cleanStr.indexOf(',');
+        const targetStr = commaIdx !== -1 ? cleanStr.substring(commaIdx + 1).trim() : cleanStr;
+        
+        const parsed = Date.parse(targetStr);
+        if (isNaN(parsed)) return false;
+        
+        const diffTime = Math.abs(new Date() - new parsed);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays <= 3;
+    } catch (e) {
+        return false;
     }
 }
 
@@ -121,6 +170,7 @@ function getLibraryUrl(index) {
 }
 
 function escapeHtml(str) {
+    if (!str) return "";
     return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
 
@@ -158,4 +208,3 @@ function generateIndexSchema(lang) {
     };
     window.GlobalAppCore.schema.injectUnifiedGraph(graph);
 }
-
