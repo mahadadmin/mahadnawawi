@@ -56,12 +56,7 @@
       "title": "Habari Mpya",
       "subtitle": "Fuatilia matangazo na matukio mbalimbali ya Ma'had Al-Imam An-Nawawi.",
       "btn_read_more": "Soma Zaidi",
-      "btn_view_all": "Tazama Habari Zote",
-      "articles": [
-        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Yafunguliwa Rasmi Na Masomo Kuanza", "desc": "Uongozi wa Ma'had Al-Imam An-Nawawi unafurahi kuwajulisha wanafunzi, wazazi, walezi na jamii kwa ujumla kwamba Ma'had imefunguliwa rasmi leo, Jumamosi tarehe 13 Juni 2026..." },
-        { "date": "2026-06-13", "title": "Maandalizi ya Upanuzi wa Ma'had Al-Imam An-Nawawi Yaendelea", "desc": "Ma'had Al-Imam An-Nawawi inaendelea na maandalizi ya muda mrefu ya kuimarisha miundombinu yake ili kuwezesha upanuzi wa huduma za elimu na kuongeza nafasi za udahili..." },
-        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Yazindua Tovuti Rasmi", "desc": "Katika hatua nyingine ya kuimarisha mawasiliano na upatikanaji wa elimu, Ma'had Al-Imam An-Nawawi imezindua rasmi tovuti yake kwa lengo la kuhudumia wanafunzi na jamii..." }
-      ]
+      "btn_view_all": "Tazama Habari Zote"
     },
     "library_section": {
       "title": "Maktaba ya Maarifa",
@@ -144,13 +139,8 @@
       "title": "Latest News",
       "subtitle": "Stay updated with announcements and various events at Ma'had Al-Imam An-Nawawi.",
       "btn_read_more": "Read More",
-      "btn_view_all": "View All News",
-      "articles": [
-        { "date": "2026-06-13", "title": "Ma'had Al-Imam An-Nawawi Officially Opens and Classes Commence", "desc": "The administration of Ma'had Al-Imam An-Nawawi is pleased to inform students, parents, guardians, and the wider community that the institute has officially opened today, Saturday, 13 June 2026..." },
-        { "date": "2026-06-13", "title": "Preparations for The Expansion of Ma'had Al-Imam An-Nawawi Continue", "desc": "Ma'had Al-Imam An-Nawawi continues its long-term preparations to strengthen its infrastructure in order to expand its educational services and increase admission capacity..." },
-        { "date": "2026-06-13", "title": "Ma'had An-Imam An-Nawawi Launches its Official Website", "desc": "In another significant step towards enhancing communication and expanding access to knowledge, Ma'had Al-Imam An-Nawawi has officially launched its website to serve the community..." }
-      ]
-    },
+      "btn_view_all": "View All News"
+          },
     "library_section": {
       "title": "Knowledge Library",
       "subtitle": "Benefit from a rich collection of lectures, videos, publications, and books that help build knowledge and deepen understanding.",
@@ -232,13 +222,8 @@
       "title": "آخر الأخبار",
       "subtitle": "تابع الإعلانات والأنشطة المختلفة لمعهد الإمام النووي.",
       "btn_read_more": "اقرأ المزيد",
-      "btn_view_all": "عرض جميع الأخبار",
-      "articles": [
-        { "date": "2026-06-13", "title": "افتتاح معهد الإمام النووي رسميًّا وبدء الدراسة", "desc": "يسر إدارة معهد الإمام النووي أن تعلن للطلاب وأولياء الأمور ولعموم المجتمع أن المعهد قد افتُتح رسميًّا اليوم السبت 13 يونيو 2026م، وقد بدأت الدراسة فيه بحمد الله..." },
-        { "date": "2026-06-13", "title": "استمرار الاستعدادات لتوسعة المعهد", "desc": "يواصل معهد الإمام النووي استعداداته وخططه طويلة المدى لتطوير بنيته التحتية؛ بهدف توسيع خدماته التعليمية وزيادة الطاقة الاستيعابية قبول الطلاب من مختلف المناطق..." },
-        { "date": "2026-06-13", "title": "معهد الإمام النووي يطلق موقعه الإلكتروني الرسمي", "desc": "في خطوة أخرى لتعزيز التواصل وتوسيع نطاق الاستفادة من العلم، أطلق معهد الإمام النووي موقعه الإلكتروني الرسمي ليكون في خدمة الطلاب وأولياء الأمور والمهتمين..." }
-      ]
-    },
+      "btn_view_all": "عرض جميع الأخبار"
+         },
     "library_section": {
       "title": "مكتبة المعرفة",
       "subtitle": "استفد من مجموعة غنية من المحاضرات، المرئيات، المنشورات، والكتب التي تساعد في بناء المعرفة وتعميق الفهم.",
