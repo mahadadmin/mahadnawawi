@@ -1,4 +1,4 @@
-﻿{
+{
   "sw": {
     "meta": {
       "title": "Ma'had Al-Imam An-Nawawi | Kuhusu Sisi",
@@ -9,9 +9,9 @@
       "title": "Kuhusu Sisi"
     },
     "about_section": {
-      "subheading": "Chuo Chetu",
+      "subheading": "Kituo Chetu",
       "title": "Utambulisho",
-      "p1": "Ma'had Al-Imam An-Nawawi ni taasisi ya elimu ya Kiislamu iliyoanzishwa kwa lengo la kuchangia katika kueneza elimu sahihi yenye manufaa na kulea kizazi kinachoshikamana na Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم.",
+      "p1": "Ma'had Al-Imam An-Nawawi ni kituo cha elimu ya Kiislamu kilichoanzishwa kwa lengo la kuchangia katika kueneza elimu sahihi yenye manufaa na kulea kizazi kinachoshikamana na Qur'an Tukufu na Sunnah za Mtume ﷺ kwa ufahamu wa Salafus-Salih رضي الله عنهم.",
       "p2": "Ma'had hii imejengwa juu ya misingi ya Da'watu As-Salafiyyah, ikizingatia umuhimu wa elimu, tarbiyyah na maadili mema katika malezi ya mwanafunzi wa Kiislamu. Kupitia mazingira ya kujifunza yanayochochea uelewa, nidhamu na uchamungu, Ma'had inalenga kuwajengea wanafunzi msingi imara wa kielimu na kimalezi utakaowawezesha kunufaika wao binafsi na kuchangia maendeleo ya jamii zao.",
       "p3": "Ma'had Al-Imam An-Nawawi imebeba dhamira ya kuandaa wanafunzi wenye elimu sahihi, tabia njema na uelewa wa dini unaowaongoza katika maisha yao ya kila siku. Aidha, inalenga kukuza mapenzi ya elimu, kuthamini urithi wa wanazuoni wa Ahlus-Sunnah wal-Jamaa'ah, na kuhamasisha kushikamana na njia ya haki kwa hekima, busara na uadilifu.",
       "p4": "Kwa idhini ya Allah ﷻ, Ma'had inatarajia kuwa miongoni mwa vituo vinavyochangia katika kuendeleza elimu ya Kiislamu, kuhuisha urithi wa kielimu wa Ummah, na kueneza mwanga wa Qur'an Tukufu na Sunnah za Mtume ﷺ kwa mujibu wa ufahamu wa Salafus-Salih رضي الله عنهم.",
@@ -33,11 +33,11 @@
       "items": [
         {
           "title": "Ikhlas (Uaminifu)",
-          "desc": "Kufanya kila jambo kwa ajili ya kutafuta radhi za Allah pekee state na kujitolea kwa dhati katika kuelimisha jamii."
+          "desc": "Kufanya kila jambo kwa ajili ya kutafuta radhi za Allah pekee na kujitolea kwa dhati katika kuelimisha jamii."
         },
         {
           "title": "Itqan (Ufanisi)",
-          "desc": "Kuhakikisha kiwango cha juu cha ubora na weledi katika ufundishaji, utendaji na usimamizi wa shughuli zote za chuo."
+          "desc": "Kuhakikisha kiwango cha juu cha ubora na weledi katika ufundishaji, utendaji na usimamizi wa shughuli zote za kituo."
         },
         {
           "title": "Tarbiyyah (Malezi mema)",
@@ -56,12 +56,12 @@
       "title": "About Us"
     },
     "about_section": {
-      "subheading": "Our Institution",
+      "subheading": "Our Center",
       "title": "Identity",
-      "p1": "Ma'had Al-Imam An-Nawawi is an Islamic educational institution established with the aim of contributing to the dissemination of authentic and beneficial knowledge while nurturing a generation firmly attached to the Noble Qur'an and the Sunnah of Prophet Muhammad ﷺ according to the understanding of the righteous predecessors (Al-Salaf Al-Salih رضي الله عنهم).",
-      "p2": "The institution is founded upon the principles of Da'wah Al-Salafiyyah, emphasizing the importance of knowledge, sound upbringing (tarbiyyah), and noble character in the development of a Muslim student. Through a learning environment that promotes understanding, discipline, and piety, the Ma'had seeks to provide students with a strong educational and moral foundation that enables them to benefit themselves and contribute positively to their communities.",
+      "p1": "Ma'had Al-Imam An-Nawawi is an Islamic educational center established with the aim of contributing to the dissemination of authentic and beneficial knowledge while nurturing a generation firmly attached to the Noble Qur'an and the Sunnah of Prophet Muhammad ﷺ according to the understanding of the righteous predecessors (Al-Salaf Al-Salih رضي الله عنهم).",
+      "p2": "The center is founded upon the principles of Da'wah Al-Salafiyyah, emphasizing the importance of knowledge, sound upbringing (tarbiyyah), and noble character in the development of a Muslim student. Through a learning environment that promotes understanding, discipline, and piety, the Ma'had seeks to provide students with a strong educational and moral foundation that enables them to benefit themselves and contribute positively to their communities.",
       "p3": "Ma'had Al-Imam An-Nawawi is committed to preparing students who possess sound knowledge, upright character, and a practical understanding of Islam that guides them in their daily lives. It also strives to cultivate a love for knowledge, an appreciation of the scholarly heritage of Ahl al-Sunnah wa al-Jama'ah, and a commitment to adhering to the path of truth with wisdom, balance, and integrity.",
-      "p4": "By the permission of Allah ﷻ, the Ma'had aspires to be among the institutions that contribute to the advancement of Islamic education, the preservation of the Ummah's scholarly legacy, and the dissemination of the light of the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of Al-Salaf Al-Salih رضي الله عنهم.",
+      "p4": "By the permission of Allah ﷻ, the Ma'had aspires to be among the centers that contribute to the advancement of Islamic education, the preservation of the Ummah's scholarly legacy, and the dissemination of the light of the Noble Qur'an and the Sunnah of the Prophet ﷺ according to the understanding of Al-Salaf Al-Salih رضي الله عنهم.",
       "image_alt": "Surroundings and buildings of Ma'had Al-Imam An-Nawawi in Mwera, Zanzibar"
     },
     "vision_mission": [
@@ -84,7 +84,7 @@
         },
         {
           "title": "Itqan (Excellence)",
-          "desc": "Ensuring the highest standard of quality and professionalism in teaching, execution, and management of all institutional activities."
+          "desc": "Ensuring the highest standard of quality and professionalism in teaching, execution, and management of all center activities."
         },
         {
           "title": "Tarbiyyah (Nurturing)",
@@ -95,20 +95,20 @@
   },
   "ar": {
     "meta": {
-      "title": "معهد الإمام النووي | عن المعهد",
+      "title": "معهد الإمام النووي | عن المركز",
       "description": "تعرف على أسس ورؤية ورسالة وقيم معهد الإمام النووي في مويرا، زنجبار، المعني بنشر التعليم الإسلامي الصحيح.",
-      "keywords": "عن المعهد, أسسنا, الرؤية, الرسالة, القيم, النووي, زنجبار, السلف الصالح"
+      "keywords": "عن المركز, أسسنا, الرؤية, الرسالة, القيم, النووي, زنجبار, السلف الصالح"
     },
     "hero": {
       "title": "من نحن"
     },
     "about_section": {
-      "subheading": "معهدنا",
-      "title": "التعريف بالمعهد",
-      "p1": "معهد الإمام النووي مؤسسة تعليمية إسلامية أُنشئت للمساهمة في نشر العلم الشرعي الصحيح النافع، وتربية جيل متمسك بالقرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم.",
+      "subheading": "مركزنا",
+      "title": "التعريف بالمركز",
+      "p1": "معهد الإمام النووي مركز تعليمي إسلامي أُنشئت للمساهمة في نشر العلم الشرعي الصحيح النافع، وتربية جيل متمسك بالقرآن الكريم وسنة النبي ﷺ على فهم السلف الصالح رضي الله عنهم.",
       "p2": "يقوم المعهد على أصول الدعوة السلفية، مع العناية بالعلم والتربية والأخلاق الفاضلة في إعداد الطالب المسلم. ومن خلال بيئة تعليمية تُعنى بالفهم والانضباط والتقوى، يسعى المعهد إلى بناء أساس علمي وتربوي راسخ يمكّن الطلاب من الانتفاع بعلمهم والإسهام في خدمة مجتمعاتهم.",
       "p3": "ويحمل معهد الإمام النووي رسالة إعداد طلاب يتحلون بالعلم النافع، والأخلاق الحسنة، والفهم الصحيح للدين الذي يهديهم في شؤون حياتهم المختلفة. كما يهدف إلى غرس محبة العلم، وتعظيم ميراث علماء أهل السنة والجماعة، والحث على التمسك بالحق بالحكمة والبصيرة والاعتدال.",
-      "p4": "وبإذن الله ﷻ، يطمح المعهد إلى أن يكون من المؤسسات المساهمة في خدمة التعليم الإسلامي، وإحياء التراث العلمي للأمة، ونشر نور القرآن الكريم والسنة النبوية على فهم السلف الصالح رضي الله عنهم.",
+      "p4": "وبإذن الله ﷻ، يطمح المعهد إلى أن يكون من المراكز المساهمة في خدمة التعليم الإسلامي، وإحياء التراث العلمي للأمة، ونشر نور القرآن الكريم والسنة النبوية على فهم السلف الصالح رضي الله عنهم.",
       "image_alt": "بيئة ومباني معهد الإمام النووي في مويرا، زنجبار"
     },
     "vision_mission": [
@@ -131,7 +131,7 @@
         },
         {
           "title": "الإتقان",
-          "desc": "ضمان أعلى مستويات الجودة والمهنية في التدريس والأداء وإدارة جميع أنشطة المعهد."
+          "desc": "ضمان أعلى مستويات الجودة والمهنية في التدريس والأداء وإدارة جميع أنشطة المركز."
         },
         {
           "title": "التربية",
@@ -141,4 +141,3 @@
     }
   }
 }
-
